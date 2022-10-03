@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://www.mathsisfun.com/algebra/vectors.html -->
+<html lang="en" style="height: 100%;"><!-- #BeginTemplate "/Templates/Advanced.dwt" --><!-- DW6 --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- #BeginEditable "doctitle" -->
+	<title>Vectors</title>
+	<meta name="description" content="Math explained in easy language, plus puzzles, games, quizzes, worksheets and a forum. For K-12 kids, teachers and parents.">
+	<!-- #EndEditable -->
+<meta name="keywords" content="math, maths, mathematics, school, homework, education">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="referrer" content="always">
+<link rel="stylesheet" type="text/css" href="./Vectors_files/style3.css">
+<script src="./Vectors_files/f(5).txt"></script><script src="./Vectors_files/f(6).txt"></script><script src="./Vectors_files/f(7).txt" id="google_shimpl"></script><script type="text/javascript" async="" src="./Vectors_files/ga.js.download"></script><script src="./Vectors_files/main3.js.download"></script>
+<script type="text/javascript" async="" src="./Vectors_files/element.js.download"></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="./Vectors_files/translateelement.css"><script type="text/javascript" charset="UTF-8" src="./Vectors_files/m=el_main"></script><meta http-equiv="origin-trial" content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><link rel="preload" href="./Vectors_files/f(8).txt" as="script"><script type="text/javascript" src="./Vectors_files/f(8).txt"></script><link rel="preload" href="./Vectors_files/f(9).txt" as="script"><script type="text/javascript" src="./Vectors_files/f(9).txt"></script></head>
+
+<body id="bodybg" class="adv" data-new-gr-c-s-check-loaded="14.1042.0" data-gr-ext-installed="" style="position: relative; min-height: 100%; top: 0px;" aria-hidden="false">
+<div class="bg">
+	<div id="stt"><div style="position: fixed; top: 0px; right: 50%; margin: 10px 615px 10px 0; text-align: left; "><a href="https://www.mathsisfun.com/algebra/index.html" style="text-decoration: none; color: #888888; vertical-align: middle; display: table;"><div id="menuLt">Algebra Index</div></a></div><div style="position: fixed; top: 0px; left: 50%; margin: 10px 0 10px 615px; text-align: right; "><a href="https://www.mathsisfun.com/algebra/vectors-dot-product.html" style="text-decoration: none; color: #888888; vertical-align: middle; display: table;"><div id="menuRt">Dot Product</div></a></div></div>
+	<header>
+	<div id="hdr"></div>
+	<div id="logo"><a href="https://www.mathsisfun.com/"><img src="./Vectors_files/logo.svg" alt="Math is Fun"></a></div>
+	<div id="advText">Advanced</div>
+	<div id="gtran">
+		<script>document.write(getTrans());</script><div id="google_translate_element"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage" class="goog-te-gadget-simple" style="white-space: nowrap;"><img src="./Vectors_files/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"><span style="vertical-align: middle;"><a aria-haspopup="true" class="goog-te-menu-value" href="javascript:void(0)"><span>Select Language</span><img src="./Vectors_files/cleardot.gif" alt="" width="1" height="1"><span style="border-left: 1px solid rgb(187, 187, 187);">​</span><img src="./Vectors_files/cleardot.gif" alt="" width="1" height="1"><span aria-hidden="true" style="color: rgb(118, 118, 118);">▼</span></a></span></div></div></div><script type="text/javascript">	function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');}var googleTranslateScript = document.createElement("script");googleTranslateScript.type = "text/javascript";googleTranslateScript.async = true;googleTranslateScript.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";( document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0] ).appendChild(googleTranslateScript);</script>
+	</div>
+	<div id="adTopOuter" class="centerfull noprint">
+		<div id="adTop"> 
+			<script>document.write(getAdTop());</script><div id="cookieok" style="position:absolute; right:5px; top:5px; border-radius:10px; background-color:#def; padding:3px 8px; font: 14px Arial;">We may use <a href="http://www.mathsisfun.com/about-ads.html">Cookies</a> <div style="display:inline-block; border-radius:10px; background-color:#abf; padding:3px 8px; cursor: pointer;" onclick="cookieok()">OK</div></div> 
+		</div>
+	</div>
+	<div id="adHide">
+		<div id="showAds1"><a href="javascript:showAds()">Show Ads</a></div>
+		<div id="hideAds1"><a href="javascript:hideAds()">Hide Ads</a><br>
+			<a href="https://www.mathsisfun.com/about-ads.html">About Ads</a></div>
+	</div>
+	</header>
+	<nav>
+	<div id="menuWide" class="menu"> 
+		<script>document.write(getMenu(0));</script><ul role="list"><li role="listitem" tabindex="0"><a href="https://www.mathsisfun.com/index.htm">Home</a></li>
+<li role="listitem" tabindex="0"><a href="https://www.mathsisfun.com/algebra/index.html">Algebra</a></li>
+<li role="listitem" tabindex="0"><a href="https://www.mathsisfun.com/data/index.html">Data</a></li>
+<li role="listitem" tabindex="0"><a href="https://www.mathsisfun.com/geometry/index.html">Geometry</a></li>
+<li role="listitem" tabindex="0"><a href="https://www.mathsisfun.com/measure/index.html">Measure</a></li>
+<li role="listitem" tabindex="0"><a href="https://www.mathsisfun.com/numbers/index.html">Numbers</a></li>
+<li role="listitem" tabindex="0"><a href="https://www.mathsisfun.com/definitions/index.html">Dictionary</a></li>
+<li role="listitem" tabindex="0"><a href="https://www.mathsisfun.com/games/index.html">Games</a></li>
+<li role="listitem" tabindex="0"><a href="https://www.mathsisfun.com/puzzles/index.html">Puzzles</a></li>
+<li role="listitem" tabindex="0"><a href="https://www.mathsisfun.com/worksheets/index.php">Worksheets</a></li>
+</ul> 
+	</div>
+	<div id="linkto">
+		<div id="linktort">
+			<script>document.write(getLinks());</script><a href="javascript:linkToUs()" id="linkus" title="Link To Us">Link To Us</a><a target="_blank" rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https://www.mathsisfun.com/algebra/vectors.html&amp;t=Vectors" title="Share on Facebook" id="linkfb">Facebook</a> <a target="_blank" rel="nofollow" href="https://twitter.com/intent/tweet?source=https://www.mathsisfun.com/algebra/vectors.html&amp;text=Vectors:%20https://www.mathsisfun.com/algebra/vectors.html" title="Tweet it" id="linktw">Twitter</a> <a target="_blank" rel="nofollow" href="http://pinterest.com/pin/create/button/?url=https://www.mathsisfun.com/algebra/vectors.html&amp;description=Vectors" title="Pin it" id="linkpi">Pinterest</a><a target="_blank" rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.mathsisfun.com%2Falgebra%2Fvectors.html&amp;summary=Vectors&amp;source=mathsisfun.com" title="LinkedIn" id="linkli">LinkedIn</a><a href="javascript:tellAFriend()" id="linkem" title="eMail">eMail a Friend</a>
+		</div>
+	</div>
+	<div id="search" role="search">
+		<script>document.write(getSearch());</script><form action="https://www.mathsisfun.com/search/search.html" method="get"><input type="text" name="query" value="" placeholder="Search" id="searchFld" aria-label="Search"><input type="submit" name="submit" value="" id="searchBtn" aria-label="Search Button"><input type="hidden" name="search" value="1"></form>
+	</div>
+	<div id="menuSlim" class="menu"> 
+		<script>document.write(getMenu(1));</script><ul role="list"><li><a role="listitem" href="https://www.mathsisfun.com/index.htm">Home</a></li><li><a role="listitem" href="https://www.mathsisfun.com/algebra/vectors.html#">Subjects ▼</a><ul><li><a role="listitem" href="https://www.mathsisfun.com/algebra/index.html">Algebra</a></li><li><a role="listitem" href="https://www.mathsisfun.com/calculus/index.html">Calculus</a></li><li><a role="listitem" href="https://www.mathsisfun.com/data/index.html">Data</a></li><li><a role="listitem" href="https://www.mathsisfun.com/geometry/index.html">Geometry</a></li><li><a role="listitem" href="https://www.mathsisfun.com/measure/index.html">Measure</a></li><li><a role="listitem" href="https://www.mathsisfun.com/money/index.html">Money</a></li><li><a role="listitem" href="https://www.mathsisfun.com/numbers/index.html">Numbers</a></li><li><a role="listitem" href="https://www.mathsisfun.com/physics/index.html">Physics</a></li></ul></li><li><a role="listitem" href="https://www.mathsisfun.com/algebra/vectors.html#">More ▼</a><ul role="list"><li><a role="listitem" href="https://www.mathsisfun.com/activity/index.html">Activities</a></li><li><a role="listitem" href="https://www.mathsisfun.com/definitions/index.html">Dictionary</a></li><li><a role="listitem" href="https://www.mathsisfun.com/games/index.html">Games</a></li><li><a role="listitem" href="https://www.mathsisfun.com/puzzles/index.html">Puzzles</a></li><li><a role="listitem" href="https://www.mathsisfun.com/worksheets/index.php">Worksheets</a></li></ul></li></ul> 
+	</div>
+	<div id="menuTiny" class="menu"> 
+		<script>document.write(getMenu(2));</script>&nbsp;<a href="javascript:showMenu()" style="text-decoration: none;" aria-label="Show Menu"><img src="./Vectors_files/menu.svg" alt="Menu"></a> <a href="javascript:showSrch()" style="text-decoration: none;" aria-label="Show Search"><img src="./Vectors_files/search.svg" alt="Search"></a> 
+	</div>
+	</nav>
+	<div id="extra"></div>
+</div>
+<article id="content" role="main">
+<!-- #BeginEditable "Body" -->
+
+<h1 class="center">Vectors</h1>
+
+<p class="center">This is a vector:</p>
+		<p class="center"><img src="./Vectors_files/vector.gif" width="142" height="81" alt="vector"></p>
+		<p>A vector has <b>magnitude</b> (size) and <b>direction</b>:</p>
+		<p class="center"><img src="./Vectors_files/vector-mag-dir.svg" alt="vector magnitude and direction"></p>
+		<p class="center">The length of the line shows its magnitude and the arrowhead points in the direction.</p>
+		<p>We can add two vectors by joining them head-to-tail:</p>
+		<p class="center"><img src="./Vectors_files/vector-add.svg" width="248" height="92" alt="vector add a+b"></p>
+		<p>And it doesn't matter which order we add them, we get the same result:</p>
+		<p class="center"><img src="./Vectors_files/vector-add2.gif" width="247" height="95" alt="vector add b+a"></p>
+		<div class="example">
+			<h3>Example: A plane is flying along, pointing North, but there is a wind coming from the North-West.</h3>
+			<p class="center"><img src="./Vectors_files/vector-airplane.svg" alt="vector airplane, propellor and wind"></p>
+			<p>The two vectors (the velocity caused by the propeller, and the velocity of the wind) result in a slightly slower ground speed heading a little East of North.</p>
+			<p>If you watched the plane from the ground it would seem to be slipping sideways a little.</p>
+			<p class="center"><img src="./Vectors_files/vector-airplane2.gif" width="134" height="154" alt="vector airplane ahead and slightly sideways"></p>
+			<p>Have you ever seen that happen? Maybe you have seen birds struggling against a strong wind that seem to fly sideways. Vectors help explain that.</p>
+		</div>
+		<p><a href="https://www.mathsisfun.com/measure/metric-speed.html">Velocity</a>, <a href="https://www.mathsisfun.com/measure/metric-acceleration.html">acceleration</a>, <a href="https://www.mathsisfun.com/physics/force.html">force</a> and many other things are vectors.</p>
+		<h2>Subtracting</h2>
+		<p>We can also subtract one vector from another:</p>
+		<ul>
+			<li>first we reverse the direction of the vector we want to subtract,</li>
+			<li>then add them as usual:</li>
+		</ul>
+		<p class="center"><img src="./Vectors_files/vector-subtract.gif" width="264" height="115" alt="vector subtract a-b = a + (-b)"><br>
+<b>a</b> − <b>b</b></p>
+		<h2>Notation</h2>
+		<p>A vector is often written in <b>bold</b>, like <b>a</b> or <b>b</b>.</p>
+		<table style="border: 0; margin:auto;">
+			<tbody><tr>
+				<td>A vector can also be written as the letters<br>
+of its head and tail with an arrow above it, like this:</td>
+				<td>&nbsp;</td>
+				<td><img src="./Vectors_files/vector-notation.svg" alt="vector notation a=AB, head, tail"></td>
+			</tr>
+		</tbody></table>
+		<h2>Calculations</h2>
+		<p>Now ... how do we do the calculations?</p>
+		<p>The most common way is to first break up vectors into x and y parts, like this:</p>
+		<p class="center"><img src="./Vectors_files/vector-xy-components.gif" width="122" height="92" alt="vector xy components"></p>
+		<p class="center">The vector <b>a</b> is broken up into<br>
+the two vectors <b>a<sub>x</sub></b> and <b>a<sub>y</sub></b></p>
+		<p class="center">(We <a href="https://www.mathsisfun.com/algebra/vectors.html#magdir">see later</a> how to do this.)</p>
+		<h2>Adding Vectors</h2>
+		<p>We can then add vectors by <b>adding the  x parts</b> and <b>adding the y parts</b>:</p>
+		<p class="center"><img src="./Vectors_files/vector-add3.gif" width="484" height="130" alt="vector add example"></p>
+		<p class="center">The vector (8, 13) and the vector (26, 7) add up to the vector (34, 20)</p>
+		<div class="example">
+			<h3>Example: add the vectors <b>a</b> = (8, 13) and <b>b</b> = (26, 7)</h3>
+			<p><b>c</b> = <b>a</b> + <b>b</b></p>
+			<p><b>c</b> = (8, 13) + (26, 7) = (8+26, 13+7) = (34, 20)</p>
+		</div>
+<p>When we break up a vector like that,  each part is called a <b>component</b>:</p>		
+<link rel="stylesheet" type="text/css" href="./Vectors_files/stylejs.css"><script src="./Vectors_files/geom-vector.js.download"></script>
+	<script>geomvectorMain('xy');</script><div style="position:relative; width:540px; height:360px; border: none; border-radius: 9px; margin:auto; display:block; box-shadow: 0px 0px 19px 10px rgba(0,0,68,0.46); "><canvas id="canvasxy" width="1080" height="720" style="z-index: 10; width: 540px; height: 360px;"></canvas><div style="position:absolute; right:3px; top:3px;"><button id="appBtn" onclick="winNew()" style="z-index:2;" class="clickbtn"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="21" version="1.1" style="stroke-width:2; fill:none; vertical-align:middle;"><rect style="stroke:grey;" x="1" y="6" ry="4" width="19" height="13"></rect><path style="stroke:#cdf;stroke-width:3;" d="m 14,6 h 6 v 6"></path><path style="stroke:black;" d="m 16,2 h 8 v 8"></path><path style="stroke:black;" d="m 14,12 10,-10"></path></svg></button></div><div id="btns2" style="position:absolute; right:3px; bottom:3px;"><button id="coordsBtn" onclick="toggleCoords()" style="z-index:2;" class="togglebtn lo">Coords</button><button id="resetBtn" onclick="reset()" style="z-index:2;" class="clickbtn">Reset</button></div><div id="copyrt" style="position: absolute; left: 5px; bottom: 3px; font: 10px Arial; color: #6600cc; ">© 2019 MathsIsFun.com  v0.93</div></div>
+
+<h2>Subtracting Vectors</h2>
+		<p>To subtract, first reverse the vector we want to subtract, then add.</p>
+		<div class="example">
+			<h3>Example: subtract <b>k</b> = (4, 5) from <b>v</b> = (12, 2)</h3>
+			<p><b>a</b> = <b>v</b> + −<b>k</b></p>
+			<p><b>a</b> = (12, 2) + −(4, 5) = (12, 2) + (−4, −5) = (12−4, 2−5) = (8, −3)</p>
+		</div>
+		<h2>Magnitude of a Vector</h2>
+		<p>The magnitude of a vector is shown by two vertical bars on either side of the vector:</p>
+		<p class="large center">|<b>a</b>|</p>
+		<p>OR it can be written with double vertical bars (so as not to confuse it with absolute value):</p>
+		<p class="large center">||<b>a</b>||</p>
+		<p>We use <a href="https://www.mathsisfun.com/pythagoras.html">Pythagoras' theorem</a> to calculate it:</p>
+		<p class="large center">|<b>a</b>| = √( x<sup>2</sup> + y<sup>2</sup> )</p>
+		<div class="example">
+			<h3>Example: what is the magnitude of the vector <b>b</b> = (6, 8) ?</h3>
+			<p>|<b>b</b>| = √( 6<sup>2</sup> + 8<sup>2</sup>) = √( 36+64) = √100 = 10</p>
+		</div>
+		<p>A vector with magnitude 1 is called a <a href="https://www.mathsisfun.com/algebra/vector-unit.html">Unit Vector</a>.</p>
+		<h2>Vector vs Scalar</h2>
+		<p>A <b>scalar</b> has <b>magnitude</b> (size) <b>only</b>.</p>
+		<div class="def">
+			<p>Scalar: just a number (like 7 or −0.32) ... definitely not a vector.</p>
+		</div>
+		<p>A <b>vector</b> has <b>magnitude and direction</b>, and is often written in <b>bold</b>, so we know it is not a&nbsp;scalar:</p>
+		<ul>
+			<li>so <b>c</b> is a vector, it has magnitude and direction</li>
+			<li>but c is just a value, like 3 or 12.4</li>
+		</ul>
+		<div class="example">
+			<h3>Example: k<b>b</b> is actually the scalar k times the vector <b>b</b>.</h3>
+		</div>
+		<h2>Multiplying a Vector by  a Scalar</h2>
+		<p>When we multiply a vector by a scalar it is called "scaling" a vector, because we change how big or small the vector is.</p>
+		<div class="example">
+			<h3>Example: multiply the vector <b>m</b> = (7, 3) by the scalar 3</h3>
+<table style="border: 0;">
+			<tbody><tr>
+				<td><img src="./Vectors_files/vector-scaling.gif" width="184" height="135" alt="vector scaling"></td>
+				<td>&nbsp;</td>
+				<td><b>a</b> = 3<b>m</b> = (3×7, 3×3) = (21, 9)</td>
+			</tr>
+			</tbody></table>
+			
+			<p>It still points in the same direction, but is 3 times longer</p>
+		</div>
+		<p>(And now you know why numbers are called "scalars", because they "scale" the vector up or down.)</p>
+		<p>&nbsp;</p>
+		<h2>Multiplying a Vector by a Vector (Dot Product and Cross Product)</h2>
+		<table width="100%" border="0">
+			<tbody><tr>
+				<td><img src="./Vectors_files/dot-product-1.gif" width="164" height="139" alt="dot product magnitude and angle"></td>
+				<td>
+					<p>How do we <b>multiply two vectors</b> together? There is more than one way!</p>
+					<ul>
+						<li>The scalar or <a href="https://www.mathsisfun.com/algebra/vectors-dot-product.html">Dot Product</a> (the result is a scalar).</li>
+						<li>The vector or <a href="https://www.mathsisfun.com/algebra/vectors-cross-product.html">Cross Product</a> (the result is a vector).</li>
+					</ul>
+					<p>(Read those pages for more details.)</p>
+				</td>
+			</tr>
+		</tbody></table>
+		<p>&nbsp;</p>
+		<h2>More Than 2 Dimensions</h2>
+		<p>Vectors also work perfectly well in 3 or more dimensions:</p>
+		<p class="center"><img src="./Vectors_files/vector-3da.svg" width="320" height="270" alt="vector in 3d"><br>
+<b>The vector&nbsp;(1, 4, 5)</b></p>
+		<div class="example">
+			<h3>Example: add the vectors <b>a</b> = (3, 7, 4) and <b>b</b> = (2, 9, 11)</h3>
+			<p><b>c</b> = <b>a</b> + <b>b</b></p>
+			<p><b>c</b> = (3, 7, 4) + (2, 9, 11) = (3+2, 7+9, 4+11) = (5, 16, 15)</p>
+		</div>
+		<div class="example">
+			<h3>Example: what is the magnitude of the vector <b>w</b> = (1, −2, 3) ?</h3>
+			<p class="center">|<b>w</b>| = √( 1<sup>2</sup> + (−2)<sup>2 </sup> + 3<sup>2 </sup>) = √( 1+4+9) = √14</p>
+		</div>
+		<p>Here is an example with 4 dimensions (but it is hard to draw!):</p>
+		<div class="example">
+			<h3>Example: subtract (1, 2, 3, 4) from (3, 3, 3, 3)</h3>
+			<p class="center">(3, 3, 3, 3) + −(1, 2, 3, 4)<br>
+= (3, 3, 3, 3) + (−1,−2,−3,−4)<br>
+= (3−1, 3−2, 3−3, 3−4)<br>
+= (2, 1, 0, −1)</p>
+		</div>
+		<p>&nbsp;</p>
+		<h2><a id="magdir"></a>Magnitude and Direction</h2>
+		<p>We may know a vector's magnitude and direction, but want its x and y lengths (or vice versa):</p>
+		<table style="border: 0; margin:auto;">
+			<tbody><tr>
+				<td style="text-align:center;"><img src="./Vectors_files/vector-polar.svg" alt="vector polar"></td>
+				<td style="text-align:center;">&lt;=&gt;</td>
+				<td style="text-align:center;"><img src="./Vectors_files/vector-cartesian.svg" alt="vector cartesian"></td>
+			</tr>
+			<tr>
+				<td style="text-align:center;">Vector <b>a</b> in Polar<br>
+Coordinates</td>
+				<td style="text-align:center;">&nbsp;</td>
+				<td style="text-align:center;">Vector <b>a</b> in Cartesian<br>
+Coordinates</td>
+			</tr>
+		</tbody></table>
+		<p>You can read how to convert them at <a href="https://www.mathsisfun.com/polar-cartesian-coordinates.html">Polar and Cartesian Coordinates</a>, but here is a quick summary:</p>
+		<div class="simple">
+			<table style="border: 0; margin:auto;">
+				<tbody><tr>
+					<th>From Polar Coordinates (r,<i>θ</i>)<br>
+to Cartesian Coordinates (x,y)</th>
+					<td>&nbsp;</td>
+					<th><span class="larger">From Cartesian Coordinates (x,y)<br>
+to Polar Coordinates (r,θ)</span></th>
+				</tr>
+				<tr>
+					<td>
+						<ul>
+							<li><b>x = r</b> × <b>cos( <i>θ</i> )</b></li>
+							<li><b>y = r</b> × <b>sin(<i> θ</i> )</b></li>
+						</ul>
+					</td>
+					<td>&nbsp;</td>
+					<td>
+						<ul>
+							<li><b>r = √ ( x<sup>2</sup> + y<sup>2 </sup>)</b></li>
+							<li><b><i>θ</i> = tan<sup>-1 </sup>( y / x )</b></li>
+						</ul>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p style="float:left; margin: 0 10px 5px 0;"><img src="./Vectors_files/vector-ex1c.svg" alt="vector example two people pull"></p>
+		<h2>An Example</h2>
+		<p>Sam and Alex are pulling a box.</p>
+		<ul>
+			<li>Sam pulls with 200 Newtons of force at 60°</li>
+			<li>Alex pulls with 120 Newtons of force at 45° as shown</li>
+		</ul>
+		<p>What is the combined <a href="https://www.mathsisfun.com/physics/force.html">force</a>, and its direction?</p>
+		<p>&nbsp;</p>
+		<p>Let us add the two vectors head to tail:</p>
+		<p class="center"><img src="./Vectors_files/vector-ex1a.gif" width="176" height="146" alt="vectors: angles and magnitudes"></p>
+		<p>First convert from polar to Cartesian (to 2 decimals):</p>
+		<p>Sam's Vector:</p>
+		<ul>
+			<li><b>x = r × cos( <i>θ</i> ) = 200 × cos(60°) = 200 × 0.5 = 100</b></li>
+			<li><b>y = r × sin(<i> θ</i> ) = 200 × sin(60°) = 200 × 0.8660 = 173.21</b></li>
+		</ul>
+		<p>Alex's Vector:</p>
+		<ul>
+			<li><b>x = r × cos( <i>θ</i> ) = 120 × cos(−45°) = 120 × 0.7071 = 84.85</b></li>
+			<li><b>y = r × sin(<i> θ</i> ) = 120 × sin(−45°) = 120 × -0.7071 = −84.85</b></li>
+		</ul>
+		<p>Now we have:</p>
+		<p class="center"><img src="./Vectors_files/vector-ex1b.gif" width="190" height="137" alt="vectors: components"></p>
+		<p>Add them:</p>
+		<p class="center larger">(100, 173.21) + (84.85, −84.85) = (184.85, 88.36)</p>
+		<p>That answer is valid, but let's convert back to polar as the question was in polar:</p>
+		<ul>
+			<li><b>r = √ ( x<sup>2</sup> + y<sup>2 </sup>) = √ ( 184.85<sup>2</sup> + 88.36<sup>2 </sup>)</b> = <b> 204.88</b></li>
+			<li><b><i>θ</i> = tan<sup>-1 </sup>( y / x ) = tan<sup>-1 </sup>( 88.36 / 184.85 ) = 25.5°</b></li>
+		</ul>
+		<p class="center"><span class="large">And we have this (rounded) result:</span><br>
+<img src="./Vectors_files/vector-ex1d.gif" width="138" height="140" alt="vector result"></p>
+		<p class="center"><span class="large">And it looks like this for Sam and Alex:</span><br>
+<img src="./Vectors_files/vector-ex1e.svg" alt="vector combined pull force"></p>
+		<p>They might get a better result if they were shoulder-to-shoulder!</p>
+		<p>&nbsp;</p>
+		<div class="questions">
+			<script>
+				getQ(3022, 3023, 3024, 3025, 3026, 3027, 3028, 3901, 3902, 3029);
+			</script><a href="javascript:doQ(3022,&#39;3022_3023_3024_3025_3026_3027_3028_3901_3902_3029&#39;)">Question&nbsp;1</a> <a href="javascript:doQ(3023,&#39;3022_3023_3024_3025_3026_3027_3028_3901_3902_3029&#39;)">Question&nbsp;2</a> <a href="javascript:doQ(3024,&#39;3022_3023_3024_3025_3026_3027_3028_3901_3902_3029&#39;)">Question&nbsp;3</a> <a href="javascript:doQ(3025,&#39;3022_3023_3024_3025_3026_3027_3028_3901_3902_3029&#39;)">Question&nbsp;4</a> <a href="javascript:doQ(3026,&#39;3022_3023_3024_3025_3026_3027_3028_3901_3902_3029&#39;)">Question&nbsp;5</a> <a href="javascript:doQ(3027,&#39;3022_3023_3024_3025_3026_3027_3028_3901_3902_3029&#39;)">Question&nbsp;6</a> <a href="javascript:doQ(3028,&#39;3022_3023_3024_3025_3026_3027_3028_3901_3902_3029&#39;)">Question&nbsp;7</a> <a href="javascript:doQ(3901,&#39;3022_3023_3024_3025_3026_3027_3028_3901_3902_3029&#39;)">Question&nbsp;8</a> <a href="javascript:doQ(3902,&#39;3022_3023_3024_3025_3026_3027_3028_3901_3902_3029&#39;)">Question&nbsp;9</a> <a href="javascript:doQ(3029,&#39;3022_3023_3024_3025_3026_3027_3028_3901_3902_3029&#39;)">Question&nbsp;10</a> &nbsp; </div>
+
+<div class="related">       
+  <a href="https://www.mathsisfun.com/algebra/vectors-dot-product.html">Dot Product</a>       
+  <a href="https://www.mathsisfun.com/algebra/vectors-cross-product.html">Cross Product</a>       
+  <a href="https://www.mathsisfun.com/algebra/vector-unit.html">Unit Vector</a>       
+  <a href="https://www.mathsisfun.com/algebra/vector-calculator.html">Vector Calculator</a>       
+  <a href="https://www.mathsisfun.com/algebra/index.html">Algebra Index</a> 
+</div>
+		<!-- #EndEditable -->
+
+</article>
+<div id="adend" class="centerfull noprint"> 
+	<script>document.write(getAdEnd());</script><script async="" src="./Vectors_files/f(10).txt"></script><!-- mif1905 --><ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-1389989178296449" data-ad-slot="2009442555" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" data-ad-status="filled"><ins id="aswift_0_expand" style="border: none; height: 280px; width: 760px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_0_anchor" style="border: none; height: 280px; width: 760px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block; overflow: visible;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:760px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="760" height="280" frameborder="0" src="./Vectors_files/ads.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" allow="attribution-reporting" data-google-container-id="a!1" data-google-query-id="CK6r_OXp9PQCFbG3SwUdQvEN_g" data-load-complete="true"></iframe></ins></ins></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script> 
+</div>
+<footer id="footer" class="centerfull noprint">
+	<script>document.write(getFooter());</script><div id="footMenu"><a href="https://www.mathsisfun.com/search/search.html">Search</a> ○ <a href="https://www.mathsisfun.com/links/index.html">Index</a> ○ <a href="https://www.mathsisfun.com/aboutmathsisfun.html">About</a> ○ <a href="https://www.mathsisfun.com/contact.php">Contact</a> ○ <a href="javascript:Citation()">Cite&nbsp;This&nbsp;Page</a> ○ <b><a href="https://www.mathsisfun.com/Privacy.htm">Privacy</a></b></div>
+</footer>
+<div id="copyrt">
+Copyright © 2020 MathsIsFun.com
+</div>
+<script>document.write(getBodyEnd());</script><script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-29771508-1']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script>
+
+<!-- #EndTemplate -->
+
+<div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./Vectors_files/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><ins id="aswift_1_expand" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-table;" tabindex="0" title="Advertisement" aria-label="Advertisement"><ins id="aswift_1_anchor" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: block;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" src="./Vectors_files/ads(1).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" allow="attribution-reporting" data-google-container-id="a!2" data-load-complete="true"></iframe></ins></ins></ins><div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><iframe frameborder="0" class="goog-te-menu-frame skiptranslate" title="Language Translate Widget" style="visibility: visible; box-sizing: content-box; width: 1046px; height: 263px; display: none;" src="./Vectors_files/saved_resource(2).html"></iframe><iframe src="./Vectors_files/aframe.html" width="0" height="0" style="display: none;"></iframe></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><iframe id="google_esf" name="google_esf" src="./Vectors_files/zrt_lookup.html" style="display: none;"></iframe><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; clear: none !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: fixed !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647 !important; background: transparent !important;" aria-hidden="true" data-ad-status="filled" data-vignette-loaded="true"><ins id="aswift_2_expand" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none !important; height: 100vh !important; width: 100vw !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-table !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><ins id="aswift_2_anchor" style="border: none !important; height: 100vh !important; width: 100vw !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_2" name="" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" src="./Vectors_files/zrt_lookup(1).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" allow="attribution-reporting" data-google-container-id="a!3" data-google-query-id="CIPD6Y3p9PQCFddKKwodCygBgw" data-load-complete="true" style="width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;"></iframe></ins></ins></ins></html>
