@@ -1,0 +1,13 @@
+History of R
+Video Link-https://youtu.be/uzEIvdQQWlw
+The Study materials links
+Presentation link:- shorturl.at/amNOZ
+Notes Link-https://prezi.com/view/vohCzkKI4L1F1YmxapZe/
+
+Data science With R
+Video Link-https://youtu.be/ymSPscRsgNU
+Notes Link-https://prezi.com/view/kQixpC5wjLgEerM78oV1/
+
+Vectors in R
+Video Link-https://youtu.be/6VurmNSUzgs
+Notes Link-https://prezi.com/view/Ss2gXO15t2YGrb6hDaXy/

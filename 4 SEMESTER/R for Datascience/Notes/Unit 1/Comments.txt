@@ -1,0 +1,12 @@
+Comments are generic English sentences, mostly written in a program to explain what it does or what a piece of code is supposed to do. More specifically, information that programmer should be concerned with and it has nothing to do with the logic of the code. They are completely ignored by the compiler and are thus never reflected on to the input.
+
+The question arises here that how will the compiler know whether the given statement is a comment or not?
+
+The answer is pretty simple. All languages use a symbol to denote a comment and this symbol when encountered by the compiler helps it to differentiate between a comment and statement.
+
+Comments are generally used for the following purposes:
+
+Code Readability
+Explanation of the code or Metadata of the project
+Prevent execution of code
+To include resources
