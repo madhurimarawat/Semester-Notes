@@ -1,5 +1,0 @@
-UNIT 4: TESTING OF HYPOTHESIS
-Large sample test- https://youtube.com/playlist?list=PLS025GDZpC8wwTTAgdYEA0XQIKf7Hx0Sa
-Small sample test- https://youtube.com/playlist?list=PLS025GDZpC8yg_enf30jPA-stzA4By7Qe
-chi-square test- https://youtu.be/47JP0rTHAOk
-f-test- https://youtu.be/8UXerKVEe2I
