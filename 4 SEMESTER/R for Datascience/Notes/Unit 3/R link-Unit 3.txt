@@ -1,3 +1,0 @@
-Non Numeric Values in R
-Video Link-https://youtu.be/YNkywYaoosA
-Notes Link-https://prezi.com/view/NOgXZewnpW66KwUhRbOj/
