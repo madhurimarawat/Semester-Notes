@@ -1,7 +1,0 @@
-Matrix in R
-Video Link-https://youtu.be/b5SuTHyI6QU
-Notes Link-https://prezi.com/view/3ywWOnwWBj80VYQBDaKS/
-
-Matrix Operations and Algebra
-Video Link-https://youtu.be/Fl4gLUWXMB0
-Notes Link-https://prezi.com/view/qJtjHL3V0FEyKCxxfMy8/
