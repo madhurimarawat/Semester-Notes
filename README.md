@@ -6,6 +6,8 @@
 --> This repository serves as a valuable resource to access well-structured and reliable study materials.<br><br>
 --> Study Materials are organized according to semesters and subjects.
 
+[![GitHub repo size](https://img.shields.io/github/repo-size/madhurimarawat/Semester-Notes)](https://github.com/madhurimarawat/Semester-Notes)
+
 ---
 
 ## Thanks for Visiting 😄
