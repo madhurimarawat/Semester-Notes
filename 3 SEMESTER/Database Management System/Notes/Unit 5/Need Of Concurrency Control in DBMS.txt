@@ -1,0 +1,10 @@
+why we need concurrency control in dbms?
+Why use Concurrency method?
+Reasons for using Concurrency control method is DBMS:
+
+->To apply Isolation through mutual exclusion between conflicting transactions
+->To resolve read-write and write-write conflict issues
+->To preserve database consistency through constantly preserving execution obstructions
+->The system needs to control the interaction among the concurrent transactions.
+This control is achieved using concurrent-control schemes.
+->Concurrency control helps to ensure serializability.
