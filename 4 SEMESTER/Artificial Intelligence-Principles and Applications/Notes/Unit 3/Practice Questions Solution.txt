@@ -1,0 +1,34 @@
+Practice Questions Solution
+
+1.If it rains while the sun shines, a rainbow will appear.
+Let R represent "It rains."
+Let S represent "The sun shines."
+Let A represent "A rainbow appears."
+The sentence "If it rains while the sun shines, a rainbow will appear" can be formalized as:
+(R ∧ S) → A
+
+2.Charles comes if Elsa does and the other way around Johan comes just when Peter stays at home.
+Let C represent "Charles comes."
+Let E represent "Elsa comes."
+Let J represent "Johan comes."
+Let P represent "Peter stays at home."
+The sentence "Charles comes if Elsa does and the other way around Johan comes just when Peter stays at home" can be formalized as:
+((E → C) ∧ (C → E)) ∧ (P → J)
+
+3.We are going, unless it is raining.
+Let G represent "We are going."
+Let R represent "It is raining."
+The sentence "We are going, unless it is raining" can be formalized as:
+G ∧ ¬R
+
+4.Charles and Elsa are brother and sister or nephew and niece.
+Let B represent "Charles and Elsa are brother and sister."
+Let N represent "Charles and Elsa are nephew and niece."
+The sentence "Charles and Elsa are brother and sister or nephew and niece" can be formalized as:
+(B ∨ N)
+
+5.If I have lost, I cannot make a move, then I have lost.
+Let L represent "I have lost."
+Let M represent "I can make a move."
+The sentence "If I have lost, I cannot make a move, then I have lost" can be formalized as:
+(L → ¬M) → L
