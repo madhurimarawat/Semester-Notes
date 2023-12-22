@@ -1,0 +1,10 @@
+Large sample test
+
+Large sample theory
+
+--> The sample size n is greater than 30 (n≥30) it is known as large sample. 
+
+--> For large samples the sampling distributions of statistic are normal(Z test).
+
+--> A study of sampling distribution of statistic for large sample is known as large sample theory.
+

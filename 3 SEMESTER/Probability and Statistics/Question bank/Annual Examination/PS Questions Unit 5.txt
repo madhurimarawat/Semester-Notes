@@ -1,0 +1,147 @@
+(v)
+
+(a) How is a Latin Square design used in the field of statistics and experimental design?
+
+Solution:
+
+Latin Square design:
+
+
+--> Latin Square design is a type of experimental design used in statistics.
+
+--> It is used to control for potential confounding variables that may affect the outcome of an experiment.
+
+--> The design involves arranging treatments or conditions in a square matrix.
+
+--> Each treatment appears only once in each row and column of the matrix.
+
+--> The treatments are randomly assigned to the rows and columns of the matrix.
+
+--> This ensures that each treatment appears once in each row and column.
+
+--> The design helps control for potential effects of multiple factors that could impact the outcome of the experiment.
+
+--> It is commonly used in agriculture, medicine, and other fields where multiple factors could impact the outcome of an experiment.
+
+--> Latin Square design helps ensure that any variation in the outcome of the experiment is not due to differences in confounding variables.
+
+--> It is a powerful tool in experimental design and statistics.
+
+
+
+
+(b) apples were given under two different conditions. two random samples of size 11
+and 9 showed standard deviation of 0.8 and 0.5 respectively. Test the hypothesis that
+population variance is equal to 10% level of significance. (Ftab=3.34).
+
+
+Solution:
+
+
+To test the hypothesis that the population variance is equal to 10% level of significance, we need to use the F-test.
+
+The null hypothesis for the F-test is that the population variances are equal, and the alternative hypothesis is that they are not equal.
+
+Here are the steps to perform the F-test:
+
+Calculate the ratio of the sample variances:
+F = S1^2 / S2^2
+where S1 and S2 are the sample standard deviations for the two random samples.
+
+Calculate the degrees of freedom for each sample:
+df1 = n1 - 1 = 11 - 1 = 10
+df2 = n2 - 1 = 9 - 1 = 8
+
+Look up the F-table value for the degrees of freedom and the significance level of 10%:
+Ftab = 3.34 (from the F-table)
+
+Compare the calculated F-value to the Ftab value:
+
+If the calculated F-value is greater than the Ftab value, we reject the null hypothesis that the population variances are equal. Otherwise, we fail to reject the null hypothesis.
+
+Now let's calculate the F-value using the given information:
+F = (0.8)^2 / (0.5)^2 = 2.56
+
+Since the calculated F-value (2.56) is less than the Ftab value (3.34), we fail to reject the null hypothesis that the population variances are equal at the 10% level of significance.
+
+Therefore, we conclude that there is not enough evidence to suggest that the population variances are significantly different at the 10% level of significance.
+
+
+
+(c) Is there a significant difference in the average number of cartwheels performed by
+students in three different playgrounds, using a 5% level of significance (Ftab=3.88)
+and the following data:
+
+Solution:
+
+
+To determine if there is a significant difference in the average number of cartwheels performed by students in three different playgrounds, we can perform a one-way ANOVA (Analysis of Variance) test.
+
+First, let's organize the data:
+Playground X: 82, 91, 100, 89
+Playground Y: 75, 55, 77, 100, 90, 90
+Playground Z: 93, 92, 111, 94
+
+Calculate the necessary values for the ANOVA test:
+
+
+
+Compute the sum of squares within groups (SSW):
+
+For each playground, calculate the mean:
+Mean(X) = (82+91+100+89)/4 = 90.5
+Mean(Y) = (75+55+77+100+90+90)/6 = 81.1667
+Mean(Z) = (93+92+111+94)/4 = 97.5
+
+
+Next, find the squared differences between each value and the group mean, and sum them up for each group:
+
+SSW(X) = (82-90.5)^2 + (91-90.5)^2 + (100-90.5)^2 + (89-90.5)^2 = 188.5
+SSW(Y) = (75-81.1667)^2 + ... + (90-81.1667)^2 = 616.1667
+SSW(Z) = (93-97.5)^2 + ... + (94-97.5)^2 = 194
+
+
+Now, sum the SSW values for all playgrounds:
+SSW = SSW(X) + SSW(Y) + SSW(Z) = 188.5 + 616.1667 + 194 = 998.6667
+
+
+Compute the sum of squares between groups (SSB):
+First, calculate the overall mean:
+Mean(All) = (ΣPlayground X + ΣPlayground Y + ΣPlayground Z) / (N_Playground X + N_Playground Y + N_Playground Z)
+Mean(All) = (362 + 487 + 390) / (4 + 6 + 4) = 1239 / 14 ≈ 88.5
+
+
+Now, compute the squared differences between the group means and overall mean, multiplied by the group size:
+SSB(X) = 4 * (90.5 - 88.5)^2 = 16
+SSB(Y) = 6 * (81.1667 - 88.5)^2 = 317.5
+SSB(Z) = 4 * (97.5 - 88.5)^2 = 144
+
+
+Sum the SSB values for all playgrounds:
+SSB = SSB(X) + SSB(Y) + SSB(Z) = 16 + 317.5 + 144 = 477.5
+
+
+Calculate the degrees of freedom:
+df_between = number of groups - 1 = 3 - 1 = 2
+df_within = total number of observations - number of groups = 14 - 3 = 11
+
+
+Compute the mean squares:
+MS_between = SSB / df_between = 477.5 / 2 = 238.75
+MS_within = SSW / df_within = 998.6667 / 11 ≈ 90.788
+
+
+Calculate the F-statistic:
+F = MS_between / MS_within = 238.75 / 90.788 ≈ 2.63
+
+
+Compare the F-statistic to the critical F-value:
+
+
+For a 5% level of significance, the given critical F-value (Ftab) is 3.88.
+Now, let's compare the calculated F-statistic (2.63) to the critical F-value (3.88):
+
+F-statistic (2.63) < Critical F-value (3.88)
+
+
+Since the F-statistic is less than the critical F-value, we fail to reject the null hypothesis. This means that there is no significant difference in the average number of cartwheels performed by students in the three different playgrounds at a 5% level of significance.

@@ -1,0 +1,16 @@
+Bayes Theorem
+
+Formula-
+
+P(A|B)= P(B|A)P(A)
+        __________ 
+           P(B)
+
+
+P(A)=The probability of A Occuring
+
+P(B)=The probability of B Occuring
+
+P(A|B)=The probability of A given B
+
+P(B|A)=The probability of B given A
