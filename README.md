@@ -9,6 +9,22 @@
 [![GitHub repo size](https://img.shields.io/github/repo-size/madhurimarawat/Semester-Notes)](https://github.com/madhurimarawat/Semester-Notes)
 
 ---
+## Table Of Contents 📔 🔖 📑
+<details>
+<summary>1 Semester</summary> <br>
+
+1. Engineering-Mathematics-I
+2. Environmental-Science
+3. Foundations-of-Electronics-Engineering
+4. Fundamentals-of-Computational-Biology
+5. Language-and-Writing-Skills
+6. Learning-Programming-Concepts-With-C
+- To See Lab Programs Visit: [Learning-Programming-Concepts-With-C](https://github.com/madhurimarawat/Learning-Programming-Concepts-With-C)
+7. Professional-Ethics-and-Life-Skills
+
+</details>
+
+---
 
 ## Thanks for Visiting 😄
 
