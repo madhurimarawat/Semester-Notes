@@ -39,6 +39,20 @@
 
 </details>
 
+<details>
+<summary>3 Semester</summary> <br>
+
+1. Analysis & Design of Algorithm
+- To See Lab Programs Visit: [Analysis-and-Design-of-Algorithm-using-python](https://github.com/madhurimarawat/Analysis-and-Design-of-Algorithm-using-python)
+2. Computer Organization and Architecture
+3. Database Management System
+4. Discrete Structure
+5. Independent Project
+  - To See Lab Programs Visit: [Library Management System](https://github.com/madhurimarawat/Library-Management-System)
+6. Probability and Statistics
+
+</details>
+
 ---
 
 ## Thanks for Visiting 😄
