@@ -53,6 +53,20 @@
 
 </details>
 
+<details>
+<summary>5 Semester</summary> <br>
+
+1. Artificial Intelligence-Principles and Applications
+2. Computer Network
+3. Data Visualization
+- To See Lab Programs Visit: [Data-Visualization-using-python](https://github.com/madhurimarawat/Data-Visualization-using-python)
+4. Operating System
+5. R for Datascience
+  - To See Lab Programs Visit: [R-for-Datascience](https://github.com/madhurimarawat/R-for-Datascience)
+6. Theory of Computation
+
+</details>
+
 ---
 
 ## Thanks for Visiting 😄
