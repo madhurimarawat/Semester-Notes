@@ -24,6 +24,21 @@
 
 </details>
 
+<details>
+<summary>2 Semester</summary> <br>
+
+1. Data-Structure-Using-C
+- To See Lab Programs Visit: [Data-Structure-Using-C](https://github.com/madhurimarawat/Data-structure-using-C)
+2. Digital-Logic-and-Design
+3. Engineering-Mathematics-II
+4. Entrepreneurship
+5. Object-Oriented-Programming
+  - To See Lab Programs Visit: [Object-oriented-programming-with-c-plus-plus](https://github.com/madhurimarawat/Object-oriented-programming-with-c-plus-plus)
+6. Python-For-Datascience
+- To See Lab Programs Visit: [Python-for-Datascience](https://github.com/madhurimarawat/Python-for-Datascience)
+
+</details>
+
 ---
 
 ## Thanks for Visiting 😄
