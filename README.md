@@ -54,7 +54,7 @@
 </details>
 
 <details>
-<summary>5 Semester</summary> <br>
+<summary>4 Semester</summary> <br>
 
 1. Artificial Intelligence-Principles and Applications
 2. Computer Network
