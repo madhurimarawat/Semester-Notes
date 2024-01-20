@@ -1,0 +1,3 @@
+Expectation Maximization Algorithm Link:
+
+https://medium.com/data-science-in-your-pocket/expectation-maximization-em-algorithm-explained-288626ce220e
