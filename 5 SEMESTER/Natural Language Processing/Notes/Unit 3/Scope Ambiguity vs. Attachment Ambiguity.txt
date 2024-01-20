@@ -1,0 +1,122 @@
+## Scope Ambiguity vs. Attachment Ambiguity
+
+
+____________________________________________________________________________________________________________________________________________________________
+| Feature                 | Scope Ambiguity                                       | Attachment Ambiguity                                   |
+
+|-------------------------|-------------------------------------------------------|--------------------------------------------------------|
+
+
+
+| **Definition**          | Unclear reference of a modifying phrase or clause within a sentence. | Uncertain connection between two syntactic elements 													   within a sentence. |
+
+
+
+| **Type of ambiguity**   | Lexical                                              		 | Syntactic                                              |
+
+
+
+| **Example**             | "The man saw the dog with the binoculars **on the hill**." | "**John ate dinner** and his favorite book." (Does "and" connect 			  | (Refers to the man, dog, or binoculars?)                   | "John" to "dinner" or "dinner" to "book"?)                 
+
+
+
+| **Resolution**          | Context clues, additional information, rephrasing.         | Punctuation, word order, syntactic analysis.             |
+
+
+
+
+| **Impact**              | Misinterpretation of meaning, confusion, lack of clarity. | Difficulty in understanding logical relationships, identifying 											        subjects and objects. |
+
+
+
+| **Common in**           | Phrases or clauses with multiple potential referents, prepositional phrases. | Sentences with relative clauses, conjunctions,     													   dangling modifiers. |
+
+________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+**10 Points of Difference (table format):**
+
+
+
+_____________________________________________________________________________________________________________
+
+| Point | Feature               | Scope Ambiguity               | Attachment Ambiguity         		     |
+
+|-------|-----------------------|-------------------------------|--------------------------------------------|
+| 1     | Nature of ambiguity   | Reference ambiguity           | Connection ambiguity                       |
+
+| 2     | Level of ambiguity    | Lexical (word-level)          | Syntactic (sentence-level)   		     |
+
+| 3     | Resolving techniques  | Context, additional information| Punctuation, word order, syntax	     |
+
+| 4     | Frequency             | More common (multi-referent phrases)| Less common (complex grammar)        |
+
+| 5     | Location              | Modifiers                     | Conjoined constructions, modifiers	     |
+
+| 6     | Sentence structure    | Minimal impact                | Affects meaning based on word order	     |
+
+| 7     | Severity of confusion  | Misidentification of referents| Understanding subject-object relationships|
+
+| 8     | Impact on interpretation| Word-level meaning           | Whole-sentence meaning       	     |
+
+| 9     | Awareness             | More apparent to readers      | Can be subtle, requires conscious analysis |
+
+| 10    | Linguistic complexity  | Diverse potential referents   | Complex grammar rules                     |
+_____________________________________________________________________________________________________________
+
+
+
+
+**Additional notes:**
+
+Examples:
+
+## Examples of Scope Ambiguity and Attachment Ambiguity:
+
+
+
+**Scope Ambiguity:**
+
+1. **Every student loves a computer science book.** (Does each student love a different book about computer science, or is there one specific book loved by all students?)
+
+
+2. **Not all the children went to the park.** (Do not all of the children belong to a group that went to the park, or does not everyone in the group belong to the children who went to the park?)
+
+
+3. **John gave Mary a present in front of the children.** (Who are the children in front of? John when he gave the present, or Mary while receiving it?)
+
+
+
+**Attachment Ambiguity:**
+
+1. **John ate dinner and his favorite book.** (Did John eat his book after dinner, or did he read his book after dinner?)
+
+
+2. **The woman with the telescope saw the mountains clearly.** (Does the woman see the mountains clearly because she has a telescope, or is her vision naturally clear?)
+
+
+3. **Smiling, the children ran into the room.** (Are the children smiling because they are running, or are they running while already smiling?)
+
+
+
+**In-depth Definitions:**
+
+
+
+**Scope Ambiguity:** When the intended meaning of a quantifier or other modifying phrase is unclear due to its relationship with another element in the sentence. This can lead to confusion about who or what the phrase refers to, or how it modifies the meaning of the sentence.
+
+
+
+**Attachment Ambiguity:** When the grammatical structure of a sentence is unclear, making it difficult to determine how two or more syntactic elements are connected. This can lead to misinterpretations about the subjects, objects, and actions within the sentence.
+
+
+
+**Note:** These are just a few examples, and there are many other types and interpretations of both scope and attachment ambiguity. Understanding these different forms can help us to analyze and interpret complex sentences more effectively.
+
+
+
+This clarifies the examples and provides a deeper understanding of the key features of each type of ambiguity.
+
