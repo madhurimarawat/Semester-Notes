@@ -1,0 +1,38 @@
+2. For each of the following questions, provide an example of an association rule from the 
+market basket domain that satisfies the following conditions. Also, describe whether such 
+rules are subjectively interesting. (4M)
+a. A rule that has high support and high confidence.
+b. A rule that has reasonably high support but low confidence.
+c. A rule that has low support and low confidence.
+d. A rule that has low support and high confidence
+
+
+Solution:
+
+
+a. A rule that has high support and high confidence:
+
+   Example: {Bread} -> {Butter}
+
+   Explanation: This rule indicates a strong association, revealing that customers purchasing bread are likely to also buy butter. This insight can aid supermarket strategies like product placement, promotions, and inventory management.
+
+
+b. A rule that has reasonably high support but low confidence:
+
+   Example: {Eggs} -> {Milk}
+
+   Explanation: While there's decent support, the low confidence suggests that not all egg buyers also purchase milk. This rule may not be as impactful for decision-making regarding product placement or promotions.
+
+
+c. A rule that has low support and low confidence:
+
+   Example: {Caviar} -> {Champagne}
+
+   Explanation: This rule suggests a rare purchasing pattern with both low support and low confidence. It lacks significance for decision-making in the supermarket due to its infrequency and weak association.
+
+
+d. A rule that has low support and high confidence:
+
+   Example: {Diapers} -> {Baby Food}
+
+   Explanation: Despite low support, the high confidence implies a strong link between diaper and baby food purchases. This rule could be valuable for targeted strategies, even with a smaller customer base.

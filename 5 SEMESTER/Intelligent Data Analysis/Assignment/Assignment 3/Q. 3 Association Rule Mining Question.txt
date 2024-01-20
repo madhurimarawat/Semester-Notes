@@ -1,0 +1,83 @@
+3. Consider the data set shown
+
+Customer ID | Transaction ID | Items Bought
+-------------------------------------------
+1           | 0001            | {a, d, e}
+1           | 0024            | {a, b, c, e}
+2           | 0012            | {a, b, d, e}
+2           | 0031            | {a, c, d, e}
+3           | 0015            | {b, c, e}
+3           | 0022            | {b, d, e}
+4           | 0029            | {c, d}
+4           | 0040            | {a, b, c}
+5           | 0033            | {a, d, e}
+5           | 0038            | {a, b, e}
+
+
+a. Compute the support for itemsets {e}, {b, d}, and {b, d, e} by treating each 
+transaction ID as a market basket.
+
+b. Use the results in part (a) to compute the confidence for the association rules {b, d} 
+−→ {e} and {e} −→ {b, d}. Is confidence a symmetric measure?
+
+c. Repeat part (a) by treating each customer ID as a market basket. Each item should 
+be treated as a binary variable (1 if an item appears in at least one transaction bought 
+by the customer, and 0 otherwise.)
+
+d. Use the results in part (c) to compute the confidence for the association rules {b, d} 
+−→ {e} and {e} −→ {b, d}.
+
+
+Solution:
+
+
+a. Compute the support for itemsets {e}, {b, d}, and {b, d, e} by treating each transaction ID as a market basket:
+
+- Support({X}) = (Number of transactions that include X) / (Total number of transactions)
+
+So, we have:
+
+- Support({e}) = (Number of transactions that include e) / (Total number of transactions) = 8/10 = 0.8
+
+- Support({b, d}) = (Number of transactions that include both b and d) / (Total number of transactions) = 2/10 = 0.2
+
+- Support({b, d, e}) = (Number of transactions that include b, d, and e) / (Total number of transactions) = 1/10 = 0.1
+
+
+
+b. Use the results in part (a) to compute the confidence for the association rules {b, d} → {e} and {e} → {b, d}:
+
+- Confidence({X} → {Y}) = Support({X, Y}) / Support({X})
+
+So, we have:
+
+- Confidence({b, d} → {e}) = Support({b, d, e}) / Support({b, d}) = 0.1 / 0.2 = 0.5
+
+- Confidence({e} → {b, d}) = Support({b, d, e}) / Support({e}) = 0.1 / 0.8 = 0.125
+
+
+c. Repeat part (a) by treating each customer ID as a market basket:
+
+- Support({X}) = (Number of customers that include X in at least one transaction) / (Total number of customers)
+
+So, we have:
+
+- Support({e}) = 4/5 = 0.8
+
+- Support({b, d}) = 2/5 = 0.4
+
+- Support({b, d, e}) = 1/5 = 0.2
+
+
+d. Use the results in part (c) to compute the confidence for the association rules {b, d} → {e} and {e} → {b, d}:
+
+- Confidence({X} → {Y}) = Support({X, Y}) / Support({X})
+
+So, we have:
+
+- Confidence({b, d} → {e}) = Support({b, d, e}) / Support({b, d}) = 0.2 / 0.4 = 0.5
+
+- Confidence({e} → {b, d}) = Support({b, d, e}) / Support({e}) = 0.2 / 0.8 = 0.25
+
+
+Please note that confidence is not a symmetric measure. That is, Confidence({b, d} → {e}) is not necessarily equal to Confidence({e} → {b, d}). 

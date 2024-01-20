@@ -1,0 +1,76 @@
+5. Elaborate maximal and closed frequent item sets. Also list the difference between them.
+
+
+Solution:
+
+
+- Maximal Frequent Itemsets:
+
+A maximal frequent itemset is a frequent itemset for which none of its immediate supersets are frequent. 
+
+It provides a compact representation of all the frequent itemsets for a particular dataset. 
+
+However, the support count of maximal frequent itemsets does not provide any information about the support count of their subsets.
+
+
+- Closed Frequent Itemsets: 
+
+A closed frequent itemset is a frequent itemset where all of its subsets are also frequent. 
+
+It is a set of items which is as large as it can possibly be without losing any transactions.
+
+Difference between Maximal and Closed Frequent Itemsets:
+
+
+|                             | Maximal Frequent Itemsets                                             | Closed Frequent Itemsets                                      |
+|-----------------------------|--------------------------------------------------------------------|-------------------------------------------------------|
+| **Definition**              | A frequent itemset for which none of its immediate supersets are   | A frequent itemset where all of its subsets are also 												   | frequent.                                             |
+              		      | frequent.
+
+
+
+
+| **Representation**          | Provides a compact representation of all the frequent itemsets.       | Represents a set of items which is as large as it 												        can possibly be without losing any transactions.   |
+
+
+
+
+| **Support Count Information** | Does not provide any information about the support count of their subsets. | The support count is equal to the support of                              								                                               their closure.      			   |
+
+
+
+
+| **Subset Information**      | None of its immediate supersets are frequent.                        | All of its subsets are also frequent.                          |
+
+
+
+
+| **Superset Information**    | None of its immediate supersets are frequent.                        | It does not matter if an immediate superset exists                       												       with more support, only immediate supersets with 												       exactly the same support do matter.                 |
+
+
+
+
+| **Hierarchy**               | Maximal frequent itemsets are a subset of the set of closed itemsets. | Closed itemsets are a subset of all frequent itemsets.         |
+
+
+
+
+
+| **Data Traversal**          | An additional traversal of data is needed to determine the support count for non-maximal frequent itemsets. | No additional                       																	      data traversal 																	      is needed.|
+
+
+
+
+| **Efficiency**              | Less efficient than closed frequent itemsets because they do not provide the support of the subsets. | More efficient than 																       maximal frequent 											                                               itemsets because they 														                       provide the support 																       of the subsets.     |
+
+
+
+
+
+| **Itemset Containment**     | A frequent itemset which is not contained in another frequent itemset. | A set of items which is as large as it can possibly 													 be without losing any transactions.               |
+
+
+
+
+
+| **Support Criteria**        | Meets the minimum support criteria.                                  | Meets the minimum support criteria and all super-												       patterns of a closed pattern are less frequent than 												       the closed pattern. |

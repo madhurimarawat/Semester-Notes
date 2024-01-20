@@ -1,0 +1,47 @@
+1. Explain association rule mining and list all the preliminary requirements for it.
+
+
+Solution:
+
+
+Association Rule Mining uncovers relationships between sets of items in datasets, revealing patterns and correlations. 
+Rules, expressed as Antecedent -> Consequent, describe dependencies between item sets, 
+e.g., Bread -> Butter suggests a likely purchase pattern. 
+Evaluation metrics like lift, support, and confidence gauge rule importance. 
+
+Basic terminologies include Itemset, Support Count, and Minimum Support Count.
+
+- **Itemset:** Collection of one or more items in the transaction dataset.
+
+- **Support Count of an Itemset:** Frequency of an item in the transaction data.
+
+- **Minimum Support Count:** Threshold for an itemset's frequency to be relevant in association mining.
+
+Preliminary requirements:
+
+1. **Data:** Transaction dataset or database for identifying item associations.
+
+2. **Support and Confidence:** Metrics evaluating rule quality; support denotes the if/then relationship frequency, while confidence indicates the truthfulness of these relationships.
+
+3. **Minimum Support and Minimum Confidence:** Thresholds to extract association rules effectively.
+
+4. **Algorithm:** APRIORI and FP-GROWTH algorithms are commonly employed for rule extraction.
+
+5. **Non-Numeric, Categorical Data:** Association rule mining is well-suited for non-numeric, categorical datasets.
+
+Support and confidence are key metrics in association rule mining, applied to datasets for pattern discovery.
+
+Support quantifies the frequency of an itemset in the dataset. 
+
+The formula is Support(X) = (Transactions with X) / (Total transactions)
+ 
+
+
+Confidence measures the likelihood of item Y given item X, 
+
+calculated as Confidence(X -> Y) = (Support(X ∪ Y)) / (Support(X)) 
+
+These metrics, often used together, help uncover common patterns and the strength of associations in large datasets.
+
+
+Association rule mining is a valuable analytical tool, applied in diverse domains such as data mining and continuous production. Despite its advantages, it has limitations like any other technique.

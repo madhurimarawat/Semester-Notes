@@ -1,0 +1,47 @@
+Data Attributes And Types Link:
+
+https://www2.cs.uh.edu/~ceick/UDM/UDM/Stat202/solution1.html
+
+Homework 1
+
+
+Problem 2
+
+(a) Time in terms of AM or PM.
+Binary, qualitative, nominal (most people consider binary attributes to be nominal)
+
+(b) Brightness as measured by a light meter.
+Continuous, quantitative, ratio
+
+(c) Brightness as measured by people’s judgments.
+Discrete, qualitative, ordinal (assuming we make them choose from a discrete set of ratings)
+
+(d) Angles as measured in degrees between 0◦ and 360◦.
+Continuous, quantitative, ratio
+
+(e) Bronze, Silver, and Gold medals as awarded at the Olympics.
+Discrete, qualitative, ordinal
+
+(f) Height above sea level.
+Continuous, quantitative, interval/ratio (depends on whether sea level is regarded as an arbitrary origin)
+
+(g) Number of patients in a hospital.
+Discrete, quantitative, ratio
+
+(h) ISBN numbers for books. (Look up the format on the Web.)
+Discrete, qualitative, nominal (but ISBN numbers do have some order information so it could be ordinal if you use that information)
+
+(i) Ability to pass light in terms of the following values: opaque, translucent, transparent.
+Discrete, qualitative, ordinal
+
+(j) Military rank.
+Discrete, qualitative, ordinal
+
+(k) Distance from the center of campus.
+Continuous, quantitative, interval/ratio (depends)
+
+(l) Density of a substance in grams per cubic centimeter.
+Continuous, quantitative, ratio
+
+(m) Coat check number. (When you attend an event, you can often give your coat to someone who, in turn, gives you a number that you can use to claim your coat when you leave.)
+Discrete, qualitative, nominal (or ordinal if you are using the order information)
