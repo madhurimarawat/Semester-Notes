@@ -48,7 +48,7 @@
 3. Database Management System
 4. Discrete Structure
 5. Independent Project
-  - To See Lab Programs Visit: [Library Management System](https://github.com/madhurimarawat/Library-Management-System)
+  - To See Project Visit: [Library Management System](https://github.com/madhurimarawat/Library-Management-System)
 6. Probability and Statistics
 
 </details>
@@ -64,6 +64,23 @@
 5. R for Datascience
   - To See Lab Programs Visit: [R-for-Datascience](https://github.com/madhurimarawat/R-for-Datascience)
 6. Theory of Computation
+
+</details>
+
+<details>
+<summary>5 Semester</summary> <br>
+
+1. Computational Complexity
+2. Cryptography and Network Security
+  - To See Lab Programs Visit: [Cryptography-and-Network-Security](https://github.com/madhurimarawat/Cryptography-and-Network-Security)
+3. Intelligent Data Analysis
+- To See Lab Programs Visit: [Intelligent-Data-Analysis](https://github.com/madhurimarawat/Intelligent-Data-Analysis)
+4. Natural Language Processing
+  - To See Lab Programs Visit: [Natural-Language-Processing-in-Python](https://github.com/madhurimarawat/Natural-Language-Processing-in-Python)
+5. Pattern Recognition and Machine Learning
+  - To See Lab Programs Visit: [Pattern-Recognition-and-Machine-Learning](https://github.com/madhurimarawat/Pattern-Recognition-and-Machine-Learning)
+6. Vocational Training
+- To See Lab Project Visit: [Vocational Training Project](https://github.com/madhurimarawat/Final-Internship-Project)
 
 </details>
 
