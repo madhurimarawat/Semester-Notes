@@ -1,0 +1,94 @@
+Q 1 
+
+(a) A Perceptron Model is-
+
+
+a) Backtracking algorithm
+b) Backpropagation algorithm
+c) Feed-forward neural network
+d) Feed Forward-backward algorithm
+
+Solution:
+
+
+Correct Answer: (c) Feed-forward neural network
+
+
+Explanation: The Perceptron is a type of artificial neuron or a simple neural network model. It's a feed-forward neural network, meaning the information flows in one direction, from input to output. It does not involve backtracking or backpropagation. Backpropagation is commonly associated with training multi-layer neural networks.
+
+
+
+(b) Linear Discriminant Analysis require which of the following data-
+
+
+a) Labelled data
+b) Unlabelled
+c) Labelled and Unlabelled data
+d) None of these
+
+
+Solution:
+
+
+Correct Answer: (a) Labelled data
+
+
+Explanation: Linear Discriminant Analysis is a supervised learning algorithm, and it requires labeled data for training. LDA aims to find the linear combinations of features that best separate two or more classes. Without labeled data, it wouldn't have the information needed to discriminate between classes.
+
+
+
+Q 2
+
+(a) The effectiveness of an SVM depends upon:
+
+
+(a) Selection of Kernel trick
+(b) Kernel Parameters
+(c) Soft Margin Parameter C
+(d) All of the above
+
+
+Solution:
+
+
+Correct Answer: (d) All of the above
+
+The effectiveness of an SVM depends upon: (d) All of the above
+
+Explanation:
+
+Support Vector Machines (SVMs) are powerful machine learning models, and their effectiveness depends on several factors:
+
+(a) **Selection of Kernel trick:** The choice of a kernel function is a critical aspect of SVMs. The kernel trick allows SVMs to operate in a high-dimensional space efficiently. Different problems may benefit from different kernel functions (e.g., linear, polynomial, radial basis function), and selecting an appropriate one is crucial for achieving good performance.
+
+(b) **Kernel Parameters:** Each kernel function has its own set of parameters. For example, the radial basis function (RBF) kernel has a parameter commonly denoted as gamma. Proper tuning of these parameters is essential for optimizing the SVM's performance. Incorrect parameter values can lead to overfitting or underfitting.
+
+(c) **Soft Margin Parameter C:** The soft margin parameter (C) is a regularization parameter that controls the trade-off between having a smooth decision boundary and classifying training points correctly. It helps prevent overfitting by allowing some misclassifications. The optimal value of C depends on the specific characteristics of the dataset, and selecting an appropriate C is vital for achieving a balanced and effective SVM model.
+
+In conclusion, the effectiveness of an SVM depends on the careful consideration and tuning of the kernel trick, kernel parameters, and the soft margin parameter C. All of these factors play a crucial role in determining the SVM's ability to generalize well to new, unseen data.
+
+
+(b) Suppose you are using RBF (radial basis factor) kernel in SVM with a high Gamma value. What does this signify?
+
+
+a) The model would consider even far away points from the hyperplane for modeling
+
+b) The model would consider only the points close to the hyperplane for modeling
+
+c) The mode! would not be affected by the distance of points from the hyperplane for modeling
+
+d) None of the above
+
+Solution:
+
+Correct Answer: (b) The model would consider only the points close to the hyperplane for modeling
+
+Explanation:
+
+
+- In the context of the Radial Basis Function (RBF) kernel in SVM, the parameter gamma (γ) is a crucial factor.
+- A high gamma value results in a smaller standard deviation for the RBF kernel, causing the influence of a data point to be localized to its close neighbors.
+- High gamma makes the model focus more on the points close to the hyperplane, making the decision boundary more dependent on nearby points.
+- This can lead to a more complex and intricate decision boundary, potentially capturing intricate patterns in the data.
+- Conversely, a low gamma value would result in a larger standard deviation, causing points farther away from the hyperplane to have more influence on the decision boundary.
+

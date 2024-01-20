@@ -1,0 +1,84 @@
+Q 1
+
+(a) Let’s say your model is Overfitting. Which of the following is NOT a suitable method for attempting to decrease overfitting? |
+
+a) Increase the amount of training data.
+
+b) Improve the optimization algorithm being used for error
+minimization.
+
+c) Decrease the model complexity.
+
+d) Reduce the noise in the training data.
+
+
+Solution:
+
+
+Correct Answer: b) Improve the optimization algorithm being used for error minimization.
+
+
+Explanation: Improving the optimization algorithm typically aims to enhance the model's ability to converge to the global minimum and is generally a suitable method for addressing overfitting rather than exacerbating it.
+
+(b) Suppose we like to calculate P (H|E, F) and we have no conditional independence information. Which of the following sets of numbers are Sufficient for the calculation-
+
+a) P(E, F), P(H), P(E|H), P(F|H)
+
+b) P(E, F), P(H), P(E, F|H)
+
+c) P(H), P(E|H), P(F|H)
+
+d) d) P(E, F), P(E|H), P(F|H)
+
+
+Solution:
+
+
+Correct Answer: b) P(E, F), P(H), P(E, F|H)
+
+
+Explanation: To calculate P(H|E, F), you need the joint probability distribution P(E, F, H), and the set of numbers in option (b) includes P(E, F) (which can be used to compute the joint distribution) and P(H), P(E, F|H) (which are relevant conditional probabilities for the calculation). This set provides the necessary information for Bayesian inference without assuming conditional independence.
+
+
+
+Q 2
+
+
+(a) Parameter estimation problem is about:
+
+a) Identifying input parameter
+
+b) Identifying output parameter
+
+c) Identifying model parameter
+
+d) All of the Above
+
+
+Solution:
+
+
+Correct Answer: c) Identifying model parameter
+
+
+Explanation: The parameter estimation problem is about determining the values of parameters in a given model based on observed data. It involves finding the best-fitting parameters that make the model predictions align with the actual data.
+
+
+(b) If we train a Naive Bayes classifier using infinite training data that Satisties all of its modeling assumptions then in general, What we can Say about the training error and test error:
+
+a) It may not achieve either zero training error or zero test error.
+
+b) It may always achieve zero training error and zero test error.
+
+c) It will always achieve zero training error but may not achieve zero test error.
+
+d) It may not achieve zero training error but will always achieve zero test error.
+
+
+Solution:
+
+
+Correct Answer: a) It may not achieve either zero training error or zero test error.
+
+
+Explanation: Even with infinite training data that satisfies all modeling assumptions, a Naive Bayes classifier may not necessarily achieve zero training error or zero test error due to the inherent assumptions and simplifications in the model, and potential complexities in the underlying data distribution.
