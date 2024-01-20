@@ -1,0 +1,16 @@
+Minimum relative entropy estimation, also known as Kullback-Leibler divergence, is a measure of how one probability distribution `P` is different from a second, reference probability distribution `Q`. It's often used in statistical analysis and machine learning to compare the similarity between two probability distributions.
+
+The Kullback-Leibler divergence is defined as:
+
+DKL(P||Q) = ∑i P(i) log (P(i)/Q(i))
+
+
+Here, `P` and `Q` are the two probability distributions, and the sum is over all possible events `i`. This formula calculates the expected number of extra bits required to code samples from `P` using a code optimized for `Q`.
+
+In the context of quantum information theory, the min-relative entropy is defined as:
+
+Dmin(r || Q) = log F(r,Q) ^ 2
+
+where `F(r, Q)` is the fidelity between `r` and `Q`, `r` is a density operator, and `Q` is a positive semidefinite operator.
+
+Please note that while these measures give us a way to compare two distributions, they are not symmetric, meaning that `D(P||Q)` is not necessarily equal to `D(Q||P)`, and they do not satisfy the triangle inequality¹.
