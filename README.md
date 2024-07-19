@@ -84,6 +84,84 @@
 
 </details>
 
+<details>
+  <summary>Syllabus</summary> <br>
+  
+  This section contains the syllabus for each semester:
+  
+  - Detailed course outlines, including topics and subtopics.
+  - List of recommended textbooks and reference materials.
+  - Suggested reading materials to complement the coursework.
+  - Key topics and learning objectives for each subject.
+</details>
+
+<details>
+  <summary>Question Papers</summary> <br>
+  
+  This section contains the question papers for each semester:
+  
+  - Organized by semester for easy navigation.
+  - Includes Class Test 1, Class Test 2, and Annual Exams.
+  - Contains Re-Class Tests, if applicable.
+  - Each semester folder provides a comprehensive collection of exam papers.
+</details>
+
+<details>
+  <summary>Docs</summary> <br>
+  
+  This folder contains the code for this website:
+  
+  - The `index.html` file serves as the main page.
+  - The website is user-friendly, featuring an intuitive interface that is easy to navigate.
+  - Responsive design ensures the portfolio looks great and functions well on all devices and screen sizes.
+  - A new dropdown menu allows dynamic color changes with options for Autumn, Summer, Rainy, and Winter. Upon selection, the website color changes instantly. Refreshing the page restores the default color scheme.
+</details>
+
+## Directory Structure 🗃️
+
+```
+Semester-Notes/
+├── 1 SEMESTER/               # 📁 Folder for the first semester
+│
+├── 2 SEMESTER/               # 📁 Folder for the second semester
+│
+├── 3 SEMESTER/               # 📁 Folder for the third semester
+│
+├── 4 SEMESTER/               # 📁 Folder for the fourth semester
+│
+├── 5 SEMESTER/               # 📁 Folder for the fifth semester
+│
+├── SYLLABUS/                 # 📚 Folder containing the syllabus for all semesters
+│
+└── QUESTION PAPERS/          # 📝 Folder containing the question papers for all semesters
+│
+├── docs/                     # 🗂️ Folder containing website code
+│   ├── index.html            # 🏠 Main landing page of the website
+│   ├── Astyle-Commands.html  # ⚙️ Page dedicated to Astyle formatter commands
+│   ├── Git-Commands.html     # 🛠️ Page dedicated to Git formatter commands
+│   │
+│   ├── css/
+│   │   ├── index.css         # 🎨 Stylesheet for index.html
+│   │   └── commands.css      # 🎨 Stylesheet for Astyle-Commands.html and Git-Commands.html
+│   │
+│   ├── js/
+│   │   ├── index.js          # 🖥️ Script to dynamically change the primary color of the website
+│   │   └── commands.js       # 📜 Script to manage the visibility of the color and copying of commands in Astyle-Commands.html and Git-Commands.html
+│
+├── LICENSE                   # 📜 MIT License file
+│
+└── README.md                 # 📄 Documentation file for the repository
+```
+
+---
+## Website Design
+
+This website showcases a comprehensive repository of semester notes and study resources. It features a dynamic, color-changing dropdown menu using JavaScript. The content is organized into detailed sections, covering semester-wise subjects and commonly used commands for Astyle and GitHub. Visit the website at: [file:///C:/Users/rawat/Documents/Semester%20Notes/docs/index.html](https://madhurimarawat.github.io/Semester-Notes/).
+
+<a href ="https://madhurimarawat.github.io/Semester-Notes/">![Screenshot 2024-07-19 103717](https://github.com/user-attachments/assets/f84acd1e-c09b-40e7-a76a-429359a6c222)<a>
+
+<a href ="https://madhurimarawat.github.io/Semester-Notes/"><img src = "https://github.com/user-attachments/assets/d53a032a-2218-4828-b931-49899135e28d" width = "100%"></a>
+<a href ="https://madhurimarawat.github.io/Semester-Notes/">![Screenshot 2024-07-19 104138](https://github.com/user-attachments/assets/65ba467b-38cd-411f-9e40-1eb8e26924c6)</a>
 
 ---
 
