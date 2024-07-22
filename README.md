@@ -47,7 +47,7 @@
 2. [Computer Organization and Architecture](https://github.com/madhurimarawat/Semester-Notes/tree/main/3%20SEMESTER/Computer-Organization-and-Architecture) <br><br>
 3. [Database Management System](https://github.com/madhurimarawat/Semester-Notes/tree/main/3%20SEMESTER/Database-Management-System) <br><br>
 4. [Discrete Structure](https://github.com/madhurimarawat/Semester-Notes/tree/main/3%20SEMESTER/Discrete-Structure) <br><br>
-5. [Independent Project](https://github.com/madhurimarawat/Semester-Notes/tree/main/3%20SEMESTER/Independent-Project)
+5. [Independent Project](https://github.com/madhurimarawat/Semester-Notes/tree/main/3%20SEMESTER/Independent%20Project)
   - To see the project, visit: [Library Management System](https://github.com/madhurimarawat/Library-Management-System) <br>
 6. [Probability and Statistics](https://github.com/madhurimarawat/Semester-Notes/tree/main/3%20SEMESTER/Probability-and-Statistics)
 
@@ -82,6 +82,16 @@
 6. [Vocational Training](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Vocational-Training)
   - To see the lab project, visit: [Vocational Training Project](https://github.com/madhurimarawat/Final-Internship-Project) <br>
 
+</details>
+
+<details>
+<summary>6 Semester</summary> <br>
+  
+- **Presentation**:
+  - `Update_Presentation.pptx`: Presentation for the first two months.
+  - `Final_Presentation.pptx`: Final presentation of the project.
+- **Internship Report**:
+  - `Final_Report.pdf`: Detailed report of the project work, methodologies, results, and conclusions.
 </details>
 
 <details>
@@ -132,6 +142,8 @@ Semester-Notes/
 ├── 4 SEMESTER/               # 📁 Folder for the fourth semester
 │
 ├── 5 SEMESTER/               # 📁 Folder for the fifth semester
+│
+├── 6 SEMESTER/               # 📁 Folder for the sixth semester
 │
 ├── SYLLABUS/                 # 📚 Folder containing the syllabus for all semesters
 │
