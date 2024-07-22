@@ -26,7 +26,16 @@
 // Run when DOM content is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
   // Center align contentRow element using Flexbox
-  var contentRow = document.getElementById("contentRow");
+  var contentRow = document.getElementById("contentRow_1");
+  if (contentRow) {
+    contentRow.classList.add("d-flex", "justify-content-center");
+  }
+});
+
+// Run when DOM content is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  // Center align contentRow element using Flexbox
+  var contentRow = document.getElementById("contentRow_2");
   if (contentRow) {
     contentRow.classList.add("d-flex", "justify-content-center");
   }
@@ -92,4 +101,3 @@ $(document).ready(function () {
     $(".navbar-collapse").collapse('hide');
   });
 });
-
