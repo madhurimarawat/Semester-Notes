@@ -101,3 +101,113 @@ $(document).ready(function () {
     $(".navbar-collapse").collapse('hide');
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Toggle visibility of the search bar
+  document.getElementById("searchButton").addEventListener("click", function () {
+    const searchBar = document.getElementById("search-bar");
+    searchBar.classList.toggle("hidden");
+  });
+
+  const searchInput = document.getElementById('searchInput');
+  const suggestions = document.getElementById('suggestions');
+  const cards = {
+
+    // 1 Semester Subjects
+    'em-1-card': 'Engineering Mathematics I',
+    'es-card': 'Environmental Science',
+    'fee-card': 'Foundations of Electronics Engineering',
+    'fcb-card': 'Fundamentals of Computational Biology',
+    'lws-card': 'Language and Writing Skills',
+    'lpcc-card': 'Learning Programming Concepts With C',
+    'pels-card': 'Professional Ethics and Life Skills',
+
+    // 2 Semester Subjects
+    'ds-card': 'Data Structure Using C',
+    'dld-card': 'Digital Logic and Design',
+    'em-2-card': 'Engineering Mathematics II',
+    'entrepreneur-card': 'Entrepreneurship',
+    'oop-card': 'Object-Oriented Programming',
+    'pds-card': 'Python For Data Science',
+
+    // 3 Semester Subjects
+    'ada-card': 'Analysis and Design of Algorithm',
+    'coa-card': 'Computer Organization and Architecture',
+    'dbms-card': 'Database Management System',
+    'ds-card': 'Discrete Structure',
+    'ps-card': 'Probability and Statistics',
+    'ip-card': 'Independent Project',
+
+    // 4 Semester Subjects
+    'ai-card': 'Artificial Intelligence Principles and Applications',
+    'cn-card': 'Computer Network',
+    'dv-card': 'Data Visualization',
+    'os-card': 'Operating System',
+    'rds-card': 'R for Data Science',
+    'toc-card': 'Theory of Computation',
+
+    // 5 Semester Subjects
+    'cc-card': 'Computational Complexity',
+    'cns-card': 'Cryptography and Network Security',
+    'ida-card': 'Intelligent Data Analysis',
+    'nlp-card': 'Natural Language Processing',
+    'prml-card': 'Pattern Recognition and Machine Learning',
+    'vt-card': 'Vocational Training',
+
+    // 6 Semester Subjects
+    'intern-card': 'Internship'
+
+  };
+
+  searchInput.addEventListener('input', function () {
+    const filter = searchInput.value.toLowerCase();
+    suggestions.innerHTML = '';
+
+    if (filter) {
+      Object.keys(cards).forEach(id => {
+        const text = cards[id].toLowerCase();
+        if (text.includes(filter)) {
+          const listItem = document.createElement('li');
+          listItem.classList.add('list-group-item');
+          listItem.textContent = cards[id];
+          listItem.setAttribute('data-id', id);
+          suggestions.appendChild(listItem);
+        }
+      });
+    }
+  });
+
+  suggestions.addEventListener('click', function (e) {
+    if (e.target && e.target.matches('li.list-group-item')) {
+      const id = e.target.getAttribute('data-id');
+      const element = document.getElementById(id);
+      if (element) {
+        let navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+        // Adjust the navbar height based on device width
+        if (window.matchMedia("(max-width: 767.98px)").matches) {
+          // Mobile devices
+          navbarHeight += 25; // Adjust for mobile
+        } else if (window.matchMedia("(min-width: 768px) and (max-width: 1199.98px)").matches) {
+          // Tablets and small laptops
+          navbarHeight += 30; // Adjust for tablets and small laptops
+        } else if (window.matchMedia("(min-width: 1200px)").matches) {
+          // Large laptops and desktops
+          navbarHeight += 30; // Adjust for large laptops and desktops
+        }
+
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - navbarHeight;
+
+        // Scroll to the adjusted position
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+
+        suggestions.innerHTML = '';
+        searchInput.value = '';
+      }
+    }
+  });
+});
