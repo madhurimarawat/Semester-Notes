@@ -10,7 +10,8 @@
 * Issues/Bugs: For any issues or bugs, please visit the GitHub repository issues section.
 * Comments: This JS file defines functions to update the primary color variable of the root
 *           element based on the provided season. It enhances user experience by allowing
-*           dynamic customization of the color scheme.
+*           dynamic customization of the color scheme. Also supports search functionality 
+*           for subjects and give suggestions based on user input.
 * Dependencies: None
 *********************************************************************************************
 */
@@ -102,6 +103,15 @@ $(document).ready(function () {
   });
 });
 
+/**
+ * This function handles the search functionality for the study materials website.
+ * It adds event listeners to the search input and suggestions list, and performs
+ * filtering and scrolling operations based on user input. In other words, it suggests
+ * subjects based on user input and displays them in the suggestions list. Then users
+ * can select a subject from the suggestions list to navigate to its corresponding section.
+ *
+ * @returns {void}
+ */
 document.addEventListener("DOMContentLoaded", function () {
   // Toggle visibility of the search bar
   document.getElementById("searchButton").addEventListener("click", function () {
