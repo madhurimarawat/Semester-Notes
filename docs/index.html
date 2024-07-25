@@ -123,8 +123,6 @@
                                 class="fas fa-snowflake"></i>&nbspWinter</a>
                     </div>
                 </li>
-
-
             </ul>
 
             <ul class="navbar-nav ml-auto">
@@ -151,16 +149,30 @@
                 <li class="nav-item">
                     <a class="nav-link" href="https://linktr.ee/madhurima_rawat" target="_blank"><i
                             class="fa fa-link"></i>LinkTree</a>
+                </li> &nbsp;
+                <li class="nav-item">
+
+                    <button id="searchButton" class="btn btn-outline-light">Search</button>
                 </li>
+
             </ul>
         </div>
     </nav>
     <br><br>
+
     <section id="introduction">
         <div class="container mt-5">
             <div class="header-container">
                 <h1><i class="fas fa-book"></i>&nbsp; Study Materials</h1>
             </div>
+
+            <section id="search-bar" class="hidden">
+                <div class="container" id="search-container">
+                    <input type="text" id="searchInput" placeholder="Search for subjects..." class="form-control">
+                    <ul id="suggestions" class="list-group"></ul>
+                </div>
+            </section>
+
             <br>
             <div class="intro-box">
                 <h2>Introduction</h2>
@@ -176,13 +188,14 @@
         </div>
     </section>
 
+
     <!-- 1st Semester -->
     <section id="1-sem">
         <div class="container mt-5">
             <div class="semester-box">
                 <h2>1 Semester</h2><br>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="em-1-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-calculator"></i> Engineering Mathematics I</h5>
@@ -194,7 +207,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="es-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-leaf"></i> Environmental Science</h5><br>
@@ -204,7 +217,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="fee-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-microchip"></i> Foundations of Electronics
@@ -218,7 +231,7 @@
                 </div>
                 <div class="row">
                     <!-- Additional subjects for 1st semester -->
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="fcb-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-dna"></i> Fundamentals of Computational Biology
@@ -229,7 +242,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="lws-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-pen"></i> Language and Writing Skills</h5><br>
@@ -239,7 +252,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="lpcc-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-code"></i> Learning Programming Concepts With C
@@ -255,7 +268,7 @@
                 </div>
                 <div class="row" id="contentRow_1">
                     <!-- Additional subjects for 1st semester -->
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="pels-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-handshake"></i> Professional Ethics and Life
@@ -272,6 +285,7 @@
         </div>
     </section>
 
+
     <!-- 2nd Semester -->
     <section id="2-sem">
         <div class="container mt-5">
@@ -279,7 +293,7 @@
                 <h2>2 Semester</h2>
                 <br>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="ds-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5><i class="fas fa-sitemap"></i> Data Structure Using C</h5>
@@ -292,7 +306,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="dld-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5><i class="fas fa-project-diagram"></i> Digital Logic and Design</h5>
@@ -303,7 +317,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="em-2-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5><i class="fas fa-square-root-alt"></i> Engineering Mathematics II</h5>
@@ -318,7 +332,7 @@
 
                 <div class="row">
                     <!-- Additional subjects for 2nd semester -->
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="entrepreneur-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5><i class="fas fa-lightbulb"></i> Entrepreneurship</h5>
@@ -329,7 +343,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="oop-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5><i class="fas fa-object-group"></i> Object-Oriented Programming</h5>
@@ -342,7 +356,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="pds-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5><i class="fas fa-tools"></i> Python For Datascience</h5>
@@ -369,7 +383,7 @@
                 <h2>3 Semester</h2>
                 <br>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="ada-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5><i class="fas fa-chart-line"></i> Analysis and Design of Algorithm</h5>
@@ -381,7 +395,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="coa-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5><i class="fas fa-server"></i> Computer Organization and Architecture</h5>
@@ -391,7 +405,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="dbms-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5><i class="fas fa-database"></i> Database Management System</h5>
@@ -405,7 +419,7 @@
                 </div>
                 <div class="row">
                     <!-- Additional subjects for 3rd semester -->
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="ds-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5><i class="fas fa-project-diagram"></i> Discrete Structure</h5>
@@ -416,7 +430,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="ps-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5><i class="fas fa-chart-pie"></i> Probability and Statistics</h5>
@@ -426,7 +440,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="ip-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5><i class="fas fa-flask"></i> Independent Project</h5>
@@ -453,7 +467,7 @@
                 <h2>4 Semester</h2>
                 <br>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="ai-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-robot"></i> Artificial
@@ -465,7 +479,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="cn-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-network-wired"></i>
@@ -478,7 +492,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="dv-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-chart-line"></i> Data
@@ -494,7 +508,7 @@
                 </div>
                 <div class="row">
                     <!-- Additional subjects for 4th semester -->
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="os-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-desktop"></i> Operating
@@ -505,7 +519,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="rds-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-database"></i> R for
@@ -519,7 +533,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="toc-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-brain"></i> Theory of
@@ -542,7 +556,7 @@
                 <h2>5 Semester</h2>
                 <br>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="cc-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-calculator"></i>
@@ -554,7 +568,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="cns-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-lock"></i> Cryptography
@@ -568,7 +582,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="ida-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-database"></i>
@@ -585,7 +599,7 @@
                 </div>
                 <div class="row">
                     <!-- Additional subjects for 5th semester -->
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="nlp-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-language"></i> Natural
@@ -599,7 +613,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="prml-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-brain"></i> Pattern
@@ -613,7 +627,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="vt-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fas fa-tasks"></i> Vocational
@@ -640,7 +654,7 @@
                 <br>
                 <div class="row" id="contentRow_2">
                     <!-- Subjects for 6 semester -->
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="intern-card">
                         <div class="card">
                             <div class="card-body">
                                 <h5><i class="fas fa-briefcase"></i> Internship</h5>
