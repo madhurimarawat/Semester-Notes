@@ -31,6 +31,119 @@
     --button-color-lighter: hsl(var(--button-hue), var(--button-saturation), 50%);
 }
 
+.hidden {
+    display: none;
+}
+
+/* Ensure box-sizing is applied globally */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#search-container {
+    width: 100%;
+    padding: 0;
+    margin-top: 23px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#searchInput {
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #ccc;
+    /* Subtle border */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Card-like shadow */
+    background-color: #fff;
+    /* White background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
+    transition: box-shadow 0.3s, border 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+#searchInput:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on hover */
+    border: 2px solid var(--primary-color);
+    /* Change border color on hover */
+}
+
+#searchInput:focus {
+    outline: none;
+    /* Remove the default blue outline */
+    border: 2px solid var(--primary-color);
+    /* Optional: add a custom border */
+    box-shadow: 0 0 5px var(--primary-color);
+    /* Optional: add a custom shadow */
+}
+
+.header-container h1 {
+    margin-bottom: 10px;
+}
+
+.line-space {
+    margin-bottom: 0;
+    /* Adjust or remove this to decrease space after the search box */
+}
+
+.intro-box {
+    margin-top: 10px;
+    /* Adjust this value to decrease the space after the search box */
+}
+
+#suggestions {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#suggestions .list-group-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions .list-group-item:hover {
+    background-color: #f0f0f0;
+}
+
+#search-line {
+    margin-top: 5px;
+    height: 1px;
+    background-color: #ccc;
+}
+
+/* Style for the button */
+#searchButton {
+    border-color: white;
+    /* Initial border color */
+    color: white;
+    /* Initial text color */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect */
+#searchButton:hover {
+    background-color: var(--primary-color);
+    /* Background color on hover */
+    color: black;
+    /* Text color on hover */
+    border-color: white;
+    /* Border color on hover */
+}
+
 /* Styling for tool buttons */
 .tool-button {
     display: inline-block;
@@ -134,7 +247,7 @@
 
 /* Hover effect for navbar links */
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #f0f0f0;
+    color: black;
     /* Change text color on hover */
 }
 
