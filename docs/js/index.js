@@ -10,8 +10,8 @@
 * Issues/Bugs: For any issues or bugs, please visit the GitHub repository issues section.
 * Comments: This JS file defines functions to update the primary color variable of the root
 *           element based on the provided season. It enhances user experience by allowing
-*           dynamic customization of the color scheme. Also supports search functionality 
-*           for subjects and give suggestions based on user input.
+*           dynamic customization of the color scheme. It also handles mouse navigation 
+*           for suggestions dropdowns.
 * Dependencies: None
 *********************************************************************************************
 */
@@ -103,15 +103,6 @@ $(document).ready(function () {
   });
 });
 
-/**
- * This function handles the search functionality for the study materials website.
- * It adds event listeners to the search input and suggestions list, and performs
- * filtering and scrolling operations based on user input. In other words, it suggests
- * subjects based on user input and displays them in the suggestions list. Then users
- * can select a subject from the suggestions list to navigate to its corresponding section.
- *
- * @returns {void}
- */
 document.addEventListener("DOMContentLoaded", function () {
   // Toggle visibility of the search bar
   document.getElementById("searchButton").addEventListener("click", function () {
@@ -169,6 +160,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   };
 
+  let currentFocus = -1;
+
+  searchButton.addEventListener("click", function () {
+    searchBar.classList.toggle("hidden");
+  });
+
   searchInput.addEventListener('input', function () {
     const filter = searchInput.value.toLowerCase();
     suggestions.innerHTML = '';
@@ -186,6 +183,39 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
+
+  searchInput.addEventListener('keydown', function (e) {
+    let items = suggestions.getElementsByTagName('li');
+    if (e.keyCode === 40) {
+      // Arrow Down
+      currentFocus++;
+      addActive(items);
+    } else if (e.keyCode === 38) {
+      // Arrow Up
+      currentFocus--;
+      addActive(items);
+    } else if (e.keyCode === 13) {
+      // Enter
+      e.preventDefault();
+      if (currentFocus > -1) {
+        if (items) items[currentFocus].click();
+      }
+    }
+  });
+
+  function addActive(items) {
+    if (!items) return false;
+    removeActive(items);
+    if (currentFocus >= items.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = items.length - 1;
+    items[currentFocus].classList.add('active');
+  }
+
+  function removeActive(items) {
+    for (let i = 0; i < items.length; i++) {
+      items[i].classList.remove('active');
+    }
+  }
 
   suggestions.addEventListener('click', function (e) {
     if (e.target && e.target.matches('li.list-group-item')) {
