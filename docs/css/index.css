@@ -100,23 +100,66 @@
     /* Adjust this value to decrease the space after the search box */
 }
 
+/* Container for search suggestions */
 #suggestions {
     position: absolute;
+    /* Position the container absolutely relative to its parent */
     z-index: 1000;
+    /* Ensure the container is above other content */
     width: 100%;
+    /* Make the container as wide as its parent */
     list-style-type: none;
+    /* Remove default list styling */
     padding: 0;
+    /* Remove default padding */
     margin: 0;
+    /* Remove default margin */
     text-align: center;
+    /* Center-align the text */
 }
 
+/* Styling for each search suggestion item */
 #suggestions .list-group-item {
     padding: 10px;
+    /* Add padding to each item */
     cursor: pointer;
+    /* Change cursor to pointer for clickable items */
+    background-color: white;
+    /* Set the background color to white */
+    color: black;
+    /* Ensure the text color is black */
+    border: 1px solid #ddd;
+    /* Add a light gray border to each item */
+    border-bottom: none;
+    /* Remove the bottom border for all but the last item */
+    border-left: none;
+    /* Remove the left border for a cleaner look */
+    border-right: none;
+    /* Remove the right border for a cleaner look */
+    outline: none;
+    /* Remove the outline for a cleaner look */
 }
 
+/* Add bottom border to the last list item */
+#suggestions .list-group-item:last-child {
+    border-bottom: 1px solid #ddd;
+    /* Add the bottom border to the last item */
+}
+
+/* Active color for keyboard navigation */
+#suggestions .list-group-item.active {
+    background-color: #f0f0f0;
+    /* Change the background color when active */
+    color: black;
+    /* Ensure the text color remains black */
+}
+
+/* Hover color for list items */
 #suggestions .list-group-item:hover {
     background-color: #f0f0f0;
+    /* Change the background color on hover */
+    color: black;
+    /* Ensure the text color remains black */
 }
 
 #search-line {
