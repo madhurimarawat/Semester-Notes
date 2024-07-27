@@ -170,7 +170,7 @@ Semester-Notes/
 ---
 ## Website Design
 
-This website showcases a comprehensive repository of semester notes and study resources. It features a dynamic, color-changing dropdown menu using JavaScript. The content is organized into detailed sections, covering semester-wise subjects and commonly used commands for Astyle and GitHub. Visit the website at: [file:///C:/Users/rawat/Documents/Semester%20Notes/docs/index.html](https://madhurimarawat.github.io/Semester-Notes/).
+This website showcases a comprehensive repository of semester notes and study resources. It features a dynamic, color-changing dropdown menu using JavaScript. The content is organized into detailed sections, covering semester-wise subjects and commonly used commands for Astyle and GitHub. Visit the website at: [Website Link](https://madhurimarawat.github.io/Semester-Notes/).
 
 <a href ="https://madhurimarawat.github.io/Semester-Notes/">![Screenshot 2024-07-19 103717](https://github.com/user-attachments/assets/f84acd1e-c09b-40e7-a76a-429359a6c222)<a>
 
