@@ -152,15 +152,16 @@ Semester-Notes/
 ├── docs/                     # 🗂️ Folder containing website code
 │   ├── index.html            # 🏠 Main landing page of the website
 │   ├── Astyle-Commands.html  # ⚙️ Page dedicated to Astyle formatter commands
-│   ├── Git-Commands.html     # 🛠️ Page dedicated to Git formatter commands
+│   ├── Git-Commands.html     # 🛠️ Page dedicated to Git commands
+│   ├── Hadoop-Commands.html  # 📊 Page dedicated to Hadoop commands
 │   │
 │   ├── css/
 │   │   ├── index.css         # 🎨 Stylesheet for index.html
-│   │   └── commands.css      # 🎨 Stylesheet for Astyle-Commands.html and Git-Commands.html
+│   │   └── commands.css      # 🎨 Stylesheet for Astyle-Commands.html and Git-Commands.html and Hadoop-Commands.html
 │   │
 │   ├── js/
 │   │   ├── index.js          # 🖥️ Script to dynamically change the primary color of the website
-│   │   └── commands.js       # 📜 Script to manage the visibility of the color and copying of commands in Astyle-Commands.html and Git-Commands.html
+│   │   └── commands.js       # 📜 Script to manage the visibility of the color and copying of commands in Astyle-Commands.html and Git-Commands.html and Hadoop-|                                    Commands.html
 │
 ├── LICENSE                   # 📜 MIT License file
 │
@@ -172,9 +173,9 @@ Semester-Notes/
 
 This website showcases a comprehensive repository of semester notes and study resources. It features a dynamic, color-changing dropdown menu using JavaScript. The content is organized into detailed sections, covering semester-wise subjects and commonly used commands for Astyle and GitHub. Visit the website at: [Website Link](https://madhurimarawat.github.io/Semester-Notes/).
 
-<a href ="https://madhurimarawat.github.io/Semester-Notes/">![Screenshot 2024-07-19 103717](https://github.com/user-attachments/assets/f84acd1e-c09b-40e7-a76a-429359a6c222)<a>
+<a href ="https://madhurimarawat.github.io/Semester-Notes/">![Screenshot 2024-07-19 103717](https://github.com/user-attachments/assets/f68840c1-f9ec-4db5-af80-789176a1fc47)<a>
 
-<a href ="https://madhurimarawat.github.io/Semester-Notes/"><img src = "https://github.com/user-attachments/assets/d53a032a-2218-4828-b931-49899135e28d" width = "100%"></a>
+<a href ="https://madhurimarawat.github.io/Semester-Notes/"><img src = "https://github.com/user-attachments/assets/ea40513b-7e70-4b35-b174-3f162dd553f9" width = "100%"></a>
 <a href ="https://madhurimarawat.github.io/Semester-Notes/">![Screenshot 2024-07-19 104138](https://github.com/user-attachments/assets/65ba467b-38cd-411f-9e40-1eb8e26924c6)</a>
 
 ---
