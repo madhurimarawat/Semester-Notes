@@ -115,7 +115,9 @@ h2 {
 }
 
 /* Command box title styling */
-.command-title {
+.command-title,
+.command-title-1,
+.command-title-2 {
     font-weight: bold;
     /* Bold text */
     color: var(--primary-color);
@@ -289,6 +291,14 @@ h2 {
     /* Remove margin */
 }
 
+.hadoop-list {
+    text-align: left;
+}
+
+.description {
+    margin-top: 15px;
+}
+
 /* Media query for mobile devices */
 @media (max-width: 600px) {
     .copy-button {
@@ -314,5 +324,17 @@ h2 {
         /* Reduced font size */
         transition: background-color 0.3s ease;
         /* Transition effect */
+    }
+
+    .command-title {
+        margin-right: 45px;
+    }
+
+    .command-title-1 {
+        margin-right: 75px;
+    }
+
+    .command-title-2 {
+        margin-right: 85px;
     }
 }

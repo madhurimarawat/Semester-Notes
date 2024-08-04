@@ -1,0 +1,408 @@
+<!--
+*********************************************************************************************
+* File: Hadoop-Commands.html
+* Author: Madhurima Rawat
+* Date: July 17, 2024
+* Description: Study resources commands website showing some comman commands used in Hadoop.
+*              It also features a dynamic color-changing dropdown menu using JavaScript.
+* Version: 1.0
+* GitHub Repository: https://github.com/madhurimarawat/Semester-Notes
+* Issues/Bugs: For any issues or bugs, please visit the GitHub repository issues section.
+* Comments: This HTML file serves as the foundational structure for a comprehensive Hadoop commands website. 
+*           It organizes content into detailed sections and additional resources for 
+*           commanly used commands.
+* Dependencies:
+    - Font Awesome 5.15.3: External CSS for icons.
+    - Bootstrap 4.5.2: External CSS for responsive design (used in other stylesheets).
+    - JavaScript file (commands.js): Manages the copying of commands and color changing of page.
+    - CSS file (commands.css): Contains styles for this website.
+*********************************************************************************************
+-->
+
+<!--
+
+  This HTML snippet visually represents Git commands with styled command boxes
+  and descriptive elements, emphasizing readability and usability for understanding
+  and applying Git operations easily.
+
+  Summary:
+  - Visual representation of Git commands
+  - Styled command boxes for readability
+  - Descriptive elements for easy understanding
+  - Facilitates application of Git operations
+  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS  CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/commands.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Hadoop Commands</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Resources
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Astyle-Commands.html">Astyle</a>
+                        <a class="dropdown-item" href="Git-Commands.html">Git</a>
+                        <a class="dropdown-item" href="Hadoop-Commands.html">Hadoop</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://library-management-website.netlify.app/">Library
+                            Management System</a>
+                        <a class="dropdown-item"
+                            href="https://ml-model-datasets-using-apps-3gy37ndiancjo2nmu36sls.streamlit.app/">HyperTuneML</a>
+                        <a class="dropdown-item"
+                            href="https://web-scrapper-functions-h6phqofpkjtaylwyn9uvzf.streamlit.app/">Web Scrapper
+                            Functions</a>
+                        <a class="dropdown-item" href="https://github-repository-topics-lister.netlify.app/">GitHub
+                            Repository Lister</a>
+                        <a class="dropdown-item"
+                            href="https://final-internship-project-nvdx7l2pqe42g2p9ambd8s.streamlit.app/">Credit Card
+                            Fraud Detection</a>
+                        <a class="dropdown-item" href="https://madhurimarawat.github.io/Portfolio-Website/">Portfolio
+                            Website</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://drive.google.com/file/d/1EYrjwt8p55lhdj78in0dio0IwTDdsPAL/view?usp=sharing">Resume</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Color
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" onclick="changeColor('autumn')"><i
+                                class="fas fa-leaf"></i>&nbsp;Autumn</a>
+                        <a class="dropdown-item" href="#" onclick="changeColor('summer')"><i
+                                class="fas fa-sun"></i>&nbspSummer</a>
+                        <a class="dropdown-item" href="#" onclick="changeColor('rainy')"><i
+                                class="fas fa-cloud-showers-heavy"></i>&nbspRainy</a>
+                        <a class="dropdown-item" href="#" onclick="changeColor('winter')"><i
+                                class="fas fa-snowflake"></i>&nbspWinter</a>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:rawatmadhurima@gmail.com">
+                        <i class="fa fa-envelope"></i> Email
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tel:+9407959924">
+                        <i class="fa fa-phone"></i> 9407959924
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/madhurimarawat" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://linkedin.com/in/madhurima-rawat" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://linktr.ee/madhurima_rawat" target="_blank"><i
+                            class="fa fa-link"></i>LinkTree</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <section class="section">
+
+        <div class="header-container">
+            <img src="https://logodix.com/logo/1086545.png" height="40" width="60">
+            <h1>Hadoop Commands</h1>
+        </div>
+        <br>
+        <div class="intro-box">
+            <h2>Introduction to Apache Hadoop</h2>
+            <p>Apache Hadoop is an open-source framework that allows for the distributed processing of large data sets
+                across
+                clusters of computers using simple programming models. It is designed to scale up from a single server
+                to
+                thousands of machines, each offering local computation and storage. Hadoop is known for its reliability
+                and
+                ability to handle vast amounts of data efficiently.</p>
+
+            <p>The Hadoop Distributed File System (HDFS) is a fundamental component of Hadoop, providing scalable and
+                reliable data
+                storage. HDFS is designed to store very large files across a cluster of machines, ensuring fault
+                tolerance and high
+                availability.
+            </p>
+
+            <p>Another critical component of Hadoop is the MapReduce programming model, which enables efficient data
+                processing across
+                the distributed storage provided by HDFS. MapReduce breaks down data processing tasks into two main
+                phases: the Map
+                phase, which filters and sorts the data, and the Reduce phase, which performs aggregation and
+                summarization.Together with YARN (Yet Another Resource Negotiator), which manages and schedules
+                resources in the Hadoop cluster, these
+                components make Hadoop a robust platform for big data analytics, allowing organizations to gain insights
+                from their data
+                at unprecedented scales.</p>
+        </div>
+
+
+        <div class="intro-box">
+
+            <h2>Prerequisites</h2>
+
+            <p>Before starting Hadoop, ensure you have:</p>
+            <ul class="hadoop-list">
+                <li>Properly installed Hadoop on the system.</li>
+                <li>Configured the necessary environment variables (<code>HADOOP_HOME</code>, <code>JAVA_HOME</code>,
+                    etc.).
+                </li>
+                <li>Configured the core Hadoop configuration files (<code>core-site.xml</code>,
+                    <code>hdfs-site.xml</code>,
+                    <code>yarn-site.xml</code>, and <code>mapred-site.xml</code>).
+                </li>
+            </ul>
+        </div>
+
+        <div class="intro-box">
+
+            <h2>Example Workflow</h2>
+            <ol class="description hadoop-list">
+                <li><strong>Start Command Prompt in Admin Mode</strong>:
+                    <ul>
+                        <li>Press <code>Windows Key + X</code>, select <strong>Command Prompt (Admin)</strong>, and
+                            confirm any
+                            prompts.</li>
+                    </ul>
+                </li>
+                <li><strong>Navigate to the <code>sbin</code> Directory</strong>:
+                    <ul>
+                        <li><code>cd C:\Hadoop\sbin</code>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Start HDFS</strong>:
+                    <ul>
+                        <li><code>start-dfs.cmd</code>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Start YARN</strong>:
+                    <ul>
+                        <li><code>start-yarn.cmd</code></li>
+                    </ul>
+                </li>
+                <li><strong>Verify HDFS</strong>:
+                    <ul>
+                        <li>Open <a href="http://localhost:9870/" target="_blank">http://localhost:9870/</a> in the web
+                            browser.</li>
+                    </ul>
+                </li>
+                <li><strong>Verify YARN</strong>:
+                    <ul>
+                        <li>Open <a href="http://localhost:8088/" target="_blank">http://localhost:8088/</a> in the web
+                            browser.</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <p>Following these steps will help ensure that Hadoop services are correctly started and running on the
+                local machine.
+                For more detailed information, refer to the official <a href="https://hadoop.apache.org/docs/"
+                    target="_blank">Apache Hadoop documentation</a>. Detailed steps for starting this services are
+                provided later in
+                this page.</p>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title-2">Starting Apache Hadoop Services</div>
+            <p class="description">Follow these steps to start the Hadoop Distributed File System (HDFS) and YARN (Yet
+                Another Resource
+                Negotiator):
+            </p>
+            <p><strong>Step 1:</strong> Open Command Prompt in Administrator Mode</p>
+            <p>To avoid permission issues, it's important to run the command prompt with administrative privileges.</p>
+            <ol>
+                <li>Press <code>Windows Key + X</code> and select <strong>Command Prompt (Admin)</strong> or
+                    <strong>Windows
+                        PowerShell (Admin)</strong>.
+                </li>
+                <li>Confirm any prompts to allow the command prompt to run as an administrator.</li>
+            </ol>
+            <p>Step 2: Navigate to the Hadoop <code>sbin</code> Directory</p>
+            <p>Change the directory to the Hadoop <code>sbin</code> directory where the startup scripts are located.
+            </p>
+            <pre class="command">cd C:\Hadoop\sbin</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                <strong>Description:</strong>
+                <ul>
+                    <li>The command <code>cd C:\Hadoop\sbin</code> changes the current directory to the
+                        <code>sbin</code> folder in
+                        the Hadoop installation directory.
+                    </li>
+                </ul>
+                <strong>Output:</strong>
+                <ul>
+                    <li>The prompt will change to <code>C:\Hadoop\sbin</code>, indicating that you are now in the
+                        correct directory.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title-2">Starting HDFS Services</div>
+            <p class="description"><strong>Step 3:</strong> Start the Hadoop Distributed File System (HDFS)</pp>
+            <p>Run the following command to start the HDFS daemons (NameNode, Secondary NameNode, and DataNode):</p>
+            <pre class="command">start-dfs.cmd</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                <strong>Description:</strong>
+                <ul>
+                    <li>The command <code>start-dfs.cmd</code> starts the Hadoop Distributed File System (HDFS) daemons,
+                        including
+                        the NameNode, Secondary NameNode, and DataNode processes.</li>
+                    <li>These processes are responsible for managing the distributed storage in Hadoop, ensuring data is
+                        stored
+                        across multiple nodes for fault tolerance and high availability.</li>
+                </ul>
+                <strong>Output:</strong>
+                <ul>
+                    <li>Log messages indicating that the NameNode, Secondary NameNode, and DataNode services have
+                        started
+                        successfully.</li>
+                    <li>The prompt will return, indicating the command has finished executing.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title-2">Starting YARN Services and Verification</div>
+            <p class="description"><strong>Step 4:</strong> Start YARN</pp>
+            <p>Run the following command to start YARN daemons (ResourceManager and NodeManager):</p>
+            <pre class="command">start-yarn.cmd</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                <strong>Description:</strong>
+                <ul>
+                    <li>The command <code>start-yarn.cmd</code> starts the YARN (Yet Another Resource Negotiator)
+                        daemons, including
+                        the ResourceManager and NodeManager processes.</li>
+                    <li>The ResourceManager is responsible for managing resources across the cluster and scheduling
+                        applications,
+                        while the NodeManager manages resources on a single node.</li>
+                </ul>
+                <strong>Output:</strong>
+                <ul>
+                    <li>Log messages indicating that the ResourceManager and NodeManager services have started
+                        successfully.</li>
+                    <li>The prompt will return, indicating the command has finished executing.</li>
+                </ul>
+            </div>
+            <p><strong>Step 5:</strong> Verify Hadoop Services</p>
+
+            <p>HDFS Verification</p>
+            <p>Open a web browser and navigate to the HDFS web UI to verify that the DataNode and NameNode are running
+                correctly:</p>
+            <p><a href="http://localhost:9870/" target="_blank">http://localhost:9870/</a></p>
+            <p>This URL provides information about the HDFS NameNode status and allows you to browse the file system.
+            </p>
+
+            <p>YARN Verification</p>
+            <p>To verify that YARN is running correctly, navigate to the YARN ResourceManager web UI:</p>
+            <p><a href="http://localhost:8088/" target="_blank">http://localhost:8088/</a></p>
+            <p>This URL provides information about the cluster status, including running applications and available
+                resources.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Thank You section -->
+
+    <section id="thank-you" style="text-align: center; padding: 20px; background-color: #f1f1f1">
+        <h2>Thank You</h2>
+        <p>
+            Thank you for visiting this website. If you have any questions or would
+            like to get in touch, please feel free to contact me.
+        </p>
+
+
+        <!-- Contact Links -->
+        <div class="contact heading_1" style="text-align: center; padding: 10px;color: white;">
+            <a href="mailto:rawatmadhurima@gmail.com" style="color: black"><i class="fas fa-envelope"></i> Email</a>
+            <a class="nav-link" href="tel:+9407959924" style="color: black"><i class="fa fa-phone"></i>
+                9407959924</a>
+            <a href="https://github.com/madhurimarawat" style="color: black"><i class="fab fa-github"></i>
+                GitHub</a>
+            &nbsp;
+            &nbsp;
+            <a href="https://www.linkedin.com/in/madhurima-rawat/" style="color: black"><i class="fab fa-linkedin"></i>
+                LinkedIn</a> &nbsp;
+            <a href="https://linktr.ee/madhurima_rawat" target="_blank" style="color: black"><i class="fa fa-link"></i>
+                LinkTree</a> &nbsp;
+            <a href="index.htm" style="color: black"><i class="fas fa-globe"></i> Portfolio</a>&nbsp;
+            <a href="https://madhurima-devfolio.streamlit.app/" style="color: black"><i class="fas fa-code"></i>
+                Devfolio</a>
+
+        </div>
+        <a class="tool-button-2" href="https://github.com/madhurimarawat/Semester-Notes">Visit on GitHub &nbsp;<i
+                class="fab fa-github"></i></a>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        &copy; 2024 Madhurima Rawat. All rights reserved.
+    </footer>
+
+
+</body>
+<script src="js/commands.js"></script>
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+</html>
