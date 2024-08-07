@@ -234,8 +234,10 @@
                 </li>
                 <li><strong>Verify HDFS</strong>:
                     <ul>
+                        <li>Open <a href="http://localhost:9864/" target="_blank">http://localhost:9864/</a> in the web
+                            browser for datanode information.</li>
                         <li>Open <a href="http://localhost:9870/" target="_blank">http://localhost:9870/</a> in the web
-                            browser.</li>
+                            browser for namenode information.</li>
                     </ul>
                 </li>
                 <li><strong>Verify YARN</strong>:
@@ -342,7 +344,14 @@
             <p>HDFS Verification</p>
             <p>Open a web browser and navigate to the HDFS web UI to verify that the DataNode and NameNode are running
                 correctly:</p>
-            <p><a href="http://localhost:9870/" target="_blank">http://localhost:9870/</a></p>
+            <p><strong>
+                    <i>For Datanode: </i>
+                </strong><a href="http://localhost:9864/" target="_blank">http://localhost:9864/</a>
+            </p>
+            <p>
+                <i><strong>For Namenode: </strong></i><a href="http://localhost:9870/"
+                    target="_blank">http://localhost:9870/</a>
+            </p>
             <p>This URL provides information about the HDFS NameNode status and allows you to browse the file system.
             </p>
 
