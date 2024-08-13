@@ -25,6 +25,10 @@ Both presentations are made using a professional style. You can save these prese
 
 This directory contains the comprehensive report for the project. The report includes all sections and details from the index, providing a thorough overview of the work done during the internship.
 
+### Experience Summary
+
+This directory contains document summarizing my internship experience, including key insights, challenges, and professional growth.
+
 ## Contents
 
 - **Presentation**:
@@ -32,5 +36,7 @@ This directory contains the comprehensive report for the project. The report inc
   - `Final_Presentation.pptx`: Final presentation of the project.
 - **Internship Report**:
   - `Final_Report.pdf`: Detailed report of the project work, methodologies, results, and conclusions.
+- **Experience Summary**:
+  - `Internship Experience Summary.pdf`: This document summarizes my internship experience, including key insights, challenges, and professional growth.
 
 Feel free to explore the contents and use the materials as references for similar projects or presentations.
