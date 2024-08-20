@@ -188,21 +188,38 @@
 
 
         <div class="intro-box">
-
             <h2>Prerequisites</h2>
-
             <p>Before starting Hadoop, ensure you have:</p>
             <ul class="hadoop-list">
                 <li>Properly installed Hadoop on the system.</li>
                 <li>Configured the necessary environment variables (<code>HADOOP_HOME</code>, <code>JAVA_HOME</code>,
                     etc.).
                 </li>
-                <li>Configured the core Hadoop configuration files (<code>core-site.xml</code>,
-                    <code>hdfs-site.xml</code>,
+                <li>Configured the core Hadoop configuration files
+                    (<code>core-site.xml</code>, <code>hdfs-site.xml</code>,
                     <code>yarn-site.xml</code>, and <code>mapred-site.xml</code>).
+                    Update the bin file in the Hadoop folder. You can
+                    <a href="https://drive.google.com/drive/folders/1MIEuEfNNX8sI7STp-96wbSZPAKAdBWRo?usp=drive_link"
+                        target="_blank">download the updated bin folder</a> from here, then
+                    copy it directly
+                    into your Hadoop directory.
+                    For the XML files, navigate to <code>Hadoop\etc\hadoop</code> and
+                    <a href="https://drive.google.com/drive/folders/19nLZxcYsUSCPObqYxLDcMxZ7I6JOO1gq?usp=drive_link"
+                        target="_blank">download the updated XML files</a>. Just copy and paste
+                    them directly
+                    into this folder to update.
                 </li>
+
+
+                <li>Set <code>HADOOP_HOME</code> to <code>C:\Hadoop\bin</code> in the system variables.</li>
+                <li>Set <code>JAVA_HOME</code> to the JDK path <code>C:\Java\jdk\bin</code> in both system
+                    variables.</li>
+                <li>Added <code>C:\Hadoop\bin</code> and <code>C:\Hadoop\sbin</code> to the system PATH variable.
+                </li>
+                <li>Added <code>JAVA_HOME\bin</code> to the user PATH variable.</li>
             </ul>
         </div>
+
 
         <div class="intro-box">
 
