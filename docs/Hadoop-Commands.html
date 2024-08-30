@@ -217,6 +217,9 @@
                 <li>Added <code>C:\Hadoop\bin</code> and <code>C:\Hadoop\sbin</code> to the system PATH variable.
                 </li>
                 <li>Added <code>JAVA_HOME\bin</code> to the user PATH variable.</li>
+                <li>Updated the <code>hadoop-env.cmd</code> file to include the <code>JAVA_HOME</code> variable at
+                    <code>C:\Hadoop\etc\hadoop\hadoop-env.cmd</code>.
+                </li>
                 <li>Launch Command Prompt as an Administrator and execute the command
                     <code>hdfs namenode -format</code>. This step is
                     only necessary during the initial setup, as it formats all the namenodes.
@@ -229,20 +232,39 @@
             <p>
                 If your DataNode is not running, follow these steps:
             </p>
+
             <ol style="text-align: justify;">
-                <li>Navigate to <code>C:\Hadoop\data\dfs\current\namenode</code> and open the <strong>VERSION</strong>
-                    file.</li>
-                <li>Copy the <strong>ClusterID</strong> value from the VERSION file.</li>
-                <li>Now, go to <code>C:\Hadoop\data\dfs\current\datanode</code> and paste the same
+                <p><b>1. DataNode and NameNode Version Mismatch</b></p>
+                <li style="margin-left: 35px;">Navigate to <code>C:\Hadoop\data\dfs\current\namenode</code> and open the
+                    <strong>VERSION</strong> file.
+                </li>
+                <li style="margin-left: 35px;">Copy the <strong>ClusterID</strong> value from the VERSION file.</li>
+                <li style="margin-left: 35px;">Go to <code>C:\Hadoop\data\dfs\current\datanode</code> and paste the same
                     <strong>ClusterID</strong> value into the corresponding VERSION file in this directory.
                 </li>
             </ol>
+
+            <ol style="text-align: justify;">
+                <p><b>2. Permission Issues</b></p>
+                <li style="margin-left: 35px;">Check if the DataNode directory is not creating the necessary files.</li>
+                <li style="margin-left: 35px;">Navigate to <code>C:\Hadoop\data\dfs\current\datanode</code> and
+                    right-click on
+                    the directory.</li>
+                <li style="margin-left: 35px;">Select <strong>Properties</strong>, then go to the
+                    <strong>Security</strong> tab.
+                </li>
+                <li style="margin-left: 35px;">Click on <strong>Edit</strong> and ensure that the user has full control
+                    by
+                    selecting <strong>Allow</strong> for all permissions.</li>
+                <li style="margin-left: 35px;">Click <strong>Apply</strong> and then <strong>OK</strong> to save the
+                    changes.
+                </li>
+            </ol>
+
             <p>
-                In most cases, this resolves the issue with the DataNode not running.
+                In most cases, these steps will resolve the issue with the DataNode not running.
             </p>
         </div>
-
-
 
         <div class="intro-box">
 
