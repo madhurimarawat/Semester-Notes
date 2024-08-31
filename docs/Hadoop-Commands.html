@@ -186,46 +186,83 @@
                 at unprecedented scales.</p>
         </div>
 
-
         <div class="intro-box">
-            <h2>Prerequisites</h2>
+            <h2>Hadoop Installation and Setup Guide</h2>
             <p>Before starting Hadoop, ensure you have:</p>
             <ul class="hadoop-list">
+                <li>Downloaded Hadoop from the <a href="https://hadoop.apache.org/releases.html"
+                        target="_blank">official Hadoop
+                        website</a> and Java from the <a href="https://www.oracle.com/java/technologies/downloads/"
+                        target="_blank">Oracle website</a>. Note that Java is downloaded from Oracle, so if you don’t
+                    have an
+                    account, you will need to create one.</li>
+                <li>Checked if the Hadoop files are already associated with WinRAR (indicated by red box logos on the
+                    files). If
+                    they are, WinRAR is already installed. If not, you can download WinRAR from the <a
+                        href="https://www.rarlab.com/download.htm" target="_blank">official WinRAR website</a>. After
+                    downloading, unzip the Hadoop file into the `C:\Hadoop` directory by right-clicking on the file and
+                    selecting "Extract Here."</li>
+                <li>Verified if `winutils` is running by opening a Command Prompt and typing <code>winutils.exe</code>.
+                    If it is
+                    not recognized or does not run, you will need to download the necessary `msvcr120.dll` file. Follow
+                    these
+                    steps:
+                    <ul>
+                        <li>Go to the <a href="https://www.dll-files.com/msvcr120.dll.html" target="_blank">msvcr120.dll
+                                download page</a> and download the file.</li>
+                        <li>Navigate to the `C:\Windows\System32` directory.</li>
+                        <li>Copy and paste the downloaded `msvcr120.dll` file into the `System32` folder.</li>
+                        <li>After copying the DLL file, try running <code>winutils.exe</code> again in Command Prompt.
+                        </li>
+                    </ul>
+                </li>
+                <li>During Java installation, create two folders within the <code>Java</code> directory: one for the JDK
+                    (<code>C:\Java\jdk</code>) and one for the JRE (<code>C:\Java\jre</code>). Ensure to update the
+                    paths
+                    accordingly in the installation wizard.</li>
+                <li>Created a folder named <code>Hadoop</code> in the root of the Windows (C:) drive for installing
+                    Hadoop.</li>
+                <li>Created a `data` folder within the `Hadoop` directory, and inside the `data` folder, created two
+                    subfolders:
+                    `dfs/namenode` and `dfs/datanode`. These directories are used by Hadoop to store the namenode and
+                    datanode
+                    data.</li>
                 <li>Properly installed Hadoop on the system.</li>
-                <li>Configured the necessary environment variables (<code>HADOOP_HOME</code>, <code>JAVA_HOME</code>,
-                    etc.).
+                <li>Configured the necessary environment variables:
+                    <ul>
+                        <li>Set <code>HADOOP_HOME</code> to <code>C:\Hadoop\bin</code> in the system variables.</li>
+                        <li>Set <code>JAVA_HOME</code> to the JDK path <code>C:\Java\jdk</code> in system
+                            variables.</li>
+                        <li>Added <code>C:\Hadoop\bin</code> and <code>C:\Hadoop\sbin</code> to the system PATH
+                            variable.</li>
+                        <li>Added <code>JAVA_HOME\bin</code> to the user PATH variable.</li>
+                    </ul>
                 </li>
-                <li>Configured the core Hadoop configuration files
-                    (<code>core-site.xml</code>, <code>hdfs-site.xml</code>,
-                    <code>yarn-site.xml</code>, and <code>mapred-site.xml</code>).
-                    Update the bin file in the Hadoop folder. You can
-                    <a href="https://drive.google.com/drive/folders/1MIEuEfNNX8sI7STp-96wbSZPAKAdBWRo?usp=drive_link"
-                        target="_blank">download the updated bin folder</a> from here, then
-                    copy it directly
-                    into your Hadoop directory.
-                    For the XML files, navigate to <code>Hadoop\etc\hadoop</code> and
-                    <a href="https://drive.google.com/drive/folders/19nLZxcYsUSCPObqYxLDcMxZ7I6JOO1gq?usp=drive_link"
-                        target="_blank">download the updated XML files</a>. Just copy and paste
-                    them directly
-                    into this folder to update.
+                <li>Updated the core Hadoop configuration files (<code>core-site.xml</code>, <code>hdfs-site.xml</code>,
+                    <code>yarn-site.xml</code>, and <code>mapred-site.xml</code>). Update the bin file in the Hadoop
+                    folder. You
+                    can <a
+                        href="https://drive.google.com/drive/folders/1MIEuEfNNX8sI7STp-96wbSZPAKAdBWRo?usp=drive_link"
+                        target="_blank">download the updated bin folder</a> from here, then copy it directly into your
+                    Hadoop
+                    directory. For the XML files, navigate to <code>C:\Hadoop\etc\hadoop</code> and <a
+                        href="https://drive.google.com/drive/folders/19nLZxcYsUSCPObqYxLDcMxZ7I6JOO1gq?usp=drive_link"
+                        target="_blank">download the updated XML files</a>. Just copy and paste them directly into this
+                    folder
+                    to update.
                 </li>
-
-
-                <li>Set <code>HADOOP_HOME</code> to <code>C:\Hadoop\bin</code> in the system variables.</li>
-                <li>Set <code>JAVA_HOME</code> to the JDK path <code>C:\Java\jdk\bin</code> in both system
-                    variables.</li>
-                <li>Added <code>C:\Hadoop\bin</code> and <code>C:\Hadoop\sbin</code> to the system PATH variable.
-                </li>
-                <li>Added <code>JAVA_HOME\bin</code> to the user PATH variable.</li>
-                <li>Updated the <code>hadoop-env.cmd</code> file to include the <code>JAVA_HOME</code> variable at
-                    <code>C:\Hadoop\etc\hadoop\hadoop-env.cmd</code>.
+                <li>Updated the <code>hadoop-env.cmd</code> file to include the <code>JAVA_HOME</code> variable. Set
+                    <code>JAVA_HOME</code> to <code>C:\Java\jdk</code> in the
+                    <code>C:\Hadoop\etc\hadoop\hadoop-env.cmd</code>
+                    file.
                 </li>
                 <li>Launch Command Prompt as an Administrator and execute the command
-                    <code>hdfs namenode -format</code>. This step is
-                    only necessary during the initial setup, as it formats all the namenodes.
+                    <code>hdfs namenode -format</code>. This
+                    step is only necessary during the initial setup, as it formats all the namenodes.
                 </li>
             </ul>
         </div>
+
 
         <div class="intro-box">
             <h2>Troubleshooting</h2>
