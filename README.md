@@ -126,7 +126,7 @@
   - The `index.html` file serves as the main page.
   - The website is user-friendly, featuring an intuitive interface that is easy to navigate.
   - Responsive design ensures the portfolio looks great and functions well on all devices and screen sizes.
-  - A new dropdown menu allows dynamic color changes with options for Autumn, Summer, Rainy, and Winter. Upon selection, the website color changes instantly. Refreshing the page restores the default color scheme.
+  - A dropdown menu allows dynamic color changes with options for Autumn, Summer, Rainy, and Winter. Upon selection, the website color changes instantly. Refreshing the page restores the default color scheme.
 </details>
 
 ## Directory Structure 🗃️
