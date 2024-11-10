@@ -166,6 +166,8 @@ Semester-Notes/
 ├── LICENSE                   # 📜 MIT License file
 │
 └── README.md                 # 📄 Documentation file for the repository
+│
+└── CONTRIBUTING.md           # 🤝 Guide for contributing to the repository
 ```
 
 ---
