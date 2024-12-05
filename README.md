@@ -2,7 +2,8 @@
 
 ![Presentation1](https://github.com/madhurimarawat/Semester-Notes/assets/105432776/784d77f1-41bf-46a3-b2f8-c185ec52aad7)
 
-- This repository contains a vast collection of academic notes, study materials, and resources from various semesters of  Datascience course.<br><br>
+- This repository includes academic notes, study materials, and resources from B.Tech (Hons) in CSE, specializing in Artificial Intelligence and Data Science. <br><br>
+- It features question papers, proprietary study guides, and resources to support learning in these fields. <br><br>
 - This repository serves as a valuable resource to access well-structured and reliable study materials.<br><br>
 - Study Materials are organized according to semesters and subjects.
 
