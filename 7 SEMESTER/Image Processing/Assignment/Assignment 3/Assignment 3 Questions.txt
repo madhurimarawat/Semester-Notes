@@ -1,0 +1,9 @@
+Assignment 3
+
+Q1) Write short notes on:
+
+i)Thresholding segmentation method
+
+ii)Region based segmentation method
+
+Q2) Explain the various types of features extraction techniques?

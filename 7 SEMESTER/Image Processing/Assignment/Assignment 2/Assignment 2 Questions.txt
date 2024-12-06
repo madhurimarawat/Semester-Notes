@@ -1,0 +1,7 @@
+Assignment 2
+
+Q1) Describe the various image restoration techniques ?
+
+Q2) Explain spatial domain image enhancements techniques? 
+
+Q3) Describe the filtering in the frequency domain?
