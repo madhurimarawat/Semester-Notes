@@ -1,0 +1,340 @@
+/*
+*********************************************************************************************
+* File: commands.css
+* Author: Madhurima Rawat
+* Date: July 18, 2024
+* Description: Stylesheet for a website dedicated to additional resources for commands, featuring responsive design,
+*              interactive hover effects, cohesive color schemes, and refined layout adjustments.
+* Version: 1.0
+* GitHub Repository: https://github.com/madhurimarawat/Semester-Notes
+* Issues/Bugs: For any issues or bugs, please visit the GitHub repository issues section.
+* Comments: This CSS file defines styles for various components such as navbar, cards, 
+*           headings, buttons, and footer. It includes customizations for hover effects,
+*           color schemes, and layout adjustments to enhance user experience and visual appeal.
+* Dependencies: Bootstrap 4.5.2 for responsive design.
+*********************************************************************************************
+*/
+
+/* Root variables for primary colors */
+:root {
+    --primary-color: #28a745;
+    --button-color: #ffc107;
+}
+
+/* Background color for the navbar */
+.navbar {
+    background-color: var(--primary-color);
+    /* Change background color */
+}
+
+/* Text color for navbar links */
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    /* Change text color */
+}
+
+/* Hover effect for navbar links */
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #f0f0f0;
+    /* Change text color on hover */
+}
+
+/* Padding for the navigation links */
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    /* Padding for the navigation links */
+}
+
+/* Margin for font-awesome icons in navigation links */
+.navbar-nav .nav-link .fa {
+    margin-right: 5px;
+    /* Margin for font-awesome icons in navigation links */
+}
+
+/* Dropdown menu item hover */
+.navbar-dark .navbar-nav .dropdown-menu a.dropdown-item:hover {
+    background-color: var(--primary-color);
+    /* Set hover background color */
+    color: black;
+    /* Set hover text color */
+}
+
+/* General section styling */
+.section {
+    padding: 45px;
+    /* Padding for sections */
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    /* Font family for the body */
+    color: #333;
+    /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Text shadow effect */
+    background-color: #FFFFF0;
+    /* Background color */
+}
+
+/* Heading styling */
+h1,
+h2 {
+    text-align: center;
+    /* Center align headings */
+    color: var(--primary-color);
+    /* Heading text color */
+}
+
+/* Styling for command boxes */
+.command-box {
+    border: 2px solid var(--primary-color);
+    /* Border color and width */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding inside the box */
+    margin: 20px 0;
+    /* Margin outside the box */
+    background-color: #fff;
+    /* Background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Box shadow for 3D effect */
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* Transition effects */
+    position: relative;
+    /* Ensure position context for absolute button */
+}
+
+/* Hover effect for command boxes */
+.command-box:hover {
+    transform: translateY(-5px);
+    /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Deeper shadow on hover */
+}
+
+/* Command box title styling */
+.command-title,
+.command-title-1,
+.command-title-2 {
+    font-weight: bold;
+    /* Bold text */
+    color: var(--primary-color);
+    /* Text color */
+    font-size: 1.2em;
+    /* Font size */
+    text-align: center;
+    /* Center align text */
+}
+
+/* Command box description styling */
+.command-desc {
+    margin-top: 10px;
+    /* Margin at the top */
+    color: #666;
+    /* Text color */
+}
+
+/* Command text styling */
+.command {
+    font-family: monospace;
+    /* Monospaced font */
+    background-color: #eee;
+    /* Background color */
+    padding: 10px;
+    /* Padding */
+    display: block;
+    /* Block display */
+    margin-top: 10px;
+    /* Margin at the top */
+    border-radius: 5px;
+    /* Rounded corners */
+    white-space: pre-wrap;
+    /* Preserve white space and line breaks */
+    text-align: center;
+    /* Center align text */
+}
+
+/* Copy button styling */
+.copy-button {
+    position: absolute;
+    /* Absolute positioning */
+    top: 18px;
+    /* Position from the top */
+    right: 20px;
+    /* Position from the right */
+    background-color: var(--button-color);
+    /* Background color */
+    color: #fff;
+    /* Text color */
+    border: none;
+    /* No border */
+    padding: 5px 10px;
+    /* Padding */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    font-size: 0.8em;
+    /* Font size */
+    transition: background-color 0.3s ease;
+    /* Transition effect */
+}
+
+/* Hover effect for copy button */
+.copy-button:hover {
+    background-color: var(--button-color);
+    /* Background color on hover */
+    color: black;
+}
+
+/* Intro box styling */
+.intro-box {
+    border: 2px solid var(--primary-color);
+    /* Border color and width */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding inside the box */
+    margin: 20px 0;
+    /* Margin outside the box */
+    background-color: #fff;
+    /* Background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Box shadow for 3D effect */
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* Transition effects */
+    text-align: center;
+    /* Center align text */
+}
+
+/* Hover effect for intro box */
+.intro-box:hover {
+    transform: translateY(-5px);
+    /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Deeper shadow on hover */
+}
+
+/* Note styling */
+.note {
+    font-size: 0.9em;
+    /* Font size */
+    color: #555;
+    /* Text color */
+    margin-top: 10px;
+    /* Margin at the top */
+}
+
+/* Header container styling */
+.header-container {
+    display: flex;
+    /* Flex display */
+    justify-content: center;
+    /* Center align horizontally */
+    align-items: center;
+    /* Center align vertically */
+    text-align: center;
+    /* Center align text */
+}
+
+/* Styling for the second type of tool button */
+.tool-button-2 {
+    display: inline-block;
+    /* Inline-block display */
+    background-color: bisque;
+    /* Background color */
+    color: black;
+    /* Text color */
+    text-align: center;
+    /* Center align text */
+    padding: 4px 10px;
+    /* Reduced padding */
+    margin: 2px 4px;
+    /* Slightly reduced margin */
+    border-radius: 4px;
+    /* Increased border radius for a smoother look */
+    text-decoration: none;
+    /* No text decoration */
+    font-size: 0.875rem;
+    /* Slightly smaller font size */
+    font-weight: 500;
+    /* Added font weight for a bolder look */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Added transform transition for better effect */
+}
+
+/* Hover effect for the second type of tool button */
+.tool-button-2:hover {
+    background-color: bisque;
+    /* Slightly darker background on hover */
+    transform: scale(1.05);
+    /* Slight scale up effect on hover */
+}
+
+/* Footer section styling */
+.footer-section {
+    text-align: center;
+    /* Center align text */
+    padding: 10px;
+    /* Padding inside the footer */
+    color: white;
+    /* Text color */
+    background-color: var(--primary-color);
+    /* Background color */
+    width: 100%;
+    /* Full width */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    margin: 0;
+    /* Remove margin */
+}
+
+.hadoop-list {
+    text-align: left;
+}
+
+.description {
+    margin-top: 15px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .copy-button {
+        position: absolute;
+        /* Absolute positioning */
+        top: 24px;
+        /* Position from the top */
+        right: 20px;
+        /* Position from the right */
+        background-color: var(--primary-color);
+        /* Background color */
+        color: #fff;
+        /* Text color */
+        border: none;
+        /* No border */
+        padding: 5px 10px;
+        /* Padding */
+        border-radius: 5px;
+        /* Rounded corners */
+        cursor: pointer;
+        /* Pointer cursor on hover */
+        font-size: 0.5em;
+        /* Reduced font size */
+        transition: background-color 0.3s ease;
+        /* Transition effect */
+    }
+
+    .command-title {
+        margin-right: 45px;
+    }
+
+    .command-title-1 {
+        margin-right: 75px;
+    }
+
+    .command-title-2 {
+        margin-right: 85px;
+    }
+}

@@ -1,0 +1,564 @@
+<!--
+*********************************************************************************************
+* File: Git-Commands.html
+* Author: Madhurima Rawat
+* Date: July 17, 2024
+* Description: Study resources commands website showing some comman commands used in Git.
+*              It also features a dynamic color-changing dropdown menu using JavaScript.
+* Version: 1.0
+* GitHub Repository: https://github.com/madhurimarawat/Semester-Notes
+* Issues/Bugs: For any issues or bugs, please visit the GitHub repository issues section.
+* Comments: This HTML file serves as the foundational structure for a comprehensive Git commands website. 
+*           It organizes content into detailed sections and additional resources for 
+*           commanly used commands.
+* Dependencies:
+    - Font Awesome 5.15.3: External CSS for icons.
+    - Bootstrap 4.5.2: External CSS for responsive design (used in other stylesheets).
+    - JavaScript file (commands.js): Manages the copying of commands and color changing of page.
+    - CSS file (commands.css): Contains styles for this website.
+*********************************************************************************************
+-->
+
+<!--
+
+  This HTML snippet visually represents Git commands with styled command boxes
+  and descriptive elements, emphasizing readability and usability for understanding
+  and applying Git operations easily.
+
+  Summary:
+  - Visual representation of Git commands
+  - Styled command boxes for readability
+  - Descriptive elements for easy understanding
+  - Facilitates application of Git operations
+  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS  CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/commands.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Git Commands</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Resources
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Astyle-Commands.html">Astyle</a>
+                        <a class="dropdown-item" href="Git-Commands.html">Git</a>
+                        <a class="dropdown-item" href="Hadoop-Commands.html">Hadoop</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://library-management-website.netlify.app/">Library
+                            Management System</a>
+                        <a class="dropdown-item"
+                            href="https://ml-model-datasets-using-apps-3gy37ndiancjo2nmu36sls.streamlit.app/">HyperTuneML</a>
+                        <a class="dropdown-item"
+                            href="https://web-scrapper-functions-h6phqofpkjtaylwyn9uvzf.streamlit.app/">Web Scrapper
+                            Functions</a>
+                        <a class="dropdown-item" href="https://github-repository-topics-lister.netlify.app/">GitHub
+                            Repository Lister</a>
+                        <a class="dropdown-item"
+                            href="https://final-internship-project-nvdx7l2pqe42g2p9ambd8s.streamlit.app/">Credit Card
+                            Fraud Detection</a>
+                        <a class="dropdown-item" href="https://madhurimarawat.github.io/Portfolio-Website/">Portfolio
+                            Website</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                        href="https://drive.google.com/file/d/1EYrjwt8p55lhdj78in0dio0IwTDdsPAL/view?usp=sharing">Resume</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Theme
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" onclick="changeColor('autumn')"><i
+                                class="fas fa-leaf"></i>&nbsp;Autumn</a>
+                        <a class="dropdown-item" href="#" onclick="changeColor('summer')"><i
+                                class="fas fa-sun"></i>&nbspSummer</a>
+                        <a class="dropdown-item" href="#" onclick="changeColor('rainy')"><i
+                                class="fas fa-cloud-showers-heavy"></i>&nbspRainy</a>
+                        <a class="dropdown-item" href="#" onclick="changeColor('winter')"><i
+                                class="fas fa-snowflake"></i>&nbspWinter</a>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:rawatmadhurima@gmail.com">
+                        <i class="fa fa-envelope"></i> Email
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tel:+9407959924">
+                        <i class="fa fa-phone"></i> 9407959924
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/madhurimarawat" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://linkedin.com/in/madhurima-rawat" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://linktr.ee/madhurima_rawat" target="_blank"><i
+                            class="fa fa-link"></i>LinkTree</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <section class="section">
+
+        <div class="header-container">
+            <img src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/git-13.png" height="40"
+                width="60">
+            <h1>Git Commands</h1>
+        </div>
+        <br>
+        <div class="intro-box">
+            <h2>Introduction to Git</h2>
+            <p>Git is a distributed version control system renowned for its ability to manage projects of various scales
+                with efficiency and speed. Originally developed by Linus Torvalds for managing the Linux kernel
+                development,
+                Git has become an essential tool in modern software development.</p>
+
+            <p>Its distributed nature allows developers to work offline, commit changes locally, and synchronize their
+                work
+                with remote repositories seamlessly. Git tracks changes to files, enabling developers to revert to
+                previous
+                versions, manage different branches for feature development, and collaborate effectively across teams.
+            </p>
+
+            <p>Used extensively in both open-source and proprietary projects, Git's popularity stems from its
+                robustness,
+                scalability, and the rich ecosystem of tools and services built around it. Whether you're working on a
+                small
+                personal project or coordinating with a global team on a large-scale application, Git provides the
+                foundation
+                for efficient version control and collaborative software development.</p>
+        </div>
+
+
+        <div class="intro-box">
+
+            <h2>Installing Git</h2>
+
+            <p>To install Git on your Windows machine, follow these steps:</p>
+            <ol style="text-align: left;">
+                <li>Download Git from the official Git website: <a href="https://git-scm.com/download/win"
+                        target="_blank">Git for Windows</a></li>
+                <li>Run the downloaded installer file and follow the installation instructions.</li>
+                <li>During installation, you can customize settings as per your preference.</li>
+                <li>Once installed, open Git Bash or Git GUI to start using Git commands.</li>
+            </ol>
+
+        </div>
+
+
+
+        <div class="command-box">
+            <div class="command-title">Command 1:</div>
+            <pre class="command">git init</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Initializes a new Git repository.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git init</code> creates an empty Git repository or reinitializes an existing one.</li>
+                </ul>
+                <strong>Output:</strong> A new <code>.git</code> directory is created in the current directory.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 2:</div>
+            <pre class="command">git clone &lt;repository-url&gt;</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Clones a repository into a new directory.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git clone &lt;repository-url&gt;</code> copies an existing Git repository to your local
+                        machine.</li>
+                </ul>
+                <strong>Output:</strong> A new directory is created containing the cloned repository.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 3:</div>
+            <pre class="command">git status</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Displays the state of the working directory and staging area.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git status</code> shows which changes have been staged, which haven't, and which files
+                        aren't
+                        being tracked by Git.</li>
+                </ul>
+                <strong>Output:</strong> A summary of changes to be committed, changes not staged for commit, and
+                untracked
+                files.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 4:</div>
+            <pre class="command">git add &lt;file&gt;</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Adds changes in the working directory to the staging area.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git add &lt;file&gt;</code> stages the specified file, preparing it for a commit.</li>
+                </ul>
+                <strong>Output:</strong> The file is added to the staging area.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 5:</div>
+            <pre class="command">git commit -m "Commit message"</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Records changes to the repository along with a commit message.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git commit -m "Commit message"</code> commits the staged changes to the repository with
+                        the specified commit message.</li>
+                </ul>
+                <strong>Output:</strong> Shows the commit hash and details of the committed changes.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 6:</div>
+            <pre class="command">git push origin &lt;branch-name&gt;</pre><button class="copy-button">Copy
+                Command</button>
+            <div class="command-desc">
+                Pushes committed changes to a remote repository.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git push origin &lt;branch-name&gt;</code> sends committed changes from your local
+                        repository
+                        to the remote repository specified by <code>origin</code>.</li>
+                </ul>
+                <strong>Output:</strong> Updates the remote repository with the local commits.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 7:</div>
+            <pre class="command">git pull</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Fetches and merges changes from a remote repository to your local branch.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git pull</code> retrieves new work from the remote repository and integrates it with your
+                        local
+                        branch.</li>
+                </ul>
+                <strong>Output:</strong> Updates your local repository with the latest changes from the remote.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 8:</div>
+            <pre class="command">git branch</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Lists all local branches in the current repository.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git branch</code> displays a list of all branches in the local repository, highlighting
+                        the
+                        current branch.</li>
+                </ul>
+                <strong>Output:</strong> Lists branches prefixed with an asterisk (*) to denote the current branch.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 9:</div>
+            <pre class="command">git checkout &lt;branch-name&gt;</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Switches to the specified branch.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git checkout &lt;branch-name&gt;</code> changes the current working branch to the
+                        specified
+                        branch.</li>
+                </ul>
+                <strong>Output:</strong> Updates the working directory to match the specified branch.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 10:</div>
+            <pre class="command">git merge &lt;branch-name&gt;</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Merges the specified branch into the current branch.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git merge &lt;branch-name&gt;</code> integrates changes from the specified branch into the
+                        current
+                        branch.</li>
+                </ul>
+                <strong>Output:</strong> Combines the histories of both branches.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 11:</div>
+            <pre class="command">git log</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Shows the commit history for the current branch.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git log</code> displays a list of commits with details such as hash, author, date, and
+                        message.
+                    </li>
+                </ul>
+                <strong>Output:</strong> Commit history log.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 12:</div>
+            <pre class="command">git reset --hard &lt;commit&gt;</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Resets the working directory and index to the specified commit.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git reset --hard &lt;commit&gt;</code> moves the HEAD to the specified commit and discards
+                        all
+                        changes in the working directory and index.</li>
+                </ul>
+                <strong>Output:</strong> Working directory and index are reset to match the specified commit.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 13:</div>
+            <pre class="command">git stash</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Temporarily saves changes in the working directory.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git stash</code> stores modified tracked files, staging area changes, and working
+                        directory
+                        changes to a stash.</li>
+                </ul>
+                <strong>Output:</strong> Changes are stashed and working directory is clean.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 14:</div>
+            <pre class="command">git stash pop</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Applies the most recent stash and removes it from the stash list.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git stash pop</code> restores the most recently stashed changes to the working directory
+                        and
+                        removes them from the stash list.</li>
+                </ul>
+                <strong>Output:</strong> Stashed changes are reapplied and removed from the stash list.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 15:</div>
+            <pre class="command">git remote add &lt;name&gt; &lt;url&gt;</pre><button class="copy-button">Copy
+                Command</button>
+            <div class="command-desc">
+                Adds a new remote repository.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git remote add &lt;name&gt; &lt;url&gt;</code> creates a new reference to a remote
+                        repository.
+                    </li>
+                </ul>
+                <strong>Output:</strong> New remote repository reference is added.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 16:</div>
+            <pre class="command">git remote -v</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Displays the current configured remote repositories.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git remote -v</code> shows the URLs of the remote repositories for fetch and push
+                        operations.
+                    </li>
+                </ul>
+                <strong>Output:</strong> List of remote repositories with their fetch and push URLs.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 17:</div>
+            <pre class="command">git tag &lt;tag-name&gt;</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Creates a new tag.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git tag &lt;tag-name&gt;</code> creates a new tag at the current commit.</li>
+                </ul>
+                <strong>Output:</strong> New tag is created at the current commit.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 18:</div>
+            <pre class="command">git diff</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Shows changes between commits, commit and working tree, etc.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git diff</code> displays the differences between the working directory and the index.</li>
+                </ul>
+                <strong>Output:</strong> Diff output of changes.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 19:</div>
+            <pre class="command">git fetch</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Downloads objects and refs from another repository.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git fetch</code> retrieves updates from a remote repository without merging them.</li>
+                </ul>
+                <strong>Output:</strong> Updates from the remote repository are fetched.
+            </div>
+        </div>
+
+        <div class="command-box">
+            <div class="command-title">Command 20:</div>
+            <pre class="command">git rebase &lt;base-branch&gt;</pre><button class="copy-button">Copy Command</button>
+            <div class="command-desc">
+                Reapplies commits on top of another base tip.
+                <br><br>
+                <strong>Description:</strong>
+                <ul>
+                    <li><code>git rebase &lt;base-branch&gt;</code> moves or combines a sequence of commits to a new
+                        base
+                        commit.</li>
+                </ul>
+                <strong>Output:</strong> Commits are reapplied on top of the new base tip.
+            </div>
+        </div>
+    </section>
+
+    <!-- Thank You section -->
+
+    <section id="thank-you" style="text-align: center; padding: 20px; background-color: #f1f1f1">
+        <h2>Thank You</h2>
+        <p>
+            Thank you for visiting this website. If you have any questions or would
+            like to get in touch, please feel free to contact me.
+        </p>
+
+
+        <!-- Contact Links -->
+        <div class="contact heading_1" style="text-align: center; padding: 10px;color: white;">
+            <a href="mailto:rawatmadhurima@gmail.com" style="color: black"><i class="fas fa-envelope"></i> Email</a>
+            <a class="nav-link" href="tel:+9407959924" style="color: black"><i class="fa fa-phone"></i>
+                9407959924</a>
+            <a href="https://github.com/madhurimarawat" style="color: black"><i class="fab fa-github"></i>
+                GitHub</a>
+            &nbsp;
+            &nbsp;
+            <a href="https://www.linkedin.com/in/madhurima-rawat/" style="color: black"><i class="fab fa-linkedin"></i>
+                LinkedIn</a> &nbsp;
+            <a href="https://linktr.ee/madhurima_rawat" target="_blank" style="color: black"><i class="fa fa-link"></i>
+                LinkTree</a> &nbsp;
+            <a href="index.htm" style="color: black"><i class="fas fa-globe"></i> Portfolio</a>&nbsp;
+            <a href="https://madhurima-devfolio.streamlit.app/" style="color: black"><i class="fas fa-code"></i>
+                Devfolio</a>
+
+        </div>
+        <a class="tool-button-2" href="https://github.com/madhurimarawat/Semester-Notes">Visit on GitHub &nbsp;<i
+                class="fab fa-github"></i></a>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        &copy; 2024 Madhurima Rawat. All rights reserved.
+    </footer>
+
+
+</body>
+<script src="js/commands.js"></script>
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+</html>

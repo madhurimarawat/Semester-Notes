@@ -1,0 +1,159 @@
+<!-- 
+Author: Madhurima Rawat
+Date: 21 November 2024
+Brief: This HTML page provides a comparison between code comments, markdown, and Jupyter notebooks. 
+It explains their purposes, file extensions, syntax, and key differences across various criteria, such as execution capability, interactivity, and learning curve.
+The comparison table is designed to help users understand the distinct features and use cases for each method of documenting and presenting code.
+
+Additional Details:
+- Color Palette: The table uses a vibrant color scheme with shades like coral, teal, lavender, and light yellow to create a visually appealing and easy-to-read format.
+- Emoji Usage: Each column header and row criterion is accompanied by a relevant emoji (e.g., 💬 for code comments, 📝 for markdown, 📓 for Jupyter notebooks), making the table more engaging and visually interactive.
+- Design: The alternating row colors and contrasting header cells make the table easy to read, while a centered heading and footer give the page a balanced, clean look.
+- Purpose: The goal of this page is to compare different forms of documentation—code comments, markdown, and Jupyter notebooks—highlighting their strengths and ideal use cases in software development, data analysis, and collaborative research.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments, Markdown, and Notebooks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7ff;
+            margin: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF6347;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Comparison of Code Comments 💬, Markdown 📝, and Jupyter Notebooks 📓</h2>
+
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr style="background-color: #FF6347; color: white;">
+                    <th><strong>Criteria</strong> 📋</th>
+                    <th><strong>Code Comments</strong> 💬</th>
+                    <th><strong>Markdown</strong> 📝</th>
+                    <th><strong>Jupyter Notebook</strong> 📓</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: #FFB6A1;">
+                    <td style="background-color: #FF6347; color: white;"><strong>Purpose 📝</strong> </td>
+                    <td>Explain code logic, add notes within code files</td>
+                    <td>Create formatted documentation and text</td>
+                    <td>Combine code, text, and output for interactive documents</td>
+                </tr>
+                <tr style="background-color: #FFE4B5;">
+                    <td style="background-color: #FF4500; color: white;"><strong>File Extensions 🗂️</strong> </td>
+                    <td>.py, .js, .c, etc. (depends on the language)</td>
+                    <td>.md, .markdown</td>
+                    <td>.ipynb</td>
+                </tr>
+                <tr style="background-color: #FFDAB9;">
+                    <td style="background-color: #FF8C00; color: white;"><strong>Ownership 🏢</strong> </td>
+                    <td>General standard across programming languages</td>
+                    <td>Developed by John Gruber (open-source standard)</td>
+                    <td>Initially developed by Fernando Pérez and IPython team (open-source)</td>
+                </tr>
+                <tr style="background-color: #F5F5DC;">
+                    <td style="background-color: #FFD700; color: white;"><strong>Syntax Format 📄</strong> </td>
+                    <td>Language-specific comment symbols (` //`, `#`, `/* */`)</td>
+                    <td>Uses simple markup like `#`, `**`, `[]()`</td>
+                    <td>Uses Markdown for text cells and Python for code cells</td>
+                </tr>
+                <tr style="background-color: #F5F5F5;">
+                    <td style="background-color: #ADFF2F; color: white;"><strong>Text Formatting ✍️</strong> </td>
+                    <td>Limited to plain text</td>
+                    <td>Supports bold, italics, headings, etc.</td>
+                    <td>Supports full Markdown formatting with rendered output</td>
+                </tr>
+                <tr style="background-color: #F0FFF0;">
+                    <td style="background-color: #32CD32; color: white;"><strong>Execution Capability ⚙️</strong> </td>
+                    <td>No code execution</td>
+                    <td>No code execution</td>
+                    <td>Code cells can be executed, showing results inline</td>
+                </tr>
+                <tr style="background-color: #E0FFFF;">
+                    <td style="background-color: #20B2AA; color: white;"><strong>Interactivity 🔄</strong> </td>
+                    <td>Not interactive</td>
+                    <td>Not interactive</td>
+                    <td>Interactive; supports widgets, graphs, etc.</td>
+                </tr>
+                <tr style="background-color: #F0F8FF;">
+                    <td style="background-color: #20B2AA; color: white;"><strong>Use Cases 📚</strong> </td>
+                    <td>Inline code documentation</td>
+                    <td>README files, project documentation</td>
+                    <td>Data analysis, teaching, research papers</td>
+                </tr>
+                <tr style="background-color: #E6E6FA;">
+                    <td style="background-color: #1E90FF; color: white;"><strong>Visual Output 🌟</strong> </td>
+                    <td>Plain text only</td>
+                    <td>Styled text formatting</td>
+                    <td>Visual output such as graphs, images, and tables</td>
+                </tr>
+                <tr style="background-color: #FFEFD5;">
+                    <td style="background-color: #FF1493; color: white;"><strong>Integration 🔗</strong> </td>
+                    <td>Integrated into code editors and IDEs</td>
+                    <td>Supported by most text editors and Git platforms</td>
+                    <td>Requires Jupyter environment or compatible software</td>
+                </tr>
+                <tr style="background-color: #FFF5EE;">
+                    <td style="background-color: #FF69B4; color: white;"><strong>Learning Curve 🎓</strong> </td>
+                    <td>Minimal; simple to use</td>
+                    <td>Easy for basic formatting; more for advanced features</td>
+                    <td>Moderate; requires learning notebook environment</td>
+                </tr>
+                <tr style="background-color: #E6E6FA;">
+                    <td style="background-color: #DC143C; color: white;"><strong>Version Control 📊</strong> </td>
+                    <td>Managed as part of code</td>
+                    <td>Easy to version-control (e.g., GitHub)</td>
+                    <td>More complex to version-control due to JSON format</td>
+                </tr>
+                <tr style="background-color: #F0F8FF;">
+                    <td style="background-color: #8A2BE2; color: white;"><strong>Execution Environment 🏃</strong> </td>
+                    <td>Runs in the specific programming environment</td>
+                    <td>Not executable</td>
+                    <td>Executable in Jupyter Notebook, JupyterLab, or similar platforms</td>
+                </tr>
+                <tr style="background-color: #FFF0F5;">
+                    <td style="background-color: #8B008B; color: white;"><strong>Collaboration 🤝</strong> </td>
+                    <td>Shared as part of code reviews</td>
+                    <td>Easy to collaborate via platforms like GitHub</td>
+                    <td>Collaborative using JupyterHub and shared notebooks</td>
+                </tr>
+                <tr style="background-color: #F8F8FF;">
+                    <td style="background-color: #800080; color: white;"><strong>Examples of Use 💡</strong> </td>
+                    <td>`# This is a code comment`</td>
+                    <td>`# This is a Markdown heading`</td>
+                    <td>Markdown cell: `# Heading` + Code cell: `print("Hello")`</td>
+                </tr>
+                <tr style="background-color: #FFFACD;">
+                    <td style="background-color: #4B0082; color: white;"><strong>Link to GitHub Repo 🔗</strong> </td>
+                    <td>Used within codebase (e.g., [Sample Repo](#))</td>
+                    <td>Often found in [README files](https://github.com/)</td>
+                    <td>Common in [Jupyter repos](https://github.com/)</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+
+<br>
+<footer>
+    <p style="color: #FF6347; font-size: 20px;"><b>&copy; 2024 Madhurima Rawat. All rights reserved.</b></p>
+</footer>
+
+</html>
