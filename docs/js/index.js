@@ -2,7 +2,7 @@
 *********************************************************************************************
 * File: index.js
 * Author: Madhurima Rawat
-* Date: December 04, 2024
+* Date: December 07, 2024
 * Description: JavaScript file for study materials website, providing
 *              functionality to dynamically change color schemes based on user-selected seasons.
 * Version: 1.0
@@ -26,30 +26,19 @@
 
 // Run when DOM content is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
-  // Center align contentRow element using Flexbox
-  var contentRow = document.getElementById("contentRow_1");
-  if (contentRow) {
-    contentRow.classList.add("d-flex", "justify-content-center");
+  // Array of contentRow IDs to center align
+  var rowIds = ["contentRow_1", "contentRow_2", "contentRow_3", "contentRow_4"];
+
+  // Loop through each ID and add the Flexbox classes if the element exists
+  for (var i = 0; i < rowIds.length; i++) {
+    var contentRow = document.getElementById(rowIds[i]);
+    if (contentRow) {
+      // Add Flexbox classes to center align the content
+      contentRow.classList.add("d-flex", "justify-content-center");
+    }
   }
 });
 
-// Run when DOM content is fully loaded
-document.addEventListener("DOMContentLoaded", function () {
-  // Center align contentRow element using Flexbox
-  var contentRow = document.getElementById("contentRow_2");
-  if (contentRow) {
-    contentRow.classList.add("d-flex", "justify-content-center");
-  }
-});
-
-// Run when DOM content is fully loaded
-document.addEventListener("DOMContentLoaded", function () {
-  // Center align contentRow element using Flexbox
-  var contentRow = document.getElementById("contentRow_3");
-  if (contentRow) {
-    contentRow.classList.add("d-flex", "justify-content-center");
-  }
-});
 
 // Function to change colors based on the Color parameter
 function changeColor(Color) {
@@ -163,13 +152,19 @@ document.addEventListener("DOMContentLoaded", function () {
     'nlp-card': 'Natural Language Processing',
     'prml-card': 'Pattern Recognition and Machine Learning',
     'vt-card': 'Vocational Training',
+    'mp5-card': 'Minor Project 5 Sem',
 
     // 6 Semester Subjects
     'intern-card': 'Internship',
 
     // 7 Semester Subjects
     'agt-card': 'Algorithmic Gaming Theory',
-    'mis-card': 'Management Information System'
+    'bda-card': 'Big Data Analytics',
+    'dw-card': 'Data Wrangling',
+    'ip-card': 'Image Processing',
+    'mis-card': 'Management Information System',
+    'se-card': 'Software Engineering',
+    'mp7-card': 'Minor Project 7 Sem'
 
   };
 
