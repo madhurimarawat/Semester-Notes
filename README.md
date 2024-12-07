@@ -168,10 +168,12 @@ Semester-Notes/
 ├── 4 SEMESTER/               # 📁 Folder for the fourth semester
 │
 ├── 5 SEMESTER/               # 📁 Folder for the fifth semester
+│   ├── AI Subjects/          # 📁 AI Subjects folder inside 5th semester
 │
 ├── 6 SEMESTER/               # 📁 Folder for the sixth semester
 │
 ├── 7 SEMESTER/               # 📁 Folder for the seventh semester
+│   ├── AI Subjects/          # 📁 AI Subjects folder inside 7th semester
 │
 ├── SYLLABUS/                 # 📚 Folder containing the syllabus for all semesters
 │
