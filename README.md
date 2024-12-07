@@ -1,13 +1,19 @@
 # Semester-Notes
 
-![Presentation1](https://github.com/madhurimarawat/Semester-Notes/assets/105432776/784d77f1-41bf-46a3-b2f8-c185ec52aad7)
+![Illustration](https://github.com/madhurimarawat/Semester-Notes/assets/105432776/784d77f1-41bf-46a3-b2f8-c185ec52aad7)
 
 - This repository includes academic notes, study materials, and resources from B.Tech (Hons) in CSE, specializing in Artificial Intelligence and Data Science. <br><br>
 - It features question papers, proprietary study guides, and resources to support learning in these fields. <br><br>
 - This repository serves as a valuable resource to access well-structured and reliable study materials.<br><br>
 - Study Materials are organized according to semesters and subjects.
 
-[![GitHub repo size](https://img.shields.io/github/repo-size/madhurimarawat/Semester-Notes)](https://github.com/madhurimarawat/Semester-Notes)
+<p align="center">
+ <a href="https://github.com/madhurimarawat/Semester-Notes">
+    <img src="https://img.shields.io/github/repo-size/madhurimarawat/Semester-Notes" alt="GitHub repo size" height = "25px">
+  </a>
+</p>
+
+<a href = "https://madhurimarawat.github.io/NameBlock-Designer/"><img src ="docs/images/SEMESTER NOTES_NameBlock.png" title = "NameBlock" alt = "NameBlock"></a>
 
 ---
 ## Table Of Contents 📔 🔖 📑
@@ -82,6 +88,8 @@
   - To see lab programs, visit: [Pattern Recognition and Machine Learning](https://github.com/madhurimarawat/Pattern-Recognition-and-Machine-Learning) <br>
 6. [Vocational Training](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Vocational-Training)
   - To see the lab project, visit: [Vocational Training Project](https://github.com/madhurimarawat/Final-Internship-Project) <br>
+7. [Minor Project](https://github.com/madhurimarawat/CSVTU-GPT/tree/main/Documents)
+   - To see the lab project, visit: [Stock Market Prediction app](https://csvtu-gpt-question-answer.streamlit.app/).
 
 </details>
 
@@ -93,6 +101,23 @@
   - `Final_Presentation.pptx`: Final presentation of the project.
 - **Internship Report**:
   - `Final_Report.pdf`: Detailed report of the project work, methodologies, results, and conclusions.
+</details>
+
+<details>
+<summary>7 Semester</summary> <br>
+
+1. [**Algorithmic Gaming Theory**](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Algorithmic%20Gaming%20Theory) <br><br>
+2. [**Big Data Analytics**](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Big%20Data%20Analytics)
+- To see lab programs, visit: [Big Data Analytics Lab](https://github.com/madhurimarawat/Big-Data-Analytics) <br>
+3. [**Data Wrangling**](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Data%20Wrangling)
+- To see lab programs, visit: [Data Wrangling Lab](https://github.com/madhurimarawat/Data-Wrangling) <br>
+4. [**Image Processing**](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Image%20Processing) <br><br>
+5. [**Management Information System**](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Management%20Information%20System) <br><br>
+6. [**Software Engineering**](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Software%20Engineering)
+- To see lab programs, visit: [Software Engineering Lab](https://github.com/madhurimarawat/Software-Engineering) <br>
+7. [Minor Project](https://github.com/madhurimarawat/Stock-Market-Prediction/tree/main/Documents)
+- To see the lab project, visit: [Stock Market Prediction app](https://stock-market-numerical-text-hybrid-prediction.streamlit.app/).
+
 </details>
 
 <details>
@@ -145,6 +170,8 @@ Semester-Notes/
 ├── 5 SEMESTER/               # 📁 Folder for the fifth semester
 │
 ├── 6 SEMESTER/               # 📁 Folder for the sixth semester
+│
+├── 7 SEMESTER/               # 📁 Folder for the seventh semester
 │
 ├── SYLLABUS/                 # 📚 Folder containing the syllabus for all semesters
 │
