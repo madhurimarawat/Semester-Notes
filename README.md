@@ -77,6 +77,8 @@
 <details>
 <summary>5 Semester</summary> <br>
 
+**Datascience Subjects:**
+
 1. [Computational Complexity](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Computational-Complexity) <br><br>
 2. [Cryptography and Network Security](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Cryptography-and-Network-Security)
   - To see lab programs, visit: [Cryptography and Network Security Lab](https://github.com/madhurimarawat/Cryptography-and-Network-Security) <br>
@@ -90,6 +92,10 @@
   - To see the lab project, visit: [Vocational Training Project](https://github.com/madhurimarawat/Final-Internship-Project) <br>
 7. [Minor Project](https://github.com/madhurimarawat/CSVTU-GPT/tree/main/Documents)
    - To see the lab project, visit: [Stock Market Prediction app](https://csvtu-gpt-question-answer.streamlit.app/).
+
+**Artificial Intelligence Subjects:**
+1. [Artificial Neural Networks](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/AI%20Subjects/Artificial%20Neural%20Networks) <br><br>
+2. [Predictive Modelling and Analytics](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/AI%20Subjects/Predictive%20Modelling%20and%20Analytics)
 
 </details>
 
@@ -106,6 +112,8 @@
 <details>
 <summary>7 Semester</summary> <br>
 
+**Datascience Subjects:**
+
 1. [**Algorithmic Gaming Theory**](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Algorithmic%20Gaming%20Theory) <br><br>
 2. [**Big Data Analytics**](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Big%20Data%20Analytics)
 - To see lab programs, visit: [Big Data Analytics Lab](https://github.com/madhurimarawat/Big-Data-Analytics) <br>
@@ -117,6 +125,10 @@
 - To see lab programs, visit: [Software Engineering Lab](https://github.com/madhurimarawat/Software-Engineering) <br>
 7. [Minor Project](https://github.com/madhurimarawat/Stock-Market-Prediction/tree/main/Documents)
 - To see the lab project, visit: [Stock Market Prediction app](https://stock-market-numerical-text-hybrid-prediction.streamlit.app/).
+
+**Artificial Intelligence Subjects:**
+1. [Business Intelligence and Analytics](https://github.com/madhurimarawat/Semester-Notes/tree/main/7%20SEMESTER/AI%20Subjects/Business%20Intelligence%20and%20Analytics) <br><br>
+2. [Intelligent System and Robotics](https://github.com/madhurimarawat/Semester-Notes/tree/main/7%20SEMESTER/AI%20Subjects/Intelligen%20%20System%20and%20Robotics)
 
 </details>
 
