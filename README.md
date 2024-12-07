@@ -77,7 +77,7 @@
 <details>
 <summary>5 Semester</summary> <br>
 
-**Datascience Subjects:**
+**Data Science Subjects:**
 
 1. [Computational Complexity](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Computational-Complexity) <br><br>
 2. [Cryptography and Network Security](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Cryptography-and-Network-Security)
@@ -112,7 +112,7 @@
 <details>
 <summary>7 Semester</summary> <br>
 
-**Datascience Subjects:**
+**Data Science Subjects:**
 
 1. [**Algorithmic Gaming Theory**](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Algorithmic%20Gaming%20Theory) <br><br>
 2. [**Big Data Analytics**](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Big%20Data%20Analytics)
