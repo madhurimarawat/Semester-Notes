@@ -1,0 +1,312 @@
+<!-- 
+Author: Madhurima Rawat
+Date: 21 November 2024
+Brief: This webpage presents a comprehensive Gantt chart example, demonstrating the use of overlapping tasks and their durations across multiple weeks. The chart visually represents how different tasks within a project can run concurrently over a 5-week period. Each task is associated with a color-coded bar indicating its timeline, and detailed explanations are provided for each task's significance and timeline.
+
+Additional Details:
+- Color Palette: The chart uses a blend of blue, red, green, yellow, and other distinct colors for each task to differentiate them easily and enhance visual appeal.
+- Task Duration: The duration of each task is represented by the width of the bars, with a small text label showing the number of weeks each task spans.
+- Task Explanations: Below the chart, a detailed list explains the purpose of each task, such as planning, design, development, testing, and documentation.
+- Design: The chart is designed with a grid layout for both days and weeks, and the bars are positioned in such a way to illustrate overlapping tasks, creating a visual timeline of the project.
+- Purpose: The goal of this Gantt chart is to help users understand how project timelines are structured, how overlapping tasks are handled, and how they can use such charts for project management in real-world scenarios.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Gantt Chart with Overlapping Tasks</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .description {
+            margin-bottom: 30px;
+        }
+
+        .gantt-chart {
+            display: grid;
+            grid-template-columns: repeat(25, 1fr);
+            gap: 2px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+        }
+
+        .day,
+        .task {
+            border: 1px solid #ddd;
+            /* Adds border to each day and task cell */
+            padding: 5px;
+            text-align: center;
+            font-size: 10px;
+
+        }
+
+        /* White color text for task cells */
+        .task {
+            color: white;
+        }
+
+        .week-label {
+            grid-column: span 5;
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        .task-row {
+            display: grid;
+            grid-template-columns: repeat(25, 1fr);
+            gap: 2px;
+            border: 1px solid #ddd;
+            /* Adds grid lines for the task rows */
+
+        }
+
+        .task-detail {
+            margin-top: 20px;
+
+        }
+
+        .task-detail ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .task-detail li {
+            margin-bottom: 5px;
+            padding: 5px;
+            background-color: #e8f8f5;
+            border-left: 4px solid #3498db;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .description {
+            margin-bottom: 30px;
+        }
+
+        .gantt-chart_1 {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            gap: 10px;
+        }
+
+        .task-label {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+
+        .bar {
+            height: 30px;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .bar::before {
+            content: attr(data-duration);
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            font-size: 12px;
+            color: #fff;
+        }
+
+        .bar-1 {
+            background-color: #3498db;
+            width: 40%;
+            /* Adjust to represent duration */
+        }
+
+        .bar-2 {
+            background-color: #e74c3c;
+            width: 50%;
+            /* Adjust to represent duration */
+        }
+
+        .bar-3 {
+            background-color: #2ecc71;
+            width: 70%;
+            /* Adjust to represent duration */
+        }
+
+        .bar-4 {
+            background-color: #f1c40f;
+            width: 60%;
+            /* Adjust to represent duration */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Understanding Gantt Charts</h1>
+        <div class="description">
+            <p>A Gantt chart is a type of bar chart that represents a project schedule. It displays the start and finish
+                dates of the various tasks or phases of a project. Gantt charts are widely used in project management to
+                visualize the project timeline, helping teams to plan, coordinate, and track specific tasks.</p>
+        </div>
+
+        <h2>Sample Gantt Chart</h2>
+        <div class="gantt-chart_1">
+            <div class="task-label">Task 1: Research</div>
+            <div class="bar bar-1" data-duration="2 weeks"></div>
+
+            <div class="task-label">Task 2: Design</div>
+            <div class="bar bar-2" data-duration="3 weeks"></div>
+
+            <div class="task-label">Task 3: Development</div>
+            <div class="bar bar-3" data-duration="5 weeks"></div>
+
+            <div class="task-label">Task 4: Testing</div>
+            <div class="bar bar-4" data-duration="4 weeks"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Comprehensive Gantt Chart with Overlapping Tasks</h1>
+        <div class="description">
+            <p>This example showcases a Gantt chart with detailed day labels and overlapping tasks, illustrating
+                concurrent project timelines and their duration.</p>
+        </div>
+
+        <h2>5-Week Gantt Chart Overview</h2>
+        <div class="gantt-chart">
+            <!-- Week Labels -->
+            <div class="week-label" style="grid-column: 1 / span 5;">Week 1</div>
+            <div class="week-label" style="grid-column: 6 / span 5;">Week 2</div>
+            <div class="week-label" style="grid-column: 11 / span 5;">Week 3</div>
+            <div class="week-label" style="grid-column: 16 / span 5;">Week 4</div>
+            <div class="week-label" style="grid-column: 21 / span 5;">Week 5</div>
+        </div>
+
+        <!-- Days Row -->
+        <div class="task-row">
+            <div class="day">Day 1</div>
+            <div class="day">Day 2</div>
+            <div class="day">Day 3</div>
+            <div class="day">Day 4</div>
+            <div class="day">Day 5</div>
+            <div class="day">Day 6</div>
+            <div class="day">Day 7</div>
+            <div class="day">Day 8</div>
+            <div class="day">Day 9</div>
+            <div class="day">Day 10</div>
+            <div class="day">Day 11</div>
+            <div class="day">Day 12</div>
+            <div class="day">Day 13</div>
+            <div class="day">Day 14</div>
+            <div class="day">Day 15</div>
+            <div class="day">Day 16</div>
+            <div class="day">Day 17</div>
+            <div class="day">Day 18</div>
+            <div class="day">Day 19</div>
+            <div class="day">Day 20</div>
+            <div class="day">Day 21</div>
+            <div class="day">Day 22</div>
+            <div class="day">Day 23</div>
+            <div class="day">Day 24</div>
+            <div class="day">Day 25</div>
+        </div>
+
+        <!-- Task Rows -->
+        <div class="task-row">
+            <div class="task" style="grid-column: 1 / span 1; background-color: #3498db;">Task A</div>
+        </div>
+        <div class="task-row">
+            <div class="task" style="grid-column: 1 / span 2; background-color: #e74c3c;">Task B</div>
+        </div>
+        <div class="task-row">
+            <div class="task" style="grid-column: 2 / span 3; background-color: #2ecc71;">Task C</div>
+        </div>
+        <div class="task-row">
+            <div class="task" style="grid-column: 5 / span 4; background-color: #f1c40f;">Task D</div>
+        </div>
+        <div class="task-row">
+            <div class="task" style="grid-column: 8 / span 5; background-color: #8e44ad;">Task E</div>
+        </div>
+        <div class="task-row">
+            <div class="task" style="grid-column: 10 / span 3; background-color: #1abc9c;">Task F</div>
+        </div>
+        <div class="task-row">
+            <div class="task" style="grid-column: 13 / span 5; background-color: #34495e;">Task G</div>
+        </div>
+        <div class="task-row">
+            <div class="task" style="grid-column: 17 / span 4; background-color: #d35400;">Task H</div>
+        </div>
+        <div class="task-row">
+            <div class="task" style="grid-column: 20 / span 5; background-color: #2980b9;">Task I</div>
+        </div>
+        <div class="task-row">
+            <div class="task" style="grid-column: 22 / span 3; background-color: #9b59b6;">Task J</div>
+        </div>
+        <div class="task-row">
+            <div class="task" style="grid-column: 24 / span 2; background-color: #e67e22;">Task K</div>
+        </div>
+
+        <div class="task-detail">
+            <h2>Task Explanations</h2>
+            <ul>
+                <li><strong>Task A:</strong> Initial setup and kick-off (Day 1)</li>
+                <li><strong>Task B:</strong> Planning phase (Days 1-2)</li>
+                <li><strong>Task C:</strong> Design discussions (Days 2-4)</li>
+                <li><strong>Task D:</strong> Development start (Days 5-8)</li>
+                <li><strong>Task E:</strong> Mid-project review (Days 8-12)</li>
+                <li><strong>Task F:</strong> Early testing phase (Days 10-12)</li>
+                <li><strong>Task G:</strong> Main development (Days 13-17)</li>
+                <li><strong>Task H:</strong> Bug fixing (Days 17-20)</li>
+                <li><strong>Task I:</strong> Final adjustments (Days 20-25)</li>
+                <li><strong>Task J:</strong> Presentation preparation (Days 22-24)</li>
+                <li><strong>Task K:</strong> Documentation completion (Days 24-25)</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+<br>
+<footer>
+    <p style="color: #2c3e50; font-size: 20px;"><b>&copy; 2024 Madhurima Rawat. All rights reserved.</b></p>
+</footer>
+
+
+</html>

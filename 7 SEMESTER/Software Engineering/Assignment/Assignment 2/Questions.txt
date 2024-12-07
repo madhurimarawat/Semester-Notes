@@ -1,0 +1,8 @@
+Q1 Difference between function and services in software systems.
+
+
+Q2 Make use case diagram/class diagram.
+ 
+Tool Link: 
+
+https://online.visual-paradigm.com/

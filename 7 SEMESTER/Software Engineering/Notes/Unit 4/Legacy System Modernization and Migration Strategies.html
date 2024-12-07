@@ -1,0 +1,184 @@
+<!-- 
+Author: Madhurima Rawat
+Date: 21 November 2024
+Brief: This table provides a comparison of different legacy system modernization strategies, including encapsulation, rehosting, refactoring, rebuilding, and more.
+It outlines the key properties such as strategy name, description, when to use, and real-life examples. This comparison helps users understand the various approaches to modernizing and migrating legacy systems.
+
+Additional Details:
+- Color Palette: The table uses a pastel color scheme with alternating shades like misty rose, lavender, and light teal to ensure the content is visually appealing and easy to follow.
+- Emoji Usage: Each strategy name is paired with a relevant emoji (e.g., 🧩 for Encapsulation, ☁️ for Rehosting, 🖥️ for Replatforming, 🔧 for Refactoring), enhancing the table's engagement and accessibility.
+- Design: The alternating row colors make the table easy to read, with highlighted header cells for clear differentiation. The design is simple yet effective, ensuring that the information is presented in a digestible format.
+- Purpose: The goal of this table is to provide a quick and insightful comparison of various legacy system modernization strategies. It helps businesses and developers understand the differences, use cases, and scenarios for each strategy, enabling informed decision-making for system modernization.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy System Modernization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7ff;
+            margin: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF6347;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #FF6347 !important;
+            /* Tomato */
+            color: #fff;
+        }
+
+        tr:nth-child(2) th,
+        tr:nth-child(2) td {
+            background-color: #ffe4e1;
+            /* Misty Rose */
+        }
+
+        tr:nth-child(3) th,
+        tr:nth-child(3) td {
+            background-color: #e6e6fa;
+            /* Muted Pink */
+        }
+
+        tr:nth-child(4) th,
+        tr:nth-child(4) td {
+            background-color: #e0ffff;
+            /* Lavender */
+        }
+
+        tr:nth-child(5) th,
+        tr:nth-child(5) td {
+            background-color: #ffebcd;
+            /* Cyan */
+        }
+
+        tr:nth-child(6) th,
+        tr:nth-child(6) td {
+            background-color: #ffcccb;
+            /* Lemon */
+        }
+
+        tr:nth-child(7) th,
+        tr:nth-child(7) td {
+            background-color: #d0f0c0;
+            /* Coral */
+        }
+
+        tr:nth-child(8) th,
+        tr:nth-child(8) td {
+            background-color: #d0f0c0;
+            /* Teal */
+        }
+
+        tr:nth-child(9) th,
+        tr:nth-child(9) td {
+            background-color: #d0f0c0;
+            /* Lemon Chiffon */
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+
+        /* Last Child */
+        tr:last-child th,
+        tr:last-child td {
+            background-color: #FFFEA3;
+            /* Light Teal */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Legacy System Modernization & Migration Strategies 🛠️</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Strategy 🚀</th>
+                <th>Description 📝</th>
+                <th>When to Use 📌</th>
+                <th>Examples/Scenarios 📋</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Encapsulation 🧩</td>
+                <td>Wrap the legacy system with modern APIs or web services to add new functionality.</td>
+                <td>When the legacy system's core functionality is valuable but lacks flexibility or integration.</td>
+                <td>A bank exposes legacy core banking functions through REST APIs for mobile banking apps.</td>
+            </tr>
+            <tr>
+                <td>Rehosting (Lift and Shift) ☁️</td>
+                <td>Move the legacy system to a new environment (e.g., cloud) with minimal changes.</td>
+                <td>When the hardware is outdated or costly but the software meets business needs.</td>
+                <td>Migrating an on-premises CRM system to AWS or Azure without code changes.</td>
+            </tr>
+            <tr>
+                <td>Replatforming 🖥️</td>
+                <td>Migrate to a modern platform with minor optimizations to improve performance.</td>
+                <td>When a balance between minimal disruption and the need for optimization is required.</td>
+                <td>Moving a legacy app to a modern OS while adopting cloud-managed services.</td>
+            </tr>
+            <tr>
+                <td>Refactoring 🔧</td>
+                <td>Rework and improve the existing codebase to enhance maintainability and scalability.</td>
+                <td>When technical debt is high, but core functionality is still valuable.</td>
+                <td>Refactoring a monolithic app into microservices for scalability and performance.</td>
+            </tr>
+            <tr>
+                <td>Rebuilding 🌟</td>
+                <td>Rewrite the system from scratch using modern technologies and best practices.</td>
+                <td>When the current system is outdated, hard to maintain, and no longer meets business needs.</td>
+                <td>Redesigning an ERP system with cloud-native architecture.</td>
+            </tr>
+            <tr>
+                <td>Replacement 🔄</td>
+                <td>Replace the legacy system with an off-the-shelf or custom-built solution.</td>
+                <td>When rebuilding or refactoring is too costly, and business needs are met by available solutions.
+                </td>
+                <td>Replacing a legacy HR system with a modern SaaS-based solution.</td>
+            </tr>
+            <tr>
+                <td>Retiring 🛑</td>
+                <td>Phase out the legacy system without replacement.</td>
+                <td>When the system is no longer needed or its functionality is duplicated elsewhere.</td>
+                <td>Decommissioning a billing system after migrating to a modern ERP.</td>
+            </tr>
+            <tr>
+                <td>Hybrid Approach 🔀</td>
+                <td>Combine multiple strategies for modernization, such as rehosting while refactoring components.</td>
+                <td>When parts of the system have different modernization requirements.</td>
+                <td>Rehosting a legacy database while rebuilding the user-facing application.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<br>
+<footer>
+    <p style="color: #FF6347; font-size: 20px;"><b>&copy; 2024 Madhurima Rawat. All rights reserved.</b></p>
+</footer>
+
+</html>
