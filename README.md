@@ -50,12 +50,12 @@
 <summary>3 Semester</summary> <br>
 
 1. [Analysis and Design of Algorithm](https://github.com/madhurimarawat/Semester-Notes/tree/main/3%20SEMESTER/Analysis-and-Design-of-Algorithm)
-  - To see lab programs, visit: [Analysis and Design of Algorithm using Python Lab](https://github.com/madhurimarawat/Analysis-and-Design-of-Algorithm-using-python) <br>
+ - To see lab programs, visit: [Analysis and Design of Algorithm using Python Lab](https://github.com/madhurimarawat/Analysis-and-Design-of-Algorithm-using-python) <br>
 2. [Computer Organization and Architecture](https://github.com/madhurimarawat/Semester-Notes/tree/main/3%20SEMESTER/Computer-Organization-and-Architecture) <br><br>
 3. [Database Management System](https://github.com/madhurimarawat/Semester-Notes/tree/main/3%20SEMESTER/Database-Management-System) <br><br>
 4. [Discrete Structure](https://github.com/madhurimarawat/Semester-Notes/tree/main/3%20SEMESTER/Discrete-Structure) <br><br>
 5. [Independent Project](https://github.com/madhurimarawat/Semester-Notes/tree/main/3%20SEMESTER/Independent%20Project)
-  - To see the project, visit: [Library Management System](https://github.com/madhurimarawat/Library-Management-System) <br>
+- To see the project, visit: [Library Management System](https://github.com/madhurimarawat/Library-Management-System) <br>
 6. [Probability and Statistics](https://github.com/madhurimarawat/Semester-Notes/tree/main/3%20SEMESTER/Probability-and-Statistics)
 
 </details>
@@ -66,10 +66,10 @@
 1. [Artificial Intelligence Principles and Applications](https://github.com/madhurimarawat/Semester-Notes/tree/main/4%20SEMESTER/Artificial-Intelligence-Principles-and-Applications) <br><br>
 2. [Computer Network](https://github.com/madhurimarawat/Semester-Notes/tree/main/4%20SEMESTER/Computer-Network) <br><br>
 3. [Data Visualization](https://github.com/madhurimarawat/Semester-Notes/tree/main/4%20SEMESTER/Data-Visualization)
-  - To see lab programs, visit: [Data Visualization using Python Lab](https://github.com/madhurimarawat/Data-Visualization-using-python) <br>
+- To see lab programs, visit: [Data Visualization using Python Lab](https://github.com/madhurimarawat/Data-Visualization-using-python) <br>
 4. [Operating System](https://github.com/madhurimarawat/Semester-Notes/tree/main/4%20SEMESTER/Operating-System) <br><br>
 5. [R for Data Science](https://github.com/madhurimarawat/Semester-Notes/tree/main/4%20SEMESTER/R-for-Datascience)
-  - To see lab programs, visit: [R for Data Science Lab](https://github.com/madhurimarawat/R-for-Datascience) <br>
+- To see lab programs, visit: [R for Data Science Lab](https://github.com/madhurimarawat/R-for-Datascience) <br>
 6. [Theory of Computation](https://github.com/madhurimarawat/Semester-Notes/tree/main/4%20SEMESTER/Theory-of-Computation)
 
 </details>
@@ -81,17 +81,17 @@
 
 1. [Computational Complexity](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Computational-Complexity) <br><br>
 2. [Cryptography and Network Security](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Cryptography-and-Network-Security)
-  - To see lab programs, visit: [Cryptography and Network Security Lab](https://github.com/madhurimarawat/Cryptography-and-Network-Security) <br>
+- To see lab programs, visit: [Cryptography and Network Security Lab](https://github.com/madhurimarawat/Cryptography-and-Network-Security) <br>
 3. [Intelligent Data Analysis](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Intelligent-Data-Analysis)
   - To see lab programs, visit: [Intelligent Data Analysis Lab](https://github.com/madhurimarawat/Intelligent-Data-Analysis) <br>
 4. [Natural Language Processing](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Natural-Language-Processing)
-  - To see lab programs, visit: [Natural Language Processing in Python Lab](https://github.com/madhurimarawat/Natural-Language-Processing-in-Python) <br>
+- To see lab programs, visit: [Natural Language Processing in Python Lab](https://github.com/madhurimarawat/Natural-Language-Processing-in-Python) <br>
 5. [Pattern Recognition and Machine Learning](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Pattern-Recognition-and-Machine-Learning)
-  - To see lab programs, visit: [Pattern Recognition and Machine Learning Lab](https://github.com/madhurimarawat/Pattern-Recognition-and-Machine-Learning) <br>
+- To see lab programs, visit: [Pattern Recognition and Machine Learning Lab](https://github.com/madhurimarawat/Pattern-Recognition-and-Machine-Learning) <br>
 6. [Vocational Training](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Vocational-Training)
-  - To see the lab project, visit: [Vocational Training Project](https://github.com/madhurimarawat/Final-Internship-Project) <br>
+- To see the lab project, visit: [Vocational Training Project](https://github.com/madhurimarawat/Final-Internship-Project) <br>
 7. [Minor Project](https://github.com/madhurimarawat/CSVTU-GPT/tree/main/Documents)
-   - To see the lab project, visit: [Stock Market Prediction app](https://csvtu-gpt-question-answer.streamlit.app/).
+- To see the lab project, visit: [Stock Market Prediction app](https://csvtu-gpt-question-answer.streamlit.app/).
 
 **Artificial Intelligence Subjects:**
 1. [Artificial Neural Networks](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/AI%20Subjects/Artificial%20Neural%20Networks) <br><br>
@@ -124,7 +124,7 @@
 6. [**Software Engineering**](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Software%20Engineering)
 - To see lab programs, visit: [Software Engineering Lab](https://github.com/madhurimarawat/Software-Engineering) <br>
 7. [Minor Project](https://github.com/madhurimarawat/Stock-Market-Prediction/tree/main/Documents)
-- To see the lab project, visit: [Stock Market Prediction app](https://stock-market-numerical-text-hybrid-prediction.streamlit.app/).
+- To see the lab project, visit: [Stock Market Prediction App](https://stock-market-numerical-text-hybrid-prediction.streamlit.app/).
 
 **Artificial Intelligence Subjects:**
 1. [Business Intelligence and Analytics](https://github.com/madhurimarawat/Semester-Notes/tree/main/7%20SEMESTER/AI%20Subjects/Business%20Intelligence%20and%20Analytics) <br><br>
