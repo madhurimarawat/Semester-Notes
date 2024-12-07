@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
     'dbms-card': 'Database Management System',
     'ds-card': 'Discrete Structure',
     'ps-card': 'Probability and Statistics',
-    'ip-card': 'Independent Project',
+    'ipr-card': 'Independent Project',
 
     // 4 Semester Subjects
     'ai-card': 'Artificial Intelligence Principles and Applications',
