@@ -37,6 +37,6 @@ Before making a contribution, please ensure the following:
    - If you are adding notes related to the subject, ensure that the **file names** do not conflict with existing ones.
    - Use the format `name_branch_year` for naming notes files.
    - Make sure that the notes are placed in the appropriate **folder** that aligns with the content.
-   - If you are unsure about the appropriate folder or have any issues, feel free to post in the [Discussions](https://github.com/madhurimarawat/Semester-Notes/Discussions) or [Issues](https://github.com/madhurimarawat/Semester-Notes/Issues) section to ask for guidance.
+   - If you are unsure about the appropriate folder or have any issues, feel free to post in the [Discussions](https://github.com/madhurimarawat/Semester-Notes/discussions) or [Issues](https://github.com/madhurimarawat/Semester-Notes/issues) section to ask for guidance.
 
 Thank you for your contributions! 🎉
