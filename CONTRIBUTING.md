@@ -15,8 +15,28 @@ Before making a contribution, please ensure the following:
    - Make sure your code follows the project’s coding standards and guidelines.
    - Add appropriate comments and documentation where necessary.
 
-3. **Relevant Notes** 📝:
+3. **File Naming Conventions** 📂:
+   - **Exam Questions**: If you are adding previous year questions, ensure the file name follows this format:
+     ```
+     Exam_name_Year_Branch.pdf
+     ```
+     Examples:
+     - `Class_Test_1_AI_2023.pdf`
+     - `Annual_Examination_AI_2023.pdf`
+     - `Class_Test_1_DS_2023.pdf`
+
+   - **Syllabi**: For syllabi, use this format:
+     ```
+     Semester_Branch_Year_Syllabus.pdf
+     ```
+     Examples:
+     - `5th_Semester_AI_2023_Syllabus.pdf`
+     - `2nd_Semester_DS_2023_Syllabus.pdf`
+
+4. **Relevant Notes** 📝:
    - If you are adding notes related to the subject, ensure that the **file names** do not conflict with existing ones.
+   - Use the format `name_branch_year` for naming notes files.
    - Make sure that the notes are placed in the appropriate **folder** that aligns with the content.
+   - If you are unsure about the appropriate folder or have any issues, feel free to post in the [Discussions](https://github.com/madhurimarawat/Semester-Notes/Discussions) or [Issues](https://github.com/madhurimarawat/Semester-Notes/Issues) section to ask for guidance.
 
 Thank you for your contributions! 🎉
