@@ -39,4 +39,10 @@ Before making a contribution, please ensure the following:
    - Make sure that the notes are placed in the appropriate **folder** that aligns with the content.
    - If you are unsure about the appropriate folder or have any issues, feel free to post in the [Discussions](https://github.com/madhurimarawat/Semester-Notes/discussions) or [Issues](https://github.com/madhurimarawat/Semester-Notes/issues) section to ask for guidance.
 
+---
+
+## Review the Pull Request Template 📜
+
+Before creating a pull request, please make sure to visit the [pull request template](https://github.com/madhurimarawat/Semester-Notes/blob/main/.github/PULL_REQUEST_TEMPLATE/PULL_REQUEST_TEMPLATE.md) to understand the required information and structure. This will help ensure that your pull request is complete and easy to review.
+
 Thank you for your contributions! 🎉
