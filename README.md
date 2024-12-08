@@ -140,14 +140,6 @@
 
 </details>
 
-### Data Science and Artificial Intelligence Subjects
-
-During the **1st to 4th semesters**, both branches followed a **common curriculum**, ensuring a foundational understanding of core subjects. 
-
-From the **5th to 7th semesters**, the curriculum began to diversify:  
-- **5th and 7th semesters:** Two subjects were tailored to individual tracks, reflecting specialized interests. I have detailed these differences above, along with separate **question papers** and **syllabi** for both branches (AI and DS).  
-- **6th semester:** Focused entirely on an **internship**, where students selected their projects, institutions, and domains independently.  
-
 <details>
   <summary>Syllabus</summary> <br>
   
@@ -182,6 +174,14 @@ From the **5th to 7th semesters**, the curriculum began to diversify:
   - Responsive design ensures the portfolio looks great and functions well on all devices and screen sizes.
   - A dropdown menu allows dynamic color changes with options for Autumn, Summer, Rainy, and Winter. Upon selection, the website color changes instantly. Refreshing the page restores the default color scheme.
 </details>
+
+### Data Science and Artificial Intelligence Subjects
+
+During the **1st to 4th semesters**, both branches followed a **common curriculum**, ensuring a foundational understanding of core subjects. 
+
+From the **5th to 7th semesters**, the curriculum began to diversify:  
+- **5th and 7th semesters:** Two subjects were tailored to individual tracks, reflecting specialized interests. I have detailed these differences above, along with separate **question papers** and **syllabi** for both branches (AI and DS).  
+- **6th semester:** Focused entirely on an **internship**, where students selected their projects, institutions, and domains independently.  
 
 ## Directory Structure 🗃️
 
