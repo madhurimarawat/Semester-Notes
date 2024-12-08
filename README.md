@@ -20,6 +20,8 @@
 <details>
 <summary>1 Semester</summary> <br>
 
+**Data Science and Artificial Intelligence Subjects:**
+
 1. [Engineering Mathematics I](https://github.com/madhurimarawat/Semester-Notes/tree/main/1%20SEMESTER/Engineering-Mathematics-I) <br><br>
 2. [Environmental Science](https://github.com/madhurimarawat/Semester-Notes/tree/main/1%20SEMESTER/Environmental-Science) <br><br>
 3. [Foundations of Electronics Engineering](https://github.com/madhurimarawat/Semester-Notes/tree/main/1%20SEMESTER/Foundations-of-Electronics-Engineering) <br><br>
@@ -33,6 +35,8 @@
 
 <details>
 <summary>2 Semester</summary> <br>
+
+**Data Science and Artificial Intelligence Subjects:**
 
 1. [Data Structure Using C](https://github.com/madhurimarawat/Semester-Notes/tree/main/2%20SEMESTER/Data-Structure-Using-C)
   - To see lab programs, visit: [Data Structure Using C Lab](https://github.com/madhurimarawat/Data-structure-using-C) <br>
@@ -49,6 +53,8 @@
 <details>
 <summary>3 Semester</summary> <br>
 
+**Data Science and Artificial Intelligence Subjects:**
+
 1. [Analysis and Design of Algorithm](https://github.com/madhurimarawat/Semester-Notes/tree/main/3%20SEMESTER/Analysis-and-Design-of-Algorithm)
  - To see lab programs, visit: [Analysis and Design of Algorithm using Python Lab](https://github.com/madhurimarawat/Analysis-and-Design-of-Algorithm-using-python) <br>
 2. [Computer Organization and Architecture](https://github.com/madhurimarawat/Semester-Notes/tree/main/3%20SEMESTER/Computer-Organization-and-Architecture) <br><br>
@@ -62,6 +68,8 @@
 
 <details>
 <summary>4 Semester</summary> <br>
+
+**Data Science and Artificial Intelligence Subjects:**
 
 1. [Artificial Intelligence Principles and Applications](https://github.com/madhurimarawat/Semester-Notes/tree/main/4%20SEMESTER/Artificial-Intelligence-Principles-and-Applications) <br><br>
 2. [Computer Network](https://github.com/madhurimarawat/Semester-Notes/tree/main/4%20SEMESTER/Computer-Network) <br><br>
@@ -131,6 +139,14 @@
 2. [Intelligent System and Robotics](https://github.com/madhurimarawat/Semester-Notes/tree/main/7%20SEMESTER/AI%20Subjects/Intelligen%20%20System%20and%20Robotics)
 
 </details>
+
+### Data Science and Artificial Intelligence Subjects
+
+During the **1st to 4th semesters**, both branches followed a **common curriculum**, ensuring a foundational understanding of core subjects. 
+
+From the **5th to 7th semesters**, the curriculum began to diversify:  
+- **5th and 7th semesters:** Two subjects were tailored to individual tracks, reflecting specialized interests. I have detailed these differences above, along with separate **question papers** and **syllabi** for both branches (AI and DS).  
+- **6th semester:** Focused entirely on an **internship**, where students selected their projects, institutions, and domains independently.  
 
 <details>
   <summary>Syllabus</summary> <br>
