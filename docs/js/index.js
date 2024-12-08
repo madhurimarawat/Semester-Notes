@@ -2,7 +2,7 @@
 *********************************************************************************************
 * File: index.js
 * Author: Madhurima Rawat
-* Date: December 07, 2024
+* Date: December 08, 2024
 * Description: JavaScript file for study materials website, providing
 *              functionality to dynamically change color schemes based on user-selected seasons.
 * Version: 1.0
@@ -27,7 +27,7 @@
 // Run when DOM content is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
   // Array of contentRow IDs to center align
-  var rowIds = ["contentRow_1", "contentRow_2", "contentRow_3", "contentRow_4"];
+  var rowIds = ["centerRow_1", "centerRow_2"];
 
   // Loop through each ID and add the Flexbox classes if the element exists
   for (var i = 0; i < rowIds.length; i++) {
@@ -152,6 +152,8 @@ document.addEventListener("DOMContentLoaded", function () {
     'nlp-card': 'Natural Language Processing',
     'prml-card': 'Pattern Recognition and Machine Learning',
     'vt-card': 'Vocational Training',
+    'ann-card': 'Artificial Neural Networks',
+    'pma-card': 'Predictive Modelling and Analytics',
     'mp5-card': 'Minor Project 5 Sem',
 
     // 6 Semester Subjects
@@ -164,6 +166,8 @@ document.addEventListener("DOMContentLoaded", function () {
     'ip-card': 'Image Processing',
     'mis-card': 'Management Information System',
     'se-card': 'Software Engineering',
+    'bia-card': 'Business Intelligence and Analytics',
+    'isr-card': 'Intelligent System and Robotics',
     'mp7-card': 'Minor Project 7 Sem'
 
   };
