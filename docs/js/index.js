@@ -2,7 +2,7 @@
 *********************************************************************************************
 * File: index.js
 * Author: Madhurima Rawat
-* Date: December 08, 2024
+* Date: January 09, 2025
 * Description: JavaScript file for study materials website, providing
 *              functionality to dynamically change color schemes based on user-selected seasons.
 * Version: 1.0
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
     'pels-card': 'Professional Ethics and Life Skills',
 
     // 2 Semester Subjects
-    'ds-card': 'Data Structure Using C',
+    'dsa-card': 'Data Structure Using C',
     'dld-card': 'Digital Logic and Design',
     'em-2-card': 'Engineering Mathematics II',
     'entrepreneur-card': 'Entrepreneurship',
