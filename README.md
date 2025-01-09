@@ -163,7 +163,7 @@
 </details>
 
 <details>
-  <summary>Question Papers</summary> <br>
+  <summary>Question Paper</summary> <br>
   
   This section contains the question papers for each semester:
 
@@ -172,10 +172,11 @@
   - Includes Class Test 1, Class Test 2, and Annual Exams.
   - Contains Re-Class Tests, if applicable.
   - Each semester folder provides a comprehensive collection of exam papers.
+  - Added "AI" or "DS" in file names to indicate the branch for which the question paper is intended. For subjects common across semesters 1 to 4, no such branch-specific tags were added.
 </details>
 
 <details>
-  <summary>Docs</summary> <br>
+  <summary>docs</summary> <br>
   
   This folder contains the code for this website:
   
