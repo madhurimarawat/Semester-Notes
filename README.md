@@ -153,6 +153,16 @@
 </details>
 
 <details>
+  <summary>Front Page & Index</summary> <br>
+  
+  This section contains the standardized front page and index format used in lab files for each semester. Below is the included format:  
+
+  - [Click here to view the Front Page & Index](https://github.com/madhurimarawat/Semester-Notes/tree/main/tree/main/Front%20Page%20&%20Index)  
+  - Naming conventions include details such as experiment names, dates, page numbers, and more for easy comprehension and navigation.  
+
+</details>
+
+<details>
   <summary>Question Papers</summary> <br>
   
   This section contains the question papers for each semester:
@@ -203,9 +213,11 @@ Semester-Notes/
 ├── 7 SEMESTER/               # 📁 Folder for the seventh semester
 │   ├── AI Subjects/          # 📁 AI Subjects folder inside 7th semester
 │
-├── SYLLABUS/                 # 📚 Folder containing the syllabus for all semesters
+├── Syllabus/                 # 📚 Folder containing the syllabus for all semesters
 │
-└── QUESTION PAPERS/          # 📝 Folder containing the question papers for all semesters
+├── Front Page & Index        # 📖 Contains the standardized front page format
+|
+└── Question Paper/           # 📝 Folder containing the question papers for all semesters
 │
 ├── docs/                     # 🗂️ Folder containing website code
 │   ├── index.html            # 🏠 Main landing page of the website
