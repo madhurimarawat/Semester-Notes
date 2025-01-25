@@ -49,11 +49,11 @@ Management Information System/
 │   ├── Notes/                     # Week 1 lecture notes and Additional tables and visuals (created by me)
 │   │   └── Week X Notes.pdf       # Week 1 Notes
 │   ├── Transcripts/               # Transcripts for Week X lectures(5 Lectures)
-│   │   ├── Lecture_01.pdf         # Transcript for Lecture 1
-│   │   ├── Lecture_02.pdf         # Transcript for Lecture 2
-│   │   ├── Lecture_03.pdf         # Transcript for Lecture 3
-│   │   ├── Lecture_04.pdf         # Transcript for Lecture 4
-│   │   └── Lecture_05.pdf         # Transcript for Lecture 5
+│   │   ├── Lecture_1.pdf         # Transcript for Lecture 1
+│   │   ├── Lecture_2.pdf         # Transcript for Lecture 2
+│   │   ├── Lecture_3.pdf         # Transcript for Lecture 3
+│   │   ├── Lecture_4.pdf         # Transcript for Lecture 4
+│   │   └── Lecture_5.pdf         # Transcript for Lecture 5
 │
 ├── Week Xn/ ...                    # Repeated for Weeks 2 to 12
 │
