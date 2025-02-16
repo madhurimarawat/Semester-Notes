@@ -122,14 +122,14 @@
 
 **Data Science Subjects:**
 
-1. [**Algorithmic Gaming Theory**](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Algorithmic%20Gaming%20Theory) <br><br>
-2. [**Big Data Analytics**](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Big%20Data%20Analytics)
+1. [**Algorithmic Gaming Theory**](https://github.com/madhurimarawat/Semester-Notes/tree/main/7%20SEMESTER/Algorithmic%20Gaming%20Theory) <br><br>
+2. [**Big Data Analytics**](https://github.com/madhurimarawat/Semester-Notes/tree/main/7%20SEMESTER/Big%20Data%20Analytics)
 - To see lab programs, visit: [Big Data Analytics Lab](https://github.com/madhurimarawat/Big-Data-Analytics) <br>
-3. [**Data Wrangling**](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Data%20Wrangling)
+3. [**Data Wrangling**](https://github.com/madhurimarawat/Semester-Notes/tree/main/7%20SEMESTER/Data%20Wrangling)
 - To see lab programs, visit: [Data Wrangling Lab](https://github.com/madhurimarawat/Data-Wrangling) <br>
-4. [**Image Processing**](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Image%20Processing) <br><br>
-5. [**Management Information System**](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Management%20Information%20System) <br><br>
-6. [**Software Engineering**](https://github.com/madhurimarawat/Semester-Notes/tree/main/5%20SEMESTER/Software%20Engineering)
+4. [**Image Processing**](https://github.com/madhurimarawat/Semester-Notes/tree/main/7%20SEMESTER/Image%20Processing) <br><br>
+5. [**Management Information System**](https://github.com/madhurimarawat/Semester-Notes/tree/main/7%20SEMESTER/Management%20Information%20System) <br><br>
+6. [**Software Engineering**](https://github.com/madhurimarawat/Semester-Notes/tree/main/7%20SEMESTER/Software%20Engineering)
 - To see lab programs, visit: [Software Engineering Lab](https://github.com/madhurimarawat/Software-Engineering) <br>
 7. [Minor Project](https://github.com/madhurimarawat/Stock-Market-Prediction/tree/main/Documents)
 - To see the lab project, visit: [Stock Market Prediction App](https://stock-market-numerical-text-hybrid-prediction.streamlit.app/).
