@@ -1,4 +1,53 @@
 # Semester-Notes
+This repository includes academic notes, study materials, and resources from B.Tech (Hons) in CSE, specializing in Artificial Intelligence and Data Science. It features question papers, proprietary study guides, and resources to support learning in these fields.
+
+<p align="center">
+  <!-- Repository Size -->
+  <a href="https://github.com/madhurimarawat/Semester-Notes">
+    <img src="https://img.shields.io/github/repo-size/madhurimarawat/Semester-Notes?color=%23FF91A4&label=Repo%20Size&labelColor=%23FF6384&style=for-the-badge&logo=github" alt="Repo Size">
+  </a>
+
+  <!-- Stars -->
+  <a href="https://github.com/madhurimarawat/Semester-Notes/stargazers">
+    <img src="https://img.shields.io/github/stars/madhurimarawat/Semester-Notes?color=%23FF6B8B&label=Stars&labelColor=%23FF477E&style=for-the-badge&logo=star" alt="GitHub Stars">
+  </a>
+
+  <!-- Forks -->
+  <a href="https://github.com/madhurimarawat/Semester-Notes/network/members">
+    <img src="https://img.shields.io/github/forks/madhurimarawat/Semester-Notes?color=%23C678DD&label=Forks&labelColor=%23A15FCF&style=for-the-badge&logo=git" alt="GitHub Forks">
+  </a>
+
+  <!-- Issues (Open + Closed) -->
+  <a href="https://github.com/madhurimarawat/Semester-Notes/issues">
+    <img src="https://img.shields.io/github/issues/madhurimarawat/Semester-Notes?color=%235A9DF9&label=Open%20Issues&labelColor=%234A7DDC&style=for-the-badge&logo=bug" alt="GitHub Issues">
+  </a>
+  <a href="https://github.com/madhurimarawat/Semester-Notes/issues?q=is%3Aissue+is%3Aclosed">
+    <img src="https://img.shields.io/github/issues-closed/madhurimarawat/Semester-Notes?color=%23FFA07A&label=Closed%20Issues&labelColor=%23FF7F50&style=for-the-badge&logo=bug" alt="Closed Issues">
+  </a>
+
+  <!-- Pull Requests (Open + Closed) -->
+  <a href="https://github.com/madhurimarawat/Semester-Notes/pulls">
+    <img src="https://img.shields.io/github/issues-pr/madhurimarawat/Semester-Notes?color=%235BCF78&label=Open%20PRs&labelColor=%2346B368&style=for-the-badge&logo=git" alt="Open Pull Requests">
+  </a>
+  <a href="https://github.com/madhurimarawat/Semester-Notes/pulls?q=is%3Apr+is%3Aclosed">
+    <img src="https://img.shields.io/github/issues-pr-closed/madhurimarawat/Semester-Notes?color=%23665ACD&label=Closed%20PRs&labelColor=%235048B3&style=for-the-badge&logo=git" alt="Closed Pull Requests">
+  </a>
+
+  <!-- Discussions -->
+  <a href="https://github.com/madhurimarawat/Semester-Notes/discussions">
+    <img src="https://img.shields.io/github/discussions/madhurimarawat/Semester-Notes?color=%23DE765D&label=Discussions&labelColor=%23C55B43&style=for-the-badge&logo=discourse" alt="GitHub Discussions">
+  </a>
+
+  <!-- Contributors -->
+  <a href="https://github.com/madhurimarawat/Semester-Notes/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/madhurimarawat/Semester-Notes?color=%231FA19C&label=Contributors&labelColor=%23197A76&style=for-the-badge&logo=github" alt="GitHub Contributors">
+  </a>
+
+  <!-- Visitors Count -->
+  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/madhurimarawat/Semester-Notes&count_bg=%23FF6B8B&title_bg=%235A9DF9&icon=github.svg&icon_color=%23FFFFFF&title=Visitors&edge_flat=true" alt="Visitors">
+</p>
+
+<a href = "https://madhurimarawat.github.io/NameBlock-Designer/"><img src ="docs/images/SEMESTER NOTES_NameBlock.png" title = "NameBlock" alt = "NameBlock"></a>
 
 ![Illustration](https://github.com/madhurimarawat/Semester-Notes/assets/105432776/784d77f1-41bf-46a3-b2f8-c185ec52aad7)
 
@@ -7,15 +56,8 @@
 - This repository serves as a valuable resource to access well-structured and reliable study materials.<br><br>
 - Study Materials are organized according to semesters and subjects.
 
-<p align="center">
- <a href="https://github.com/madhurimarawat/Semester-Notes">
-    <img src="https://img.shields.io/github/repo-size/madhurimarawat/Semester-Notes" alt="GitHub repo size" height = "25px">
-  </a>
-</p>
-
-<a href = "https://madhurimarawat.github.io/NameBlock-Designer/"><img src ="docs/images/SEMESTER NOTES_NameBlock.png" title = "NameBlock" alt = "NameBlock"></a>
-
 ---
+
 ## Table Of Contents 📔 🔖 📑
 <details>
 <summary>1 Semester</summary> <br>
