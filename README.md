@@ -43,8 +43,34 @@ This repository includes academic notes, study materials, and resources from B.T
     <img src="https://img.shields.io/github/contributors/madhurimarawat/Semester-Notes?color=%231FA19C&label=Contributors&labelColor=%23197A76&style=for-the-badge&logo=github" alt="GitHub Contributors">
   </a>
 
+  <!-- Language Breakdown -->
+  <a href="https://github.com/madhurimarawat/Semester-Notes">
+    <img src="https://img.shields.io/github/languages/top/madhurimarawat/Semester-Notes?color=%23A569BD&label=Top%20Language&labelColor=%238D50A5&style=for-the-badge&logo=python" alt="Top Language">
+  </a>
+
+  <!-- License -->
+  <a href="https://github.com/madhurimarawat/Semester-Notes/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/madhurimarawat/Semester-Notes?color=%23F39C12&label=License&labelColor=%23D68910&style=for-the-badge&logo=open-source-initiative" alt="License">
+  </a>
+
+  <!-- Last Commit -->
+  <a href="https://github.com/madhurimarawat/Semester-Notes/commits/main">
+    <img src="https://img.shields.io/github/last-commit/madhurimarawat/Semester-Notes?color=%23D4AC0D&label=Last%20Commit&labelColor=%23B7950B&style=for-the-badge&logo=github" alt="Last Commit">
+  </a>
+
+  <!-- Repository Age -->
+ <a href="https://github.com/madhurimarawat/Semester-Notes">
+  <img src="https://img.shields.io/badge/Repo%20Age-2%20Years%204%20Months-%239B59B6?style=for-the-badge&logo=github" alt="Repository Age">
+</a>
+
+  <!-- Watchers -->
+  <a href="https://github.com/madhurimarawat/Semester-Notes/watchers">
+    <img src="https://img.shields.io/github/watchers/madhurimarawat/Semester-Notes?color=%23F5B041&label=Watchers&labelColor=%23D68910&style=for-the-badge&logo=github" alt="GitHub Watchers">
+  </a>
+
   <!-- Visitors Count -->
   <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/madhurimarawat/Semester-Notes&count_bg=%23FF6B8B&title_bg=%235A9DF9&icon=github.svg&icon_color=%23FFFFFF&title=Visitors&edge_flat=true" alt="Visitors">
+
 </p>
 
 <a href = "https://madhurimarawat.github.io/NameBlock-Designer/"><img src ="docs/images/SEMESTER NOTES_NameBlock.png" title = "NameBlock" alt = "NameBlock"></a>
