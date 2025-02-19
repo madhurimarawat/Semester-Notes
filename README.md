@@ -58,9 +58,19 @@ This repository includes academic notes, study materials, and resources from B.T
     <img src="https://img.shields.io/github/last-commit/madhurimarawat/Semester-Notes?color=%23D4AC0D&label=Last%20Commit&labelColor=%23B7950B&style=for-the-badge&logo=github" alt="Last Commit">
   </a>
 
-  <!-- Repository Age -->
- <a href="https://github.com/madhurimarawat/Semester-Notes">
+<!-- Repository Age -->
+<a href="https://github.com/madhurimarawat/Semester-Notes">
   <img src="https://img.shields.io/badge/Repo%20Age-2%20Years%204%20Months-%239B59B6?style=for-the-badge&logo=github" alt="Repository Age">
+</a>
+
+<!-- Total Deployments -->
+<a href="https://github.com/madhurimarawat/Semester-Notes/actions">
+  <img src="https://img.shields.io/badge/Total%20Deployments-0-%23F1C40F?style=for-the-badge&logo=github-actions" alt="Total Deployments">
+</a>
+
+<!-- Workflow Status -->
+<a href="https://github.com/madhurimarawat/Semester-Notes/actions/workflows/update-repo-age.yml">
+  <img src="https://img.shields.io/github/actions/workflow/status/madhurimarawat/Semester-Notes/update-repo-info.yml?color=%2372DDF7&label=Workflow&labelColor=%235CC1E7&style=for-the-badge&logo=github" alt="Workflow Status">
 </a>
 
   <!-- Watchers -->
