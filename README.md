@@ -60,12 +60,12 @@ This repository includes academic notes, study materials, and resources from B.T
 
 <!-- Repository Age -->
 <a href="https://github.com/madhurimarawat/Semester-Notes">
-  <img src="https://img.shields.io/badge/Repo%20Age-2%20Years%204%20Months-%239B59B6?style=for-the-badge&logo=github" alt="Repository Age">
+  <img src="https://img.shields.io/badge/Repo%20Age-2Y 4M-%239B59B6?style=for-the-badgehttps://img.shields.io/badge/Repo%20Age-2%20Years%204%20Months-%239B59B6logo=github?style=for-the-badge&logo=github" alt="Repository Age">
 </a>
 
 <!-- Total Deployments -->
 <a href="https://github.com/madhurimarawat/Semester-Notes/actions">
-  <img src="https://img.shields.io/badge/Total%20Deployments-0-%23F1C40F?style=for-the-badge&logo=github-actions" alt="Total Deployments">
+  <img src="https://img.shields.io/badge/Total%20Deployments-30-%23F1C40F?style=for-the-badgehttps://img.shields.io/badge/Total%20Deployments-0-%23F1C40Flogo=github-actions?style=for-the-badge&logo=github-actions" alt="Total Deployments">
 </a>
 
 <!-- Workflow Status -->
