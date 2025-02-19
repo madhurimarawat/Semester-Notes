@@ -4,8 +4,7 @@
 #  🔹 This workflow updates the repository age and deployment count badges  
 #     in the README.md file.
 #  
-#  ✅ Runs daily at midnight (00:00 UTC) to update repo age.
-#  ✅ Runs on every push to update the total deployments count.
+#  ✅ Runs **once a month (1st day, 00:00 UTC)** to reduce API stress.
 #  ✅ Can be manually triggered from the GitHub Actions UI.
 #  
 #  📌 Steps:
@@ -23,8 +22,7 @@ name: Update Repo Info
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # ✅ Runs daily at midnight to update repo age
-  push:                   # ✅ Runs on every push (updates deployment count)
+    - cron: "0 0 1 * *"  # ✅ Runs on the 1st day of every month at 00:00 UTC
   workflow_dispatch:       # ✅ Allows manual trigger
 
 jobs:
@@ -38,12 +36,26 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}  # ✅ Uses GitHub's built-in token
 
-      - name: Get Repo Creation Date
+      - name: Get Repo Info (Creation Date & Deployments URL)
         id: repo_info
         run: |
-          CREATION_DATE="2022-10-03"  # ✅ Hardcoded since we know the date
+          # ✅ Fetch repo details from GitHub API
+          REPO_DATA=$(curl -s https://api.github.com/repos/madhurimarawat/Semester-Notes)
+
+          # ✅ Extract creation date
+          CREATION_DATE=$(echo "$REPO_DATA" | jq -r '.created_at' | cut -d'T' -f1)
+          if [ -z "$CREATION_DATE" ] || [ "$CREATION_DATE" = "null" ]; then
+            CREATION_DATE="2022-10-03"  # ✅ Default fallback
+          fi
+
+          # ✅ Extract deployments URL
+          DEPLOYMENTS_URL=$(echo "$REPO_DATA" | jq -r '.deployments_url' | sed 's/{.*}//') # Remove template part
+          if [ -z "$DEPLOYMENTS_URL" ] || [ "$DEPLOYMENTS_URL" = "null" ]; then
+            DEPLOYMENTS_URL="https://api.github.com/repos/madhurimarawat/Semester-Notes/deployments"
+          fi
 
           echo "CREATION_DATE=$CREATION_DATE" >> $GITHUB_ENV
+          echo "DEPLOYMENTS_URL=$DEPLOYMENTS_URL" >> $GITHUB_ENV
 
       - name: Calculate Repository Age
         id: calculate_age
@@ -65,8 +77,7 @@ jobs:
       - name: Get Total Deployments
         id: get_deployments
         run: |
-          DEPLOYMENTS=$(curl -s -H "Accept: application/vnd.github+json" \
-          "https://api.github.com/repos/madhurimarawat/Semester-Notes/deployments" | jq 'length')
+          DEPLOYMENTS=$(curl -s -H "Accept: application/vnd.github+json" "$DEPLOYMENTS_URL" | jq 'length')
 
           # ✅ Set fallback to 0 if API fails
           if [ -z "$DEPLOYMENTS" ] || [ "$DEPLOYMENTS" = "null" ]; then
@@ -97,5 +108,5 @@ jobs:
           git config --global user.email "actions@github.com"
 
           git add README.md
-          git commit -m "Updated repository age & deployment count badges" || exit 0
+          git commit -m "Updated repository age & deployment count badges (monthly)" || exit 0
           git push origin main
