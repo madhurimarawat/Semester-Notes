@@ -1,8 +1,7 @@
 # ================================================================
-#  GitHub Actions Workflow: Update Repo Age & Deployments Badges
+#  GitHub Actions Workflow: Update Repo Age Badge
 # ================================================================
-#  🔹 This workflow updates the repository age and deployment count badges  
-#     in the README.md file.
+#  🔹 This workflow updates the repository age badge in the README.md file.
 #  
 #  ✅ Runs **once a month (1st day, 00:00 UTC)** to reduce API stress.
 #  ✅ Can be manually triggered from the GitHub Actions UI.
@@ -11,14 +10,13 @@
 #  1️⃣ Fetches the repository creation date.
 #  2️⃣ Calculates the repository age (Years, Months).
 #  3️⃣ Ensures a **default repo age** (`2Y 4M`) if workflow fails.
-#  4️⃣ Fetches the total deployments using GitHub API.
-#  5️⃣ Updates the repo age and deployments badges in the README.md.
-#  6️⃣ Commits and pushes the updated README.md file back to the repository.
+#  4️⃣ Updates the repo age badge in the README.md.
+#  5️⃣ Commits and pushes the updated README.md file back to the repository.
 #  
 #  🚀 No personal access token (PAT) required! Uses `GITHUB_TOKEN`.
 # ================================================================
 
-name: Update Repo Info
+name: Update Repo Age
 
 on:
   schedule:
@@ -26,7 +24,7 @@ on:
   workflow_dispatch:       # ✅ Allows manual trigger
 
 jobs:
-  update-badges:
+  update-badge:
     runs-on: ubuntu-latest
     permissions: write-all  # ✅ Allows GitHub Actions to push changes
 
@@ -36,26 +34,12 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}  # ✅ Uses GitHub's built-in token
 
-      - name: Get Repo Info (Creation Date & Deployments URL)
+      - name: Get Repo Creation Date
         id: repo_info
         run: |
-          # ✅ Fetch repo details from GitHub API
-          REPO_DATA=$(curl -s https://api.github.com/repos/madhurimarawat/Semester-Notes)
-
-          # ✅ Extract creation date
-          CREATION_DATE=$(echo "$REPO_DATA" | jq -r '.created_at' | cut -d'T' -f1)
-          if [ -z "$CREATION_DATE" ] || [ "$CREATION_DATE" = "null" ]; then
-            CREATION_DATE="2022-10-03"  # ✅ Default fallback
-          fi
-
-          # ✅ Extract deployments URL
-          DEPLOYMENTS_URL=$(echo "$REPO_DATA" | jq -r '.deployments_url' | sed 's/{.*}//') # Remove template part
-          if [ -z "$DEPLOYMENTS_URL" ] || [ "$DEPLOYMENTS_URL" = "null" ]; then
-            DEPLOYMENTS_URL="https://api.github.com/repos/madhurimarawat/Semester-Notes/deployments"
-          fi
-
+          # ✅ Set hardcoded creation date
+          CREATION_DATE="2022-10-03"
           echo "CREATION_DATE=$CREATION_DATE" >> $GITHUB_ENV
-          echo "DEPLOYMENTS_URL=$DEPLOYMENTS_URL" >> $GITHUB_ENV
 
       - name: Calculate Repository Age
         id: calculate_age
@@ -74,31 +58,16 @@ jobs:
 
           echo "REPO_AGE=$REPO_AGE" >> $GITHUB_ENV
 
-      - name: Get Total Deployments
-        id: get_deployments
+      - name: Update README.md with New Badge
         run: |
-          DEPLOYMENTS=$(curl -s -H "Accept: application/vnd.github+json" "$DEPLOYMENTS_URL" | jq 'length')
+          # ✅ Keep original purple color for the badge
+          AGE_BADGE_COLOR="%239B59B6"
 
-          # ✅ Set fallback to 0 if API fails
-          if [ -z "$DEPLOYMENTS" ] || [ "$DEPLOYMENTS" = "null" ]; then
-            DEPLOYMENTS=0
-          fi
-
-          echo "DEPLOYMENTS=$DEPLOYMENTS" >> $GITHUB_ENV
-
-      - name: Update README.md with New Badges
-        run: |
-          # Colors for Badges
-          AGE_BADGE_COLOR="%239B59B6"  # ✅ Keeps original purple color
-          DEPLOY_BADGE_COLOR="%23F1C40F"  # Golden Yellow for deployments
-
-          # ✅ Generate Badge URLs
+          # ✅ Generate Badge URL
           AGE_BADGE_URL="https://img.shields.io/badge/Repo%20Age-${REPO_AGE}-$AGE_BADGE_COLOR?style=for-the-badge&logo=github"
-          DEPLOY_BADGE_URL="https://img.shields.io/badge/Total%20Deployments-${DEPLOYMENTS}-$DEPLOY_BADGE_COLOR?style=for-the-badge&logo=github-actions"
 
-          # ✅ Replace Badges in README
+          # ✅ Replace Badge in README
           sed -i 's|https://img.shields.io/badge/Repo%20Age-[^?]*|'"$AGE_BADGE_URL"'|' README.md
-          sed -i 's|https://img.shields.io/badge/Total%20Deployments-[^?]*|'"$DEPLOY_BADGE_URL"'|' README.md
 
       - name: Commit & Push Changes
         env:
@@ -108,5 +77,5 @@ jobs:
           git config --global user.email "actions@github.com"
 
           git add README.md
-          git commit -m "Updated repository age & deployment count badges (monthly)" || exit 0
+          git commit -m "Updated repository age badge (monthly)" || exit 0
           git push origin main
