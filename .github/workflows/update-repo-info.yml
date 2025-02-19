@@ -1,0 +1,101 @@
+# ================================================================
+#  GitHub Actions Workflow: Update Repo Age & Deployments Badges
+# ================================================================
+#  🔹 This workflow updates the repository age and deployment count badges  
+#     in the README.md file.
+#  
+#  ✅ Runs daily at midnight (00:00 UTC) to update repo age.
+#  ✅ Runs on every push to update the total deployments count.
+#  ✅ Can be manually triggered from the GitHub Actions UI.
+#  
+#  📌 Steps:
+#  1️⃣ Fetches the repository creation date.
+#  2️⃣ Calculates the repository age (Years, Months).
+#  3️⃣ Ensures a **default repo age** (`2Y 4M`) if workflow fails.
+#  4️⃣ Fetches the total deployments using GitHub API.
+#  5️⃣ Updates the repo age and deployments badges in the README.md.
+#  6️⃣ Commits and pushes the updated README.md file back to the repository.
+#  
+#  🚀 No personal access token (PAT) required! Uses `GITHUB_TOKEN`.
+# ================================================================
+
+name: Update Repo Info
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # ✅ Runs daily at midnight to update repo age
+  push:                   # ✅ Runs on every push (updates deployment count)
+  workflow_dispatch:       # ✅ Allows manual trigger
+
+jobs:
+  update-badges:
+    runs-on: ubuntu-latest
+    permissions: write-all  # ✅ Allows GitHub Actions to push changes
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}  # ✅ Uses GitHub's built-in token
+
+      - name: Get Repo Creation Date
+        id: repo_info
+        run: |
+          CREATION_DATE="2022-10-03"  # ✅ Hardcoded since we know the date
+
+          echo "CREATION_DATE=$CREATION_DATE" >> $GITHUB_ENV
+
+      - name: Calculate Repository Age
+        id: calculate_age
+        run: |
+          START_DATE=$(date -d "$CREATION_DATE" +%s 2>/dev/null || echo "0")
+          CURRENT_DATE=$(date +%s)
+
+          if [ "$START_DATE" = "0" ]; then
+            REPO_AGE="2Y 4M"  # ✅ Set default age if calculation fails
+          else
+            AGE_DAYS=$(( (CURRENT_DATE - START_DATE) / 86400 ))
+            AGE_YEARS=$(( AGE_DAYS / 365 ))
+            AGE_MONTHS=$(( (AGE_DAYS % 365) / 30 ))
+            REPO_AGE="${AGE_YEARS}Y ${AGE_MONTHS}M"
+          fi
+
+          echo "REPO_AGE=$REPO_AGE" >> $GITHUB_ENV
+
+      - name: Get Total Deployments
+        id: get_deployments
+        run: |
+          DEPLOYMENTS=$(curl -s -H "Accept: application/vnd.github+json" \
+          "https://api.github.com/repos/madhurimarawat/Semester-Notes/deployments" | jq 'length')
+
+          # ✅ Set fallback to 0 if API fails
+          if [ -z "$DEPLOYMENTS" ] || [ "$DEPLOYMENTS" = "null" ]; then
+            DEPLOYMENTS=0
+          fi
+
+          echo "DEPLOYMENTS=$DEPLOYMENTS" >> $GITHUB_ENV
+
+      - name: Update README.md with New Badges
+        run: |
+          # Colors for Badges
+          AGE_BADGE_COLOR="%239B59B6"  # ✅ Keeps original purple color
+          DEPLOY_BADGE_COLOR="%23F1C40F"  # Golden Yellow for deployments
+
+          # ✅ Generate Badge URLs
+          AGE_BADGE_URL="https://img.shields.io/badge/Repo%20Age-${REPO_AGE}-$AGE_BADGE_COLOR?style=for-the-badge&logo=github"
+          DEPLOY_BADGE_URL="https://img.shields.io/badge/Total%20Deployments-${DEPLOYMENTS}-$DEPLOY_BADGE_COLOR?style=for-the-badge&logo=github-actions"
+
+          # ✅ Replace Badges in README
+          sed -i 's|https://img.shields.io/badge/Repo%20Age-[^?]*|'"$AGE_BADGE_URL"'|' README.md
+          sed -i 's|https://img.shields.io/badge/Total%20Deployments-[^?]*|'"$DEPLOY_BADGE_URL"'|' README.md
+
+      - name: Commit & Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # ✅ Uses GitHub's built-in token
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+
+          git add README.md
+          git commit -m "Updated repository age & deployment count badges" || exit 0
+          git push origin main
