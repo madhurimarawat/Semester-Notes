@@ -9,10 +9,16 @@ This collection is inspired by the **NPTEL Management Information System** cours
 
 1. [Introduction](#introduction)
 2. [Directory Structure](#directory-structure)
-3. [Lecture Notes](#lecture-notes)
-4. [Additional Tables and Visuals](#additional-tables-and-visuals)
-5. [Achievements](#achievements)
-6. [How to Contribute](#how-to-contribute)
+3. [Tables and Visuals](#tables-and-visuals)
+
+   - [Delivery Models (Week 7)](#delivery-models)
+   - [Cloud Deployment Models (Week 9)](#cloud-deployment-models)
+   - [Internet of Things (Week 9)](#internet-of-things)
+   - [Malware Technology Solutions (Week 11)](#malware-technology-solutions)
+   - [Globalization (Week 12)](#globalization)
+
+4. [Achievements](#achievements)
+5. [How to Contribute](#how-to-contribute)
 
 ---
 
@@ -59,25 +65,18 @@ Each week's folder contains:
 - **HTML-styled visual tables** for concept clarity
 - **PNG versions** for easy preview and sharing
 
----
-
-## Lecture Notes
-
-These notes were carefully crafted to condense and simplify the core content of each week. They include:
-
-- Summarized concepts and frameworks
-- Business models and real-world applications
-- Custom visuals that aid learning and recall
-
-The notes reflect a learner’s perspective and aim to make MIS easier to grasp, whether you're revising or exploring the subject for the first time.
+Visit the individual week folders to view the full collection of tables and diagrams.
 
 ---
 
-## Additional Tables and Visuals
+## Tables and Visuals
 
-To complement the lecture notes, I created **vibrant, structured tables and diagrams**—available as both HTML and PNG files—to visually represent complex ideas. Here are some featured examples:
+Each visual is thoughtfully designed to simplify and clarify key MIS concepts. Below is a complete collection of all the tables and diagrams for quick reference.
+👉 Visit the respective folders to access the HTML versions and explore the full set in detail.
 
-### Week 7: Delivery Models
+### Week 7
+
+### Delivery Models
 
 <img src="Week 7/Notes/Delivery Models.png" alt="Delivery Models">
 
@@ -85,31 +84,37 @@ To complement the lecture notes, I created **vibrant, structured tables and diag
 
 ### Week 9
 
-**Cloud Deployment Models**  
+### Cloud Deployment Models
+
 <img src="Week 9/Notes/Cloud Deployment Models.png" alt="Cloud Deployment Models">
 
-**Internet of Things**  
+### Internet of Things
+
 <img src="Week 9/Notes/Internet of Things.png" alt="Internet of Things">
 
 ---
 
 ### Week 11
 
-**Malware Technology Solutions**  
+### Malware Technology Solutions
+
 <img src="Week 11/Notes/Malware Technology Solutions.png" alt="Malware Technology Solutions">
 
-**Malware**  
+### Malware
+
 <img src="Week 11/Notes/Malware.png" alt="Malware">
 
 ---
 
-### Week 12: Globalization
+### Week 12
+
+### Globalization
 
 <img src="Week 12/Notes/Globalization.png" alt="Globalization">
 
 <br>
 
-All visuals are created to ensure a balance of **clarity**, **engagement**, and **aesthetic appeal**, with the thoughtful use of emojis to highlight key points. 🎯📊
+All visuals maintain a balance of **clarity**, **engagement**, and **aesthetic appeal**, with the thoughtful use of emojis to emphasize key points. 🎯📊
 
 ---
 
@@ -127,9 +132,9 @@ All visuals are created to ensure a balance of **clarity**, **engagement**, and 
 
 Contributions are welcome! You can:
 
-- Suggest improvements to existing notes or visuals
-- Share additional insights or alternate representations of MIS concepts
-- Recommend formatting changes or new layout ideas
+- Suggest improvements to existing visuals
+- Share alternate representations of MIS concepts
+- Recommend formatting or layout enhancements
 
 Let’s make learning MIS easier and more accessible for everyone!
 
