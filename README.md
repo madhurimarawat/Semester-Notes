@@ -58,11 +58,6 @@ This repository includes academic notes, study materials, and resources from B.T
     <img src="https://img.shields.io/github/last-commit/madhurimarawat/Semester-Notes?color=%23D4AC0D&label=Last%20Commit&labelColor=%23B7950B&style=for-the-badge&logo=github" alt="Last Commit">
   </a>
 
-<!-- Repository Age -->
-<a href="https://github.com/madhurimarawat/Semester-Notes">
-  <img src="https://img.shields.io/badge/Repo%20Age-2Y 6M-%239B59B6?style=for-the-badgehttps://img.shields.io/badge/Repo%20Age-2Y 5M-%239B59B6logo=github?style=for-the-badgehttps://img.shields.io/badge/Repo%20Age-2Y 4M-%239B59B6logo=github?style=for-the-badgehttps://img.shields.io/badge/Repo%20Age-2Y 4M-%239B59B6logo=github?style=for-the-badgehttps://img.shields.io/badge/Repo%20Age-2Y 4M-%239B59B6logo=github?style=for-the-badgehttps://img.shields.io/badge/Repo%20Age-2%20Years%204%20Months-%239B59B6logo=github?style=for-the-badge&logo=github" alt="Repository Age">
-</a>
-
 <!-- Workflow Status -->
 <a href="https://github.com/madhurimarawat/Semester-Notes/actions/workflows/update-repo-age.yml">
   <img src="https://img.shields.io/github/actions/workflow/status/madhurimarawat/Semester-Notes/update-repo-info.yml?color=%2372DDF7&label=Workflow&labelColor=%235CC1E7&style=for-the-badge&logo=github" alt="Workflow Status">
@@ -72,9 +67,6 @@ This repository includes academic notes, study materials, and resources from B.T
   <a href="https://github.com/madhurimarawat/Semester-Notes/watchers">
     <img src="https://img.shields.io/github/watchers/madhurimarawat/Semester-Notes?color=%23F5B041&label=Watchers&labelColor=%23D68910&style=for-the-badge&logo=github" alt="GitHub Watchers">
   </a>
-
-  <!-- Visitors Count -->
-  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/madhurimarawat/Semester-Notes&count_bg=%23FF6B8B&title_bg=%235A9DF9&icon=github.svg&icon_color=%23FFFFFF&title=Visitors&edge_flat=true" alt="Visitors">
 
 </p>
 
