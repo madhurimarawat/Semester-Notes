@@ -2,7 +2,7 @@
 *********************************************************************************************
 * File: index.js
 * Author: Madhurima Rawat
-* Date: January 09, 2025
+* Date: May 12, 2025
 * Description: JavaScript file for study materials website, providing
 *              functionality to dynamically change color schemes based on user-selected seasons.
 * Version: 1.0
@@ -168,7 +168,15 @@ document.addEventListener("DOMContentLoaded", function () {
     'se-card': 'Software Engineering',
     'bia-card': 'Business Intelligence and Analytics',
     'isr-card': 'Intelligent System and Robotics',
-    'mp7-card': 'Minor Project 7 Sem'
+    'mp7-card': 'Minor Project 7 Sem',
+
+    // 8 Semester Subjects
+    'ccmp-card': 'Cloud Computing',
+    'dwr-card': 'Data Warehousing',
+    'aii-card': 'Artificial Intelligence for Investments',
+    'hpsc-card': 'High-Performance Scientific Computing',
+    'dl-card': 'Deep Learning',
+    'mp8-card': 'Major Project 8 Sem'
 
   };
 
