@@ -1,0 +1,172 @@
+<!-- 
+Author: Madhurima Rawat
+Date: 26 February 2025
+Brief: This table presents a comparative analysis of Measures of Central Tendency, including Mean, Median, Mode, and Quartiles. 
+It provides definitions, formulas, use cases, computation complexity, and real-life applications.
+
+Additional Details:
+- Color Palette: Pastel shades (coral, lavender, light cyan, mint green) for better readability.
+- Emoji Usage: Enhances engagement and visual appeal in column headers.
+- Design: Alternating row colors improve readability; bold headers emphasize key points.
+- Purpose: Serves as a reference for understanding different measures of central tendency and their applicability in data analysis.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measures of Central Tendency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7ff;
+            margin: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF6347;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #FF6347;
+            color: #fff;
+        }
+
+        tr:nth-child(2) th,
+        tr:nth-child(2) td {
+            background-color: #ffe4e1;
+        }
+
+        tr:nth-child(3) th,
+        tr:nth-child(3) td {
+            background-color: #e6e6fa;
+        }
+
+        tr:nth-child(4) th,
+        tr:nth-child(4) td {
+            background-color: #e0ffff;
+        }
+
+        tr:nth-child(5) th,
+        tr:nth-child(5) td {
+            background-color: #ffebcd;
+        }
+
+        tr:nth-child(6) th,
+        tr:nth-child(6) td {
+            background-color: #ffcccb;
+        }
+
+        tr:nth-child(7) th,
+        tr:nth-child(7) td {
+            background-color: #e0f2f1;
+        }
+
+        tr:nth-child(8) th,
+        tr:nth-child(8) td {
+            background-color: #fafad2;
+        }
+
+        tr:nth-child(9) th,
+        tr:nth-child(9) td {
+            background-color: #d0f0c0;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+
+        tr:last-child th,
+        tr:last-child td {
+            background-color: #FFFEA3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Measures of Central Tendency 📊</h1>
+    <table>
+        <tr>
+            <th>Properties 📜</th>
+            <th>Mean ➕</th>
+            <th>Median 📏</th>
+            <th>Mode 🔄</th>
+            <th>Quartiles 🧩</th>
+        </tr>
+        <tr>
+            <td>Definition 📖</td>
+            <td>Sum of all values divided by total number of values</td>
+            <td>Middle value when data is arranged in ascending order</td>
+            <td>Value that appears most frequently</td>
+            <td>Divides data into four equal parts (Q1, Q2, Q3, Q4)</td>
+        </tr>
+        <tr>
+            <td>Formula 📝</td>
+            <td>Mean (μ) = (Σx) / N</td>
+            <td>If odd: Median = middle value<br>If even: Median = (n/2<sup>th</sup> value + (n/2 + 1)<sup>th</sup>
+                value) / 2
+            </td>
+            <td>Mode = Most frequent value in dataset</td>
+            <td>Q1 = (1/4) * (N+1)<sup>th</sup> value<br>Q2 = Median<br>Q3 = (3/4) * (N+1)<sup>th</sup> value</td>
+        </tr>
+        <tr>
+            <td>Use Cases 🎯</td>
+            <td>Used for finding the overall trend, like average salary</td>
+            <td>Used for skewed data like income distribution</td>
+            <td>Used for categorical data like most popular product</td>
+            <td>Used for detailed distribution analysis in datasets</td>
+        </tr>
+        <tr>
+            <td>Computation Complexity 🖥️</td>
+            <td>Easy: O(n)</td>
+            <td>Moderate: O(n log n) (sorting required)</td>
+            <td>Easy: O(n)</td>
+            <td>Moderate: O(n log n) (sorting required)</td>
+        </tr>
+        <tr>
+            <td>Effect of Outliers ⚠️</td>
+            <td>Highly affected</td>
+            <td>Less affected</td>
+            <td>Not affected</td>
+            <td>Not affected</td>
+        </tr>
+        <tr>
+            <td>Best Used For ✅</td>
+            <td>Symmetric distributions</td>
+            <td>Skewed distributions</td>
+            <td>Nominal and categorical data</td>
+            <td>Detailed breakdown of dataset distribution</td>
+        </tr>
+        <tr>
+            <td>Real-Life Examples 🌟</td>
+            <td>Average exam scores, temperature</td>
+            <td>Median income, median house price</td>
+            <td>Most popular mobile phone brand</td>
+            <td>Salary quartiles, age distribution</td>
+        </tr>
+    </table>
+</body>
+
+<br>
+<footer>
+    <p style="color: #FF6347; font-size: 20px;"><b>&copy; 2025 Madhurima Rawat. All rights reserved.</b></p>
+</footer>
+
+</html>

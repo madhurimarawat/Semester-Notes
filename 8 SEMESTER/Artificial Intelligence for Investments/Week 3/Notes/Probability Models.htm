@@ -1,0 +1,163 @@
+<!-- 
+    Author: Madhurima Rawat
+    Date: 05 March 2025
+    Description: 
+    This HTML document presents a structured table explaining different probability models 
+    (Student's t-distribution, Poisson Distribution, Chi-Square Distribution, Binomial Distribution, Exponential Distribution, etc.).
+
+    Features:
+    - Uses a clean, readable design with pastel row colors.
+    - Includes definitions, formulas, key properties, use cases, and real-life examples.
+    - Enhances readability with emojis and clear column distinctions.
+    - Uses JavaScript to dynamically display formulas.
+    - Footer includes copyright information.
+
+    Purpose:
+    - Provides an educational reference for understanding key probability distributions.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability Models</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7ff;
+            margin: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF6347;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #FF6347;
+            color: #fff;
+        }
+
+        tr:nth-child(2) th,
+        tr:nth-child(2) td {
+            background-color: #ffe4e1;
+        }
+
+        tr:nth-child(3) th,
+        tr:nth-child(3) td {
+            background-color: #e6e6fa;
+        }
+
+        tr:nth-child(4) th,
+        tr:nth-child(4) td {
+            background-color: #e0ffff;
+        }
+
+        tr:nth-child(5) th,
+        tr:nth-child(5) td {
+            background-color: #ffebcd;
+        }
+
+        tr:nth-child(6) th,
+        tr:nth-child(6) td {
+            background-color: #ffcccb;
+        }
+
+        tr:nth-child(7) th,
+        tr:nth-child(7) td {
+            background-color: #e0f2f1;
+        }
+
+        tr:nth-child(8) th,
+        tr:nth-child(8) td {
+            background-color: #fafad2;
+        }
+
+        tr:nth-child(9) th,
+        tr:nth-child(9) td {
+            background-color: #d0f0c0;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Probability Models 🎲</h1>
+    <table>
+        <tr>
+            <th>Feature 📜</th>
+            <th>Student's t-distribution 📊</th>
+            <th>Poisson Distribution 📈</th>
+            <th>Chi-Square Distribution 🎯</th>
+            <th>Binomial Distribution 🎲</th>
+            <th>Exponential Distribution ⏳</th>
+        </tr>
+        <tr>
+            <td>Definition 📖</td>
+            <td>Used when population variance is unknown</td>
+            <td>Models the probability of events occurring in a fixed interval</td>
+            <td>Used in tests of independence and goodness of fit</td>
+            <td>Models the number of successes in a fixed number of trials</td>
+            <td>Models time until the next event in a Poisson process</td>
+        </tr>
+        <tr>
+            <td>Formula 📏</td>
+            <td>\( t = \frac{X - \mu}{s / \sqrt{n}} \)</td>
+            <td>\( P(X = k) = \frac{e^{-\lambda} \lambda^k}{k!} \)</td>
+            <td>\( \chi^2 = \sum \frac{(O - E)^2}{E} \)</td>
+            <td>\( P(X = k) = \binom{n}{k} p^k (1-p)^{n-k} \)</td>
+            <td>\( f(x) = \lambda e^{-\lambda x} \)</td>
+        </tr>
+        <tr>
+            <td>Key Properties 🔍</td>
+            <td>Symmetric, heavier tails than normal distribution</td>
+            <td>Discrete, skewed right, mean equals variance</td>
+            <td>Positively skewed, sum of squared normal variables</td>
+            <td>Discrete, two possible outcomes (success/failure)</td>
+            <td>Continuous, memoryless property</td>
+        </tr>
+        <tr>
+            <td>Use Cases 🎯</td>
+            <td>Used in hypothesis testing, confidence intervals</td>
+            <td>Used in queuing theory, network traffic analysis</td>
+            <td>Used in categorical data analysis</td>
+            <td>Used in quality control, election predictions</td>
+            <td>Used in reliability engineering, survival analysis</td>
+        </tr>
+        <tr>
+            <td>Real-life Example 🌍</td>
+            <td>Estimating the mean height of students in a school</td>
+            <td>Counting the number of calls received in an hour</td>
+            <td>Testing if a die is fair</td>
+            <td>Determining the probability of getting heads 5 times in 10 coin tosses</td>
+            <td>Predicting time between failures of a machine</td>
+        </tr>
+    </table>
+</body>
+
+<br>
+<footer>
+    <p style="color: #FF6347; font-size: 20px;"><b>&copy; 2025 Madhurima Rawat. All rights reserved.</b></p>
+</footer>
+
+</html>

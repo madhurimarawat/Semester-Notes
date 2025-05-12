@@ -1,0 +1,216 @@
+<!-- 
+    Author: Madhurima Rawat
+    Date: 05 March 2025
+    Description: 
+    This HTML document provides a structured guide to R programming, covering fundamental concepts, 
+    syntax, data structures, functions, and applications.
+
+    Features:
+    - Uses a clean and readable design with pastel row colors.
+    - Includes definitions, functions, key concepts, and real-life examples.
+    - Enhances readability with emojis and clear column distinctions.
+    - Demonstrates essential programming constructs such as vectors, data frames, operators, and control statements.
+    - Footer includes copyright information.
+
+    Purpose:
+    - Serves as an educational reference for learning R programming basics and its applications.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R Programming Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7ff;
+            margin: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF6347;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #FF6347;
+            color: #fff;
+        }
+
+        tr:nth-child(2) th,
+        tr:nth-child(2) td {
+            background-color: #ffe4e1;
+        }
+
+        tr:nth-child(3) th,
+        tr:nth-child(3) td {
+            background-color: #e6e6fa;
+        }
+
+        tr:nth-child(4) th,
+        tr:nth-child(4) td {
+            background-color: #e0ffff;
+        }
+
+        tr:nth-child(5) th,
+        tr:nth-child(5) td {
+            background-color: #ffebcd;
+        }
+
+        tr:nth-child(6) th,
+        tr:nth-child(6) td {
+            background-color: #ffcccb;
+        }
+
+        tr:nth-child(7) th,
+        tr:nth-child(7) td {
+            background-color: #e0f2f1;
+        }
+
+        tr:nth-child(8) th,
+        tr:nth-child(8) td {
+            background-color: #fafad2;
+        }
+
+        tr:nth-child(9) th,
+        tr:nth-child(9) td {
+            background-color: #d0f0c0;
+        }
+
+        tr:nth-child(10) th,
+        tr:nth-child(10) td {
+            background-color: #FFF8DC;
+            /* Cornsilk (Lighter Gold) */
+        }
+
+        tr:nth-child(11) th,
+        tr:nth-child(11) td {
+            background-color: #DFFFD6;
+            /* MintCream (Lighter PaleGreen) */
+        }
+
+        tr:nth-child(12) th,
+        tr:nth-child(12) td {
+            background-color: #E0FFFF;
+            /* LightCyan (Lighter LightBlue) */
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+
+        tr:last-child th,
+        tr:last-child td {
+            background-color: #FFFEA3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>R Programming Guide 📊</h1>
+    <table>
+        <tr>
+            <th>Concept 📌</th>
+            <th>Description 📖</th>
+            <th>Function ⚙️</th>
+            <th>Real-Life Example 🌍</th>
+        </tr>
+        <tr>
+            <td>What is R?</td>
+            <td>Open-source language for statistical computing and data analysis.</td>
+            <td>N/A</td>
+            <td>Used in finance, healthcare, and research for data modeling.</td>
+        </tr>
+        <tr>
+            <td>Basic Syntax</td>
+            <td>Uses '<-' for assignment.</td>
+            <td>x <- 10</td>
+            <td>Assigning scores in grading systems.</td>
+        </tr>
+        <tr>
+            <td>Vectors</td>
+            <td>Basic data structure storing multiple values.</td>
+            <td>vec <- c(1, 2, 3)</td>
+            <td>Stock price trends over time.</td>
+        </tr>
+        <tr>
+            <td>Data Frames</td>
+            <td>Tabular data storage.</td>
+            <td>df <- data.frame(Name=c("A", "B" ), Age=c(25,30))</td>
+            <td>Storing patient records in hospitals.</td>
+        </tr>
+        <tr>
+            <td>Operators</td>
+            <td>Used for arithmetic and logical operations.</td>
+            <td>x + y, x == y</td>
+            <td>Financial calculations like tax deductions.</td>
+        </tr>
+        <tr>
+            <td>Functions</td>
+            <td>Reusable code blocks.</td>
+            <td>sum(x), mean(y)</td>
+            <td>Analyzing survey responses.</td>
+        </tr>
+        <tr>
+            <td>Control Statements</td>
+            <td>Loops and conditionals.</td>
+            <td>if-else, for, while</td>
+            <td>Automating report generation.</td>
+        </tr>
+        <tr>
+            <td>Packages</td>
+            <td>Extend R functionality.</td>
+            <td>install.packages("ggplot2")</td>
+            <td>Creating advanced data visualizations.</td>
+        </tr>
+        <tr>
+            <td>Data Visualization</td>
+            <td>Graphical representation of data.</td>
+            <td>plot(x, y), ggplot()</td>
+            <td>Sales trend analysis in businesses.</td>
+        </tr>
+        <tr>
+            <td>Linear Models (lm)</td>
+            <td>Used for regression analysis.</td>
+            <td>lm(y ~ x, data)</td>
+            <td>Predicting housing prices.</td>
+        </tr>
+        <tr>
+            <td>Machine Learning</td>
+            <td>Implements predictive models.</td>
+            <td>library(caret)</td>
+            <td>Fraud detection in banking.</td>
+        </tr>
+        <tr>
+            <td>Boolean Logic</td>
+            <td>TRUE/FALSE values in logical expressions.</td>
+            <td>x > 10</td>
+            <td>Filtering spam emails.</td>
+        </tr>
+    </table>
+</body>
+
+<br>
+<footer>
+    <p style="color: #FF6347; font-size: 20px;"><b>&copy; 2025 Madhurima Rawat. All rights reserved.</b></p>
+</footer>
+
+</html>

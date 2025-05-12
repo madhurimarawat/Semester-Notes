@@ -1,0 +1,365 @@
+<!-- 
+    Author: Madhurima Rawat
+    Date: 12 March 2025
+    Description: 
+    This HTML document presents a structured and responsive webpage for CT-1 solutions, 
+    offering dynamic calculations and a clean user-friendly interface.
+
+    Features:
+    - Uses a simple, professional layout with structured sections.
+    - Allows users to input data and compute solutions dynamically.
+    - Utilizes JavaScript (math.js library v11.11.0) for accurate mathematical computations.
+    - Styled with CSS for readability and a visually appealing design.
+    - Footer includes copyright information.
+
+    Purpose:
+    - Provides an easy-to-use interface for solving CT-1 related problems efficiently.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CT-1 Solutions</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.js"></script>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 15px;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .author {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        /* Question cards */
+        .question {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px;
+            /* Adds margin around each card */
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .question:hover {
+            transform: scale(1.02);
+        }
+
+        /* Bullet point formatting */
+        .question ul {
+            list-style-position: inside;
+            /* Moves bullets inside the content block */
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        /* Pastel colors for different questions */
+        .q1 {
+            background-color: #ffd1dc;
+        }
+
+        /* pastel pink */
+        .q2 {
+            background-color: #d1ffd6;
+        }
+
+        /* pastel green */
+        .q3 {
+            background-color: #d1e0ff;
+        }
+
+        /* pastel blue */
+        .q4 {
+            background-color: #ead1ff;
+        }
+
+        /* pastel purple */
+        .q5 {
+            background-color: #fff5d1;
+        }
+
+        /* pastel yellow */
+        .q6 {
+            background-color: #d1fff5;
+        }
+
+        /* pastel cyan */
+        .q7 {
+            background-color: #ffd1f5;
+        }
+
+        /* pastel magenta */
+
+        /* Regular code block style inside a question */
+        .question pre {
+            background-color: #faf0e6;
+            /* pastel beige (light, soft) */
+            padding: 15px;
+            margin: 15px 0;
+            /* spacing above and below code blocks */
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95em;
+            line-height: 1.5;
+            color: #333;
+            /* dark text for readability */
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            font-weight: bolder;
+            font-size: 18px;
+        }
+
+        /* Special pastel code block if needed (optional) */
+        .question pre.output-block {
+            background-color: #fce4ec;
+            /* pastel pink for output */
+            color: #333;
+            border: 1px solid #f8bbd0;
+        }
+
+        /* Inline code formatting */
+        .question code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #c7254e;
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 50px;
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>CT-1 Solutions</h1>
+    <div class="author">By Madhurima Rawat</div>
+
+    <h2>UNIT 1</h2>
+
+    <div class="question q1">
+        <h3>1. Purpose of Cash Flow Discounting</h3>
+        <p><strong>Answer:</strong> B. To convert future cash flows into present value</p>
+    </div>
+
+    <div class="question q2">
+        <h3>2. Asset Pricing Model Assuming Efficient Market Portfolio</h3>
+        <p><strong>Answer:</strong> B. Capital Asset Pricing Model (CAPM)</p>
+    </div>
+
+    <div class="question q3">
+        <h3>3. Integration of Financial Analysis and Machine Learning</h3>
+        <p>
+            Traditional financial analysis employs risk-return analysis, cash flow discounting, and asset pricing models
+            to
+            make investment decisions.
+        <ul>
+            <li><strong>Risk-return analysis</strong> evaluates expected returns relative to risk (volatility).</li>
+            <li><strong>Cash flow discounting</strong> brings future inflows to present value using discount rates.</li>
+            <li><strong>Asset pricing models</strong> (CAPM, APT) estimate required returns for taking on specific risk.
+            </li>
+        </ul>
+        Emerging machine learning (ML) techniques enhance these by:
+        <ul>
+            <li>Using predictive models to forecast returns, risk, and potential anomalies more accurately.</li>
+            <li>Applying data-driven insights to identify hidden patterns in large datasets.</li>
+            <li>Automating decision-making processes for dynamic portfolio management.</li>
+        </ul>
+        </p>
+    </div>
+
+    <div class="question q4">
+        <h3>4. NPV Calculation</h3>
+        <pre>
+  CF1 = 800
+  CF2 = 1000
+  CF3 = 1200
+  r = 9% = 0.09
+
+  NPV = CF1 / (1 + r)^1 + CF2 / (1 + r)^2 + CF3 / (1 + r)^3
+  </pre>
+        <script>
+            const r = 0.09;
+            const CF1 = 800;
+            const CF2 = 1000;
+            const CF3 = 1200;
+
+            const NPV = CF1 / math.pow(1 + r, 1) + CF2 / math.pow(1 + r, 2) + CF3 / math.pow(1 + r, 3);
+            document.write(`<p><strong>NPV:</strong> $${NPV.toFixed(2)}</p>`);
+        </script>
+    </div>
+
+    <div class="question q5">
+        <h3>5. Mean, Variance, Standard Deviation, and Beta</h3>
+        <pre>
+  Returns = [7, 10, 4, 8, 12]
+  Mean = sum / n
+  Variance = sum((xi - mean)^2) / (n - 1)
+  Std Dev = sqrt(variance)
+
+  Beta = Cov(stock, market) / Var(market)
+  </pre>
+        <script>
+            const returns = [7, 10, 4, 8, 12];
+            const meanReturn = math.mean(returns);
+            const variance = math.variance(returns);
+            const stdDev = math.std(returns);
+
+            const covStockMarket = 0.018;
+            const varMarket = 0.02;
+            const beta = covStockMarket / varMarket;
+
+            document.write(`<p><strong>Mean Return:</strong> ${meanReturn.toFixed(2)}%</p>`);
+            document.write(`<p><strong>Variance:</strong> ${variance.toFixed(4)}</p>`);
+            document.write(`<p><strong>Standard Deviation:</strong> ${stdDev.toFixed(4)}</p>`);
+            document.write(`<p><strong>Beta:</strong> ${beta.toFixed(4)}</p>`);
+        </script>
+    </div>
+
+    <h2>UNIT 2</h2>
+
+    <div class="question q1">
+        <h3>1. Order-Driven Market Matching Mechanism</h3>
+        <p><strong>Answer:</strong> B. Limit order book</p>
+    </div>
+
+    <div class="question q2">
+        <h3>2. Interest Rate Compounding</h3>
+        <p><strong>Answer:</strong> B. Reflect the time value of money</p>
+    </div>
+
+    <div class="question q3">
+        <h3>3. Portfolio Risk in Mean-Variance Framework</h3>
+        <p><strong>Answer:</strong> B. Asset correlations and individual variances</p>
+    </div>
+
+    <div class="question q4">
+        <h3>4. Efficient Frontier Representation</h3>
+        <p><strong>Answer:</strong> B. The set of portfolios that offer the maximum expected return for a given level of
+            risk</p>
+    </div>
+
+    <div class="question q5">
+        <h3>5. Portfolio Optimization Principles</h3>
+        <ul>
+            <li><strong>Efficient frontier:</strong> Set of optimal portfolios offering maximum return for a given risk.
+            </li>
+            <li><strong>Minimum variance portfolio:</strong> Portfolio with the lowest risk for a given return.</li>
+            <li><strong>Risk-free lending/borrowing:</strong> Shifts the efficient frontier to the capital market line
+                (CML), improving risk-return trade-off.</li>
+        </ul>
+    </div>
+
+    <div class="question q6">
+        <h3>6. Two-Asset Portfolio Expected Return and Standard Deviation</h3>
+        <pre>
+  E(Rp) = wA * RA + wB * RB
+  σp = sqrt( wA^2 * σA^2 + wB^2 * σB^2 + 2 * wA * wB * ρAB * σA * σB )
+
+  Given:
+  wA = 0.5, wB = 0.5
+  RA = 9%, RB = 13%
+  σA = 10%, σB = 18%
+  ρAB = 0.5
+  </pre>
+        <script>
+            const wA = 0.5, wB = 0.5;
+            const RA = 9, RB = 13;
+            const sigmaA = 10, sigmaB = 18;
+            const rhoAB = 0.5;
+
+            const expectedReturnPortfolio = wA * RA + wB * RB;
+            const portfolioVariance = math.pow(wA, 2) * math.pow(sigmaA, 2) + math.pow(wB, 2) * math.pow(sigmaB, 2) + 2 * wA * wB * rhoAB * sigmaA * sigmaB;
+            const portfolioStdDev = math.sqrt(portfolioVariance);
+
+            document.write(`<p><strong>Expected Return:</strong> ${expectedReturnPortfolio.toFixed(2)}%</p>`);
+            document.write(`<p><strong>Standard Deviation:</strong> ${portfolioStdDev.toFixed(2)}%</p>`);
+        </script>
+    </div>
+
+    <div class="question q7">
+        <h3>7. Minimum Variance Portfolio (Three Assets)</h3>
+
+        <pre>
+      Given Expected Returns: [8%, 11%, 14%]
+      Covariance Matrix:
+          [0.025  0.010  0.005]
+          [0.010  0.040  0.015]
+          [0.005  0.015  0.090]
+      </pre>
+
+        <p>
+            This problem requires solving:<br>
+            Minimize <code>w'Σw</code><br>
+            Subject to: <code>w1 + w2 + w3 = 1</code>
+        </p>
+
+        <p>
+            Solution requires linear algebra (matrix inversion or quadratic programming).<br>
+            This is a complex calculation; implementation can be done in Python or MATLAB for exact weights.
+        </p>
+
+        <pre class="output-block">
+    Minimum Variance Portfolio (MVP) for Three Assets
+    ------------------------------------------------------------
+    Expected Returns (given, not directly used in MVP calc):
+    Asset 1: 8.00%
+    Asset 2: 11.00%
+    Asset 3: 14.00%
+    
+    Covariance Matrix:
+    [[0.025 0.01 0.005]
+     [0.01 0.04 0.015]
+     [0.005 0.015 0.09 ]]
+    
+    Inverse of Covariance Matrix (Σ⁻¹):
+    [[ 44.4811 -10.8731 -0.659 ]
+     [-10.8731 29.3245 -4.2834]
+     [ -0.659  -4.2834 11.8616]]
+    
+    Vector of Ones: [1. 1. 1.]
+    
+    --- Results ---
+    Weight of Asset 1: 0.6098 (60.98%)
+    Weight of Asset 2: 0.2622 (26.22%)
+    Weight of Asset 3: 0.1280 (12.80%)
+    
+    Minimum Portfolio Variance: 0.018506
+    Minimum Portfolio Standard Deviation (Risk): 0.1360
+    
+    --- End of Calculation ---
+      </pre>
+    </div>
+
+    <footer>© 2025 Madhurima Rawat. All rights reserved.</footer>
+</body>
+
+</html>

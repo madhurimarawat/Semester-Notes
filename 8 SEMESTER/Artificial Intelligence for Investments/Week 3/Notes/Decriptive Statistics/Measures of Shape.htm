@@ -1,0 +1,269 @@
+<!--  
+    Author: Madhurima Rawat  
+    Date: 27 February 2025  
+    Description:  
+    This HTML document explains the measures of shape in statistics, specifically Skewness and Kurtosis.  
+
+    Features:  
+    - Uses a structured table format with alternating pastel row colors for readability.  
+    - Includes definitions, formulas, use cases, real-life examples, and sensitivity to extreme values.  
+    - MathJax integration for rendering mathematical formulas.  
+    - Enhances clarity with emojis and distinct column categorization.  
+
+    Purpose:  
+    - Provides an educational reference for understanding data symmetry and distribution characteristics.  
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measures of Shape</title>
+    <script type="text/javascript" async src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7ff;
+            margin: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1,
+        h2 {
+            color: #FF6347;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #FF6347;
+            color: #fff;
+        }
+
+        tr:nth-child(2) th,
+        tr:nth-child(2) td {
+            background-color: #ffe4e1;
+        }
+
+        tr:nth-child(3) th,
+        tr:nth-child(3) td {
+            background-color: #e6e6fa;
+        }
+
+        tr:nth-child(4) th,
+        tr:nth-child(4) td {
+            background-color: #e0ffff;
+        }
+
+        tr:nth-child(5) th,
+        tr:nth-child(5) td {
+            background-color: #ffebcd;
+        }
+
+        tr:nth-child(6) th,
+        tr:nth-child(6) td {
+            background-color: #ffcccb;
+        }
+
+        tr:nth-child(7) th,
+        tr:nth-child(7) td {
+            background-color: #e0f2f1;
+        }
+
+        tr:nth-child(8) th,
+        tr:nth-child(8) td {
+            background-color: #fafad2;
+        }
+
+        tr:nth-child(9) th,
+        tr:nth-child(9) td {
+            background-color: #d0f0c0;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+
+        tr:last-child th,
+        tr:last-child td {
+            background-color: #FFFEA3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Measures of Shape 📈</h1>
+    <table>
+        <tr>
+            <th>Properties 📜</th>
+            <th>Skewness 🔄</th>
+            <th>Kurtosis ⛰️</th>
+        </tr>
+        <tr>
+            <td>Definition 📖</td>
+            <td>Measure of asymmetry in data distribution. Positive skew means the right tail is longer, negative skew
+                means the left tail is longer.</td>
+            <td>Measure of the peakedness of the data distribution. It indicates whether data has heavy or light tails
+                compared to a normal distribution.</td>
+        </tr>
+        <tr>
+            <td>Formula 📝</td>
+            <td>\(\text{Skewness} = \frac{\sum (x - \mu)^3}{N\sigma^3}\)</td>
+            <td>\(\text{Kurtosis} = \frac{\sum (x - \mu)^4}{N\sigma^4} - 3\)</td>
+        </tr>
+        <tr>
+            <td>Use Cases 🎯</td>
+            <td>Identifies bias in financial returns, test scores, climate data trends</td>
+            <td>Determines if data has outliers, assesses risk in financial modeling</td>
+        </tr>
+        <tr>
+            <td>Effect of Outliers ⚠️</td>
+            <td>Highly affected</td>
+            <td>Highly affected</td>
+        </tr>
+        <tr>
+            <td>Real-life Examples 🌍</td>
+            <td>Income distributions, stock market returns, response times in psychological studies</td>
+            <td>Quality control in manufacturing, earthquake magnitude distributions</td>
+        </tr>
+        <tr>
+            <td>Sensitivity to Extreme Values 🚨</td>
+            <td>Very sensitive</td>
+            <td>Very sensitive</td>
+        </tr>
+        <tr>
+            <td>Preferred Scenario ✅</td>
+            <td>When analyzing data symmetry, detecting trends in economic growth</td>
+            <td>When checking for heavy/light tails, determining risks in insurance claims</td>
+        </tr>
+    </table>
+
+    <h2>Types of Skewness 📊</h2>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Formula</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>Normal Distribution 📈</td>
+            <td>Mean = Median = Mode<br>Symmetric bell curve</td>
+            <td>
+                \[
+                S = 0
+                \]
+            </td>
+            <td>Heights of adults, IQ scores, measurement errors.<br>
+                <b>Case Study:</b> The heights of people in a large population follow a symmetric normal distribution
+                where
+                most people are around the average height.
+            </td>
+        </tr>
+        <tr>
+            <td>Positive Skew 📊</td>
+            <td>Mean > Median > Mode<br>Long right tail</td>
+            <td>
+                \( S > 0 \) <br><br>
+                \[
+                S = \frac{n}{(n-1)(n-2)} \sum \left( \frac{x_i - \bar{x}}{s} \right)^3
+                \]
+            </td>
+            <td>Income distribution, house prices, hospital waiting times.<br>
+                <b>Case Study:</b> In a city, most people earn between $40,000–$70,000, but a few high earners (CEOs,
+                celebrities) push the mean higher.
+            </td>
+        </tr>
+        <tr>
+            <td>Negative Skew 📉</td>
+            <td>Mean < Median < Mode<br>Long left tail</td>
+            <td>
+                \( S < 0 \) <br><br>
+                    \[
+                    S = \frac{n}{(n-1)(n-2)} \sum \left( \frac{x_i - \bar{x}}{s} \right)^3
+                    \]
+            </td>
+            <td>Test scores in an easy exam, retirement ages, lifespans of electronic devices.<br>
+                <b>Case Study:</b> In a university exam, most students score very high, but a few outliers with very low
+                scores pull the mean down.
+            </td>
+        </tr>
+    </table>
+
+    <h2>Types of Kurtosis ⛰️</h2>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Formula</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>Leptokurtic 🔼</td>
+            <td>Highly peaked, indicating heavy tails</td>
+            <td>
+                \[
+                K = \frac{\sum (x - \mu)^4}{N\sigma^4} - 3
+                \]
+            </td>
+            <td>Fat tails (e.g., financial crises data, stock market crashes, medical expenses in rare diseases).<br>
+                <b>Case Study:</b> During a stock market crash, most stocks see normal returns, but extreme losses and
+                gains
+                create heavy tails.
+            </td>
+        </tr>
+        <tr>
+            <td>Mesokurtic 🏔️</td>
+            <td>Normal distribution with moderate tails</td>
+            <td>
+                \[
+                K = 0
+                \]
+            </td>
+            <td>Moderate tails (e.g., standardized test scores, height distribution of adults, IQ scores).<br>
+                <b>Case Study:</b> Standardized test scores (like SAT scores) show a normal distribution with most
+                students
+                scoring around the average.
+            </td>
+        </tr>
+        <tr>
+            <td>Platykurtic ⬇️</td>
+            <td>Flat distribution with thin tails</td>
+            <td>
+                \[
+                K < 0 \] </td>
+            <td>Thin tails (e.g., uniform distribution, rolling a fair die, random lottery numbers).<br>
+                <b>Case Study:</b> The results of rolling a fair six-sided die form a uniform distribution where no
+                extreme
+                values occur frequently.
+            </td>
+        </tr>
+    </table>
+</body>
+
+<br>
+<footer>
+    <p style="color: #FF6347; font-size: 20px;"><b>&copy; 2025 Madhurima Rawat. All rights reserved.</b></p>
+</footer>
+
+
+</html>

@@ -1,0 +1,165 @@
+<!-- 
+    Author: Madhurima Rawat
+    Date: 05 March 2025
+    Description: 
+    This HTML document presents a structured table explaining different sampling methods
+    (Simple Random Sampling, Stratified Random Sampling, Cluster Sampling, and Systematic Sampling). 
+
+    Features:
+    - Uses a clean, readable design with alternating pastel row colors.
+    - Includes definitions, methodology, use cases, advantages, real-life examples, and formulas.
+    - Enhances readability with emojis and clear column distinctions.
+    - Uses JavaScript to dynamically display formulas.
+    - Footer includes copyright information.
+
+    Purpose:
+    - Provides an educational reference for understanding key sampling techniques in statistics.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sampling Methods</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7ff;
+            margin: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF6347;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #FF6347;
+            color: #fff;
+        }
+
+        tr:nth-child(2) th,
+        tr:nth-child(2) td {
+            background-color: #ffe4e1;
+        }
+
+        tr:nth-child(3) th,
+        tr:nth-child(3) td {
+            background-color: #e6e6fa;
+        }
+
+        tr:nth-child(4) th,
+        tr:nth-child(4) td {
+            background-color: #e0ffff;
+        }
+
+        tr:nth-child(5) th,
+        tr:nth-child(5) td {
+            background-color: #ffebcd;
+        }
+
+        tr:nth-child(6) th,
+        tr:nth-child(6) td {
+            background-color: #ffcccb;
+        }
+
+        tr:nth-child(7) th,
+        tr:nth-child(7) td {
+            background-color: #e0f2f1;
+        }
+
+        tr:nth-child(8) th,
+        tr:nth-child(8) td {
+            background-color: #fafad2;
+        }
+
+        tr:nth-child(9) th,
+        tr:nth-child(9) td {
+            background-color: #d0f0c0;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+
+        tr:last-child th,
+        tr:last-child td {
+            background-color: #FFFEA3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sampling Methods 🎯</h1>
+    <table>
+        <tr>
+            <th>Method 📜</th>
+            <th>Definition 📖</th>
+            <th>Methodology 🛠️</th>
+            <th>Formula 📏</th>
+            <th>Use Cases 🎯</th>
+            <th>Real-life Example 🌍</th>
+            <th>Advantages ✅</th>
+        </tr>
+        <tr>
+            <td>Simple Random Sampling 🎲</td>
+            <td>Every individual has an equal chance of selection</td>
+            <td>Randomly selecting samples using a lottery or random number generator</td>
+            <td>\( P = \frac{1}{N} \)</td>
+            <td>Used in surveys, elections, and experiments</td>
+            <td>Selecting employees randomly for a company survey</td>
+            <td>Eliminates bias, easy to implement</td>
+        </tr>
+        <tr>
+            <td>Stratified Random Sampling 📊</td>
+            <td>Population is divided into subgroups (strata) before sampling</td>
+            <td>Randomly selecting samples from each subgroup</td>
+            <td>\( n_i = \frac{N_i}{N} \times n \)</td>
+            <td>Used in studies where population has distinct categories</td>
+            <td>Dividing students into grade levels before selecting samples</td>
+            <td>Ensures representation, reduces variability</td>
+        </tr>
+        <tr>
+            <td>Cluster Sampling 🏘️</td>
+            <td>Population is divided into clusters, some clusters are randomly selected</td>
+            <td>Randomly selecting entire groups instead of individuals</td>
+            <td>\( k = \frac{N}{n} \)</td>
+            <td>Used in large-scale surveys and geographic studies</td>
+            <td>Choosing cities randomly for a national survey</td>
+            <td>Cost-effective, easier for large populations</td>
+        </tr>
+        <tr>
+            <td>Systematic Sampling 🔄</td>
+            <td>Every nth individual is selected from a list</td>
+            <td>Choosing a starting point and selecting every nth item</td>
+            <td>\( k = \frac{N}{n} \)</td>
+            <td>Used in quality control and manufacturing</td>
+            <td>Inspecting every 10th item on a production line</td>
+            <td>Simple to use, ensures even coverage</td>
+        </tr>
+    </table>
+</body>
+
+<br>
+<footer>
+    <p style="color: #FF6347; font-size: 20px;"><b>&copy; 2025 Madhurima Rawat. All rights reserved.</b></p>
+</footer>
+
+</html>

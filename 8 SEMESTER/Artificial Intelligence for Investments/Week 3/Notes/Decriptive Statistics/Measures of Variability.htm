@@ -1,0 +1,175 @@
+<!-- 
+    Author: Madhurima Rawat
+    Date: 27 February 2025
+    Description: 
+    This HTML document presents a structured table explaining different measures of variability 
+    (Range, Variance, Standard Deviation, and Mean Absolute Deviation). 
+
+    Features:
+    - Uses a clean, readable design with alternating pastel row colors.
+    - Includes formulas, definitions, use cases, and sensitivity to outliers.
+    - Enhances readability with emojis and clear column distinctions.
+    - Footer includes copyright information.
+
+    Purpose:
+    - Provides an educational reference for understanding data dispersion metrics in statistics.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measures of Variability</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7ff;
+            margin: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF6347;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #FF6347;
+            color: #fff;
+        }
+
+        tr:nth-child(2) th,
+        tr:nth-child(2) td {
+            background-color: #ffe4e1;
+        }
+
+        tr:nth-child(3) th,
+        tr:nth-child(3) td {
+            background-color: #e6e6fa;
+        }
+
+        tr:nth-child(4) th,
+        tr:nth-child(4) td {
+            background-color: #e0ffff;
+        }
+
+        tr:nth-child(5) th,
+        tr:nth-child(5) td {
+            background-color: #ffebcd;
+        }
+
+        tr:nth-child(6) th,
+        tr:nth-child(6) td {
+            background-color: #ffcccb;
+        }
+
+        tr:nth-child(7) th,
+        tr:nth-child(7) td {
+            background-color: #e0f2f1;
+        }
+
+        tr:nth-child(8) th,
+        tr:nth-child(8) td {
+            background-color: #fafad2;
+        }
+
+        tr:nth-child(9) th,
+        tr:nth-child(9) td {
+            background-color: #d0f0c0;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+
+        tr:last-child th,
+        tr:last-child td {
+            background-color: #FFFEA3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Measures of Variability 📊</h1>
+    <table>
+        <tr>
+            <th>Properties 📜</th>
+            <th>Range 📏</th>
+            <th>Variance 📊</th>
+            <th>Standard Deviation (SD) 📉</th>
+            <th>Mean Absolute Deviation (MAD) 🧮</th>
+        </tr>
+        <tr>
+            <td>Definition 📖</td>
+            <td>Difference between largest and smallest data point</td>
+            <td>Average of the squared deviations from the mean</td>
+            <td>Square root of variance, measures dispersion</td>
+            <td>Average of absolute deviations from the mean</td>
+        </tr>
+        <tr>
+            <td>Formula 📝</td>
+            <td>Range = Max - Min</td>
+            <td>Variance (σ²) = Σ(x - μ)² / N</td>
+            <td>SD (σ) = √Variance</td>
+            <td>MAD = Σ|x - μ| / N</td>
+        </tr>
+        <tr>
+            <td>Use Cases 🎯</td>
+            <td>Measures total spread of data</td>
+            <td>Determines data variability</td>
+            <td>Used in finance, statistics</td>
+            <td>More robust than SD for skewed data</td>
+        </tr>
+        <tr>
+            <td>Effect of Outliers ⚠️</td>
+            <td>Highly affected</td>
+            <td>Affected</td>
+            <td>Affected</td>
+            <td>Less affected</td>
+        </tr>
+        <tr>
+            <td>Real-life Examples 🌍</td>
+            <td>Temperature variations in a week</td>
+            <td>Stock market fluctuations</td>
+            <td>Measuring risk in finance</td>
+            <td>Income distribution analysis</td>
+        </tr>
+        <tr>
+            <td>Sensitivity to Extreme Values 🚨</td>
+            <td>Very sensitive</td>
+            <td>Moderately sensitive</td>
+            <td>Moderately sensitive</td>
+            <td>Least sensitive</td>
+        </tr>
+        <tr>
+            <td>Preferred Scenario ✅</td>
+            <td>Quick estimate of spread</td>
+            <td>Detailed variability analysis</td>
+            <td>Comparing datasets with similar distributions</td>
+            <td>Best for non-normal distributions</td>
+        </tr>
+    </table>
+</body>
+
+<br>
+<footer>
+    <p style="color: #FF6347; font-size: 20px;"><b>&copy; 2025 Madhurima Rawat. All rights reserved.</b></p>
+</footer>
+
+</html>

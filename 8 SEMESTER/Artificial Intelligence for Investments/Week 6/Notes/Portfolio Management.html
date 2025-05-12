@@ -1,0 +1,182 @@
+<!-- 
+    Author: Madhurima Rawat
+    Date: 05 March 2025
+    Description: 
+    This HTML document presents a structured table explaining key concepts of portfolio management,
+    including expected returns, risk, portfolio construction, optimization, and risk-free lending & borrowing.
+
+    Features:
+    - Uses a clean, readable design with pastel row colors.
+    - Includes core portfolio management topics such as diversification, optimization, and market risk.
+    - Enhances readability with a structured table format.
+    - Interactive formulas using Math.js.
+    - Footer includes copyright information.
+
+    Purpose:
+    - Provides an educational reference for understanding portfolio management principles.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Management</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.5.0/math.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7ff;
+            margin: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF6347;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        th {
+            background-color: #FF6347;
+            color: #fff;
+        }
+
+        tr:nth-child(2) td {
+            background-color: #ffe4e1;
+        }
+
+        tr:nth-child(3) td {
+            background-color: #e6e6fa;
+        }
+
+        tr:nth-child(4) td {
+            background-color: #e0ffff;
+        }
+
+        tr:nth-child(5) td {
+            background-color: #ffebcd;
+        }
+
+        tr:nth-child(6) td {
+            background-color: #ffcccb;
+        }
+
+        tr:nth-child(7) td {
+            background-color: #e0f2f1;
+        }
+
+        tr:nth-child(8) td {
+            background-color: #fafad2;
+        }
+
+        tr:nth-child(9) td {
+            background-color: #d0f0c0;
+        }
+
+        tr:nth-child(10) td {
+            background-color: #add8e6;
+        }
+
+        tr:nth-child(11) td {
+            background-color: #c1e1c1;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+
+        .math {
+            font-family: monospace;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Portfolio Management 📈</h1>
+    <table>
+        <tr>
+            <th>Topic 📌</th>
+            <th>Description 📖</th>
+            <th>Formula 📊</th>
+            <th>Real-Life Example 🌍</th>
+        </tr>
+        <tr>
+            <td>Expected Returns and Risk</td>
+            <td>Measures the probable return and uncertainty in investments.</td>
+            <td class="math">E(R) = Σ [P(i) * R(i)]</td>
+            <td>Investing in stocks: higher returns come with higher volatility.</td>
+        </tr>
+        <tr>
+            <td>Portfolio Construction (Two-Security Case)</td>
+            <td>Analyzing risk-return trade-offs for two assets.</td>
+            <td class="math">E(Rp) = w₁E(R₁) + w₂E(R₂)</td>
+            <td>Balancing between a risk-free bond and a tech stock.</td>
+        </tr>
+        <tr>
+            <td>Portfolio Construction (N-Security Case)</td>
+            <td>Extending diversification across multiple assets.</td>
+            <td class="math">E(Rp) = Σ[wᵢ * E(Rᵢ)]</td>
+            <td>Building an index fund with various industries.</td>
+        </tr>
+        <tr>
+            <td>Risk Diversification</td>
+            <td>Reduces overall risk by investing in varied assets.</td>
+            <td class="math">σp² = Σ Σ (wᵢwⱼσᵢⱼ)</td>
+            <td>Holding bonds and stocks reduces financial risk.</td>
+        </tr>
+        <tr>
+            <td>Portfolio Optimization</td>
+            <td>Finding the best allocation to maximize returns.</td>
+            <td class="math">Maximize: E(Rp) - λσ²</td>
+            <td>Hedge funds use optimization for max profit.</td>
+        </tr>
+        <tr>
+            <td>Feasible Region & Short Sales</td>
+            <td>Explores possible portfolio allocations.</td>
+            <td class="math">Σ wᵢ = 1 (with or without wᵢ &lt; 0)</td>
+            <td>Short selling tech stocks to hedge risk.</td>
+        </tr>
+        <tr>
+            <td>Minimum Variance Portfolio</td>
+            <td>Constructing the lowest-risk portfolio.</td>
+            <td class="math">w* = (σ₂² - σ₁₂) / (σ₁² + σ₂² - 2σ₁₂)</td>
+            <td>Investors looking for steady, low-risk returns.</td>
+        </tr>
+        <tr>
+            <td>Risk-Free Lending & Borrowing</td>
+            <td>Adding risk-free assets to improve portfolios.</td>
+            <td class="math">E(Rp) = Rf + (E(Rm) - Rf)β</td>
+            <td>Borrowing at a low rate to invest in stocks.</td>
+        </tr>
+        <tr>
+            <td>Market Risk and Beta</td>
+            <td>Systematic risk measurement in investments.</td>
+            <td class="math">β = Cov(Ri, Rm) / Var(Rm)</td>
+            <td>Tech stocks have higher betas than bonds.</td>
+        </tr>
+    </table>
+
+    <br>
+    <footer>
+        <p style="color: #FF6347; font-size: 20px;"><b>&copy; 2025 Madhurima Rawat. All rights reserved.</b></p>
+    </footer>
+</body>
+
+</html>
