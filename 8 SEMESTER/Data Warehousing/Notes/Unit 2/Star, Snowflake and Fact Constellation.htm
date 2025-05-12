@@ -1,0 +1,168 @@
+<!-- 
+Author: Madhurima Rawat
+Date: 26 February 2025
+Brief: This table compares three types of data warehouse schema models: Star Schema, Snowflake Schema, and Fact Constellation Schema.
+It covers key properties such as full form, definition, structure, normalization level, complexity, query performance, storage requirements, real-life examples, and use cases.
+
+Additional Details:
+- Color Palette: The table uses pastel shades such as coral, lavender, and light cyan to enhance readability.
+- Emoji Usage: Each column header has a relevant emoji (⭐ for Star Schema, ❄️ for Snowflake Schema, 🌌 for Fact Constellation Schema).
+- Design: Alternating row colors improve readability, while the header row has a distinct background.
+- Purpose: The table serves as a comparison guide for data modeling, helping users choose the right schema based on complexity, performance, and storage needs.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Warehouse Schemas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7ff;
+            margin: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF6347;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #FF6347;
+            color: #fff;
+        }
+
+        tr:nth-child(2) th,
+        tr:nth-child(2) td {
+            background-color: #ffe4e1;
+        }
+
+        tr:nth-child(3) th,
+        tr:nth-child(3) td {
+            background-color: #e6e6fa;
+        }
+
+        tr:nth-child(4) th,
+        tr:nth-child(4) td {
+            background-color: #e0ffff;
+        }
+
+        tr:nth-child(5) th,
+        tr:nth-child(5) td {
+            background-color: #ffebcd;
+        }
+
+        tr:nth-child(6) th,
+        tr:nth-child(6) td {
+            background-color: #ffcccb;
+        }
+
+        tr:nth-child(7) th,
+        tr:nth-child(7) td {
+            background-color: #e0f2f1;
+        }
+
+        tr:nth-child(8) th,
+        tr:nth-child(8) td {
+            background-color: #fafad2;
+        }
+
+        tr:nth-child(9) th,
+        tr:nth-child(9) td {
+            background-color: #d0f0c0;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+
+        tr:last-child th,
+        tr:last-child td {
+            background-color: #FFFEA3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Data Warehouse Schema Models 📊</h1>
+    <table>
+        <tr>
+            <th>Properties 📜</th>
+            <th>Star Schema ⭐</th>
+            <th>Snowflake Schema ❄️</th>
+            <th>Fact Constellation Schema 🌌</th>
+        </tr>
+        <tr>
+            <td>Definition 📖</td>
+            <td>Denormalized structure with a central fact table linked to dimension tables.</td>
+            <td>Normalized version of the star schema where dimension tables are further divided.</td>
+            <td>Complex schema with multiple fact tables sharing dimension tables.</td>
+        </tr>
+        <tr>
+            <td>Structure 🏗️</td>
+            <td>Simple, with direct relationships between fact and dimension tables.</td>
+            <td>More complex, with multiple levels of dimension tables.</td>
+            <td>Most complex, containing multiple fact tables with shared dimensions.</td>
+        </tr>
+        <tr>
+            <td>Normalization Level 🔄</td>
+            <td>Low (denormalized, minimal joins).</td>
+            <td>High (normalized, reducing redundancy).</td>
+            <td>Medium to high (fact tables normalized, dimensions may be shared).</td>
+        </tr>
+        <tr>
+            <td>Complexity ⚙️</td>
+            <td>Simple</td>
+            <td>Intermediate</td>
+            <td>High</td>
+        </tr>
+        <tr>
+            <td>Query Performance 🚀</td>
+            <td>Fast, as fewer joins are required.</td>
+            <td>Slower due to multiple joins.</td>
+            <td>Slower compared to star and snowflake schemas.</td>
+        </tr>
+        <tr>
+            <td>Storage Requirements 💾</td>
+            <td>Higher due to redundancy.</td>
+            <td>Lower, as normalization reduces data duplication.</td>
+            <td>Medium to high, as multiple fact tables are involved.</td>
+        </tr>
+        <tr>
+            <td>Real-Life Examples 🌟</td>
+            <td>Retail sales reporting, e-commerce dashboards.</td>
+            <td>Banking transaction systems, ERP systems.</td>
+            <td>Healthcare analytics, telecommunication data models.</td>
+        </tr>
+        <tr>
+            <td>Use Cases 🎯</td>
+            <td>Best for simple and fast query performance.</td>
+            <td>Best for reducing storage space and maintaining data integrity.</td>
+            <td>Best for complex analytical scenarios with multiple data sources.</td>
+        </tr>
+    </table>
+</body>
+
+<br>
+<footer>
+    <p style="color: #FF6347; font-size: 20px;"><b>&copy; 2025 Madhurima Rawat. All rights reserved.</b></p>
+</footer>
+
+</html>

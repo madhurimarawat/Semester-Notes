@@ -1,0 +1,191 @@
+<!-- 
+Author: Madhurima Rawat
+Date: 26 February 2025
+Brief: This table compares different types of data warehouse dimensions: Junk Dimension, Slowly Changing Dimension (SCD), Conformed Dimension, and Degenerate Dimension. 
+It covers key properties such as full form, definition, examples, purposes, features, user roles, customization, 
+real-life examples, and usage to help users understand the benefits and use cases of each dimension.
+
+Additional Details:
+- Color Palette: The table uses a pastel color scheme with alternating shades of colors such as coral, lavender, and light cyan 
+  to create a clean and readable design.
+- Emoji Usage: Each column header is paired with a relevant emoji (e.g., 🗑️ for Junk Dimension, 🕒 for Slowly Changing Dimension, 🔗 for Conformed Dimension, 🏷️ for Degenerate Dimension), 
+  enhancing user engagement and making the content more approachable.
+- Design: Alternating row colors improve readability and make the content visually appealing. The header rows are distinctly colored for easy differentiation.
+- Purpose: The table serves as a visual aid for comparing different data warehouse dimensions, providing key insights into their usage, features, and practical applications, 
+  helping users select the most suitable dimension for their needs.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Warehouse Dimensions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7ff;
+            margin: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF6347;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #FF6347;
+            color: #fff;
+        }
+
+        tr:nth-child(2) th,
+        tr:nth-child(2) td {
+            background-color: #ffe4e1;
+        }
+
+        tr:nth-child(3) th,
+        tr:nth-child(3) td {
+            background-color: #e6e6fa;
+        }
+
+        tr:nth-child(4) th,
+        tr:nth-child(4) td {
+            background-color: #e0ffff;
+        }
+
+        tr:nth-child(5) th,
+        tr:nth-child(5) td {
+            background-color: #ffebcd;
+        }
+
+        tr:nth-child(6) th,
+        tr:nth-child(6) td {
+            background-color: #ffcccb;
+        }
+
+        tr:nth-child(7) th,
+        tr:nth-child(7) td {
+            background-color: #e0f2f1;
+        }
+
+        tr:nth-child(8) th,
+        tr:nth-child(8) td {
+            background-color: #fafad2;
+        }
+
+        tr:nth-child(9) th,
+        tr:nth-child(9) td {
+            background-color: #d0f0c0;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Data Warehouse Dimensions 📊</h1>
+    <table>
+        <tr>
+            <th>Properties 📜</th>
+            <th>Junk Dimension 🗑️</th>
+            <th>Conformed Dimension 🔄</th>
+            <th>Slowly Changing Dimension 🕰️</th>
+            <th>Degenerate Dimension 🚫</th>
+        </tr>
+        <tr>
+            <td>Definition 📖</td>
+            <td>Groups small, unrelated attributes into one table to reduce clutter.</td>
+            <td>Used consistently across multiple fact tables for uniform data.</td>
+            <td>Tracks changes in data over time to maintain history.</td>
+            <td>A dimension key stored inside a fact table without a separate dimension table.</td>
+        </tr>
+        <tr>
+            <td>Example 🎯</td>
+            <td>Flags, statuses like "VIP Customer" or "Fraud Alert."</td>
+            <td>Customer details, product info, time dimensions.</td>
+            <td>Tracking address changes or job role history for an employee.</td>
+            <td>Order ID or Invoice Number inside a sales transaction table.</td>
+        </tr>
+        <tr>
+            <td>Purpose 🎯</td>
+            <td>Combines minor attributes to improve database efficiency.</td>
+            <td>Ensures consistency across multiple reports and data warehouses.</td>
+            <td>Preserves historical changes for tracking and reporting.</td>
+            <td>Reduces table joins and speeds up queries.</td>
+        </tr>
+        <tr>
+            <td>Storage 💾</td>
+            <td>Stored as a single compact table.</td>
+            <td>Used across multiple fact tables.</td>
+            <td>Maintains historical versions of data.</td>
+            <td>Stored directly inside the fact table.</td>
+        </tr>
+        <tr>
+            <td>Complexity 🧩</td>
+            <td>Low - Simple and easy to maintain.</td>
+            <td>Medium - Requires careful design to ensure consistency.</td>
+            <td>High - Needs strategies to handle historical changes.</td>
+            <td>Low - No separate table required.</td>
+        </tr>
+        <tr>
+            <td>Real-World Example 🌍</td>
+            <td>
+                A call center tracking customer preferences:
+                <ul>
+                    <li>"Do Not Call" flag (1 = Yes, 0 = No) 📵</li>
+                    <li>"Preferred Language" (1 = English, 2 = Spanish, 3 = French) 🌎</li>
+                </ul>
+            </td>
+            <td>
+                A retail store and bank sharing the same customer data:
+                <ul>
+                    <li>Customer ID: 12345 🆔</li>
+                    <li>Name: John Doe 👤</li>
+                    <li>Used in banking and shopping records 🏦🛍️</li>
+                </ul>
+            </td>
+            <td>
+                Employee promotion history in HR systems:
+                <ul>
+                    <li>Employee ID: 7890 🏢</li>
+                    <li>Job History: Junior Engineer → Senior Engineer → Manager 📈</li>
+                    <li>Tracks role changes over time ⏳</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Sales order records in an e-commerce database:</li>
+                    <li>Order ID: 56789 🛒</li>
+                    <li>Product: Laptop 💻</li>
+                    <li>Price: $1200 💰</li>
+                    <li>Order ID stored inside the fact table 📊</li>
+                </ul>
+            </td>
+        </tr>
+
+    </table>
+</body>
+
+<br>
+<footer>
+    <p style="color: #FF6347; font-size: 20px;"><b>&copy; 2024 Madhurima Rawat. All rights reserved.</b></p>
+</footer>
+
+</html>

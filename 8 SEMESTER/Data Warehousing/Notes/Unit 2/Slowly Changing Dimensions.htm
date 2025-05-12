@@ -1,0 +1,277 @@
+<!-- 
+Author: Madhurima Rawat
+Date: 26 February 2025
+Brief: This table compares five types of Slowly Changing Dimensions (SCDs) in Data Warehousing: Type 0, Type 1, Type 2, Type 3, and Type 4. 
+It covers key properties such as definition, example use cases, advantages, disadvantages, real-world scenarios, and tracking methods. 
+
+Additional Details:
+- Color Palette: Pastel shades for easy readability, including coral, lavender, light cyan, and mint green.
+- Emoji Usage: Each column header includes relevant emojis for a more engaging design.
+- Design: Alternating row colors enhance readability, and the header row stands out for clarity.
+- Purpose: This table serves as a quick reference for understanding different SCD types and selecting the appropriate one based on business needs.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCD Comparison Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7ff;
+            margin: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF6347;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #FF6347;
+            color: #fff;
+        }
+
+        /* Alternating Row Colors */
+        tr:nth-child(2) th,
+        tr:nth-child(2) td {
+            background-color: #ffe4e1;
+        }
+
+        /* Light Pink */
+        tr:nth-child(3) th,
+        tr:nth-child(3) td {
+            background-color: #e6e6fa;
+        }
+
+        /* Lavender */
+        tr:nth-child(4) th,
+        tr:nth-child(4) td {
+            background-color: #e0ffff;
+        }
+
+        /* Light Cyan */
+        tr:nth-child(5) th,
+        tr:nth-child(5) td {
+            background-color: #ffebcd;
+        }
+
+        /* Blanched Almond */
+        tr:nth-child(6) th,
+        tr:nth-child(6) td {
+            background-color: #ffcccb;
+        }
+
+        /* Misty Rose */
+        tr:nth-child(7) th,
+        tr:nth-child(7) td {
+            background-color: #e0f2f1;
+        }
+
+        /* Mint Green */
+        tr:nth-child(8) th,
+        tr:nth-child(8) td {
+            background-color: #fafad2;
+        }
+
+        /* Light Goldenrod */
+        tr:nth-child(9) th,
+        tr:nth-child(9) td {
+            background-color: #d0f0c0;
+        }
+
+        /* Tea Green */
+        tr:nth-child(10) th,
+        tr:nth-child(10) td {
+            background-color: #c2e0f7;
+        }
+
+        /* Light Sky Blue */
+        tr:nth-child(11) th,
+        tr:nth-child(11) td {
+            background-color: #f4d5d5;
+        }
+
+        /* Soft Peach */
+        tr:nth-child(12) th,
+        tr:nth-child(12) td {
+            background-color: #c7dcbd;
+        }
+
+        /* Pastel Green */
+
+        td:first-child {
+            font-weight: bold;
+        }
+
+        tr:last-child th,
+        tr:last-child td {
+            background-color: #FFFEA3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Slowly Changing Dimensions (SCDs) 🔄</h1>
+    <table>
+        <tr>
+            <th>Properties 📜</th>
+            <th>SCD Type 0 🚫</th>
+            <th>SCD Type 1 🔄</th>
+            <th>SCD Type 2 🏷️</th>
+            <th>SCD Type 3 📊</th>
+            <th>SCD Type 4 🏛️</th>
+            <th>SCD Type 6 🔀</th>
+        </tr>
+        <tr>
+            <td>Definition 📖</td>
+            <td>No changes tracked</td>
+            <td>Overwrites old data</td>
+            <td>Creates a new row for each change</td>
+            <td>Keeps limited history in columns</td>
+            <td>Stores historical data in a separate table</td>
+            <td>Combination of Type 1, Type 2, and Type 3</td>
+        </tr>
+        <tr>
+            <td>Example Use Case 📚</td>
+            <td>Immutable data (e.g., product SKUs)</td>
+            <td>Customer phone number updates</td>
+            <td>Employee salary changes over time</td>
+            <td>Product price changes with a "previous price" column</td>
+            <td>Historical customer address changes stored separately</td>
+            <td>Tracking customer loyalty level with history and latest status</td>
+        </tr>
+        <tr>
+            <td>Advantages ✅</td>
+            <td>Fastest and simplest</td>
+            <td>Easy to implement</td>
+            <td>Retains full history</td>
+            <td>Efficient for small history needs</td>
+            <td>Combines Type 1 & Type 2 benefits</td>
+            <td>Provides both full history and latest value in the same table</td>
+        </tr>
+        <tr>
+            <td>Disadvantages ❌</td>
+            <td>No history retained</td>
+            <td>Historical data is lost</td>
+            <td>More storage required</td>
+            <td>Limited historical tracking</td>
+            <td>Complexity in managing separate tables</td>
+            <td>Increased complexity due to combined methods</td>
+        </tr>
+        <tr>
+            <td>Tracking Method 🕵️</td>
+            <td>Not applicable</td>
+            <td>Overwrite existing record</td>
+            <td>New row with start/end date or version</td>
+            <td>New column for previous value</td>
+            <td>Separate historical table linked via keys</td>
+            <td>New row for history + current values updated</td>
+        </tr>
+        <tr>
+            <td>Real-Life Example 🌟</td>
+            <td>Product barcodes never change</td>
+            <td>Updating a customer's email address</td>
+            <td>Tracking patient's medical history</td>
+            <td>Tracking latest two addresses of a customer</td>
+            <td>Storing detailed job history for employees</td>
+            <td>Tracking customer membership tier with history and latest tier</td>
+        </tr>
+
+        <!-- Real-World Example -->
+        <tr>
+            <td colspan="7"><b>Real-World Example: Employee Department Change</b> 👔</td>
+        </tr>
+        <tr>
+            <td>Scenario</td>
+            <td colspan="6">John Doe moves from <b>Sales → Marketing</b> on <b>2025-03-01</b></td>
+        </tr>
+
+        <!-- Surrogate Key Handling -->
+        <tr>
+            <td><b>Surrogate Key 🆔</b></td>
+            <td>Not needed (Key remains same)</td>
+            <td>Same primary key, old value overwritten</td>
+            <td>New surrogate key per change</td>
+            <td>Same primary key, added "Prev_Dept" column</td>
+            <td>New surrogate key stored in history table</td>
+            <td>New surrogate key per change, plus "Prev_Dept" column</td>
+        </tr>
+
+        <!-- Stored Data Format -->
+        <tr>
+            <td><b>Stored Data Format 🗂️</b></td>
+            <td>Emp_ID = 101, Dept = Sales (Never changes)</td>
+            <td>Emp_ID = 101, Dept = Marketing (Old value lost)</td>
+            <td>
+                <b>Row 1:</b> Emp_SK = 5001, Emp_ID = 101, Dept = Sales, Valid From: 2024-01-01, Valid To: 2025-02-28,
+                Active: ❌
+                <br>
+                <b>Row 2:</b> Emp_SK = 6001, Emp_ID = 101, Dept = Marketing, Valid From: 2025-03-01, Valid To: NULL,
+                Active:
+                ✅
+            </td>
+            <td>Emp_ID = 101, Dept = Marketing, Prev_Dept = Sales</td>
+            <td>
+                <b>Main Table:</b> Emp_ID = 101, Dept = Marketing
+                <br>
+                <b>History Table:</b> Emp_SK = 5001, Emp_ID = 101, Dept = Sales, Valid From: 2024-01-01, Valid To:
+                2025-02-28
+            </td>
+            <td>
+                <b>Row 1:</b> Emp_SK = 5001, Emp_ID = 101, Dept = Sales, Prev_Dept = NULL, Valid From: 2024-01-01, Valid
+                To:
+                2025-02-28, Active: ❌
+                <br>
+                <b>Row 2:</b> Emp_SK = 6001, Emp_ID = 101, Dept = Marketing, Prev_Dept = Sales, Valid From: 2025-03-01,
+                Valid To: NULL, Active: ✅
+            </td>
+        </tr>
+
+        <!-- Valid Date Ranges -->
+        <tr>
+            <td><b>Valid From - Valid To 📅</b></td>
+            <td>Not applicable (No history tracked)</td>
+            <td>Not applicable (Overwrites directly)</td>
+            <td>Stored in separate rows with start and end dates</td>
+            <td>Only the latest and previous values stored</td>
+            <td>Stored in a separate history table</td>
+            <td>Stored in separate rows with start and end dates, plus previous value column</td>
+        </tr>
+
+        <!-- Active / Inactive Flag -->
+        <tr>
+            <td><b>Active Record Flag 🚩</b></td>
+            <td>Not applicable (Single record remains)</td>
+            <td>Not applicable (Only latest record kept)</td>
+            <td>Old record set to ❌ (inactive), new record set to ✅ (active)</td>
+            <td>Not applicable (Only latest and previous stored)</td>
+            <td>Managed in the history table with inactive records</td>
+            <td>Old record set to ❌ (inactive), new record set to ✅ (active)</td>
+        </tr>
+    </table>
+</body>
+
+<br>
+<footer>
+    <p style="color: #FF6347; font-size: 20px;"><b>&copy; 2025 Madhurima Rawat. All rights reserved.</b></p>
+</footer>
+
+</html>

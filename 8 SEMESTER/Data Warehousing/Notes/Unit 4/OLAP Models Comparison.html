@@ -1,0 +1,239 @@
+<!-- 
+Author: Madhurima Rawat
+Date: 10 April 2025
+Brief: This table provides a comparison between different OLAP (Online Analytical Processing) types – MOLAP, HOLAP, and ROLAP.
+It covers key aspects such as full form, definition, architecture, data storage, performance, scalability, examples, and suitable use cases.
+The design is colorful, accessible, and informative for students, professionals, and data enthusiasts.
+
+Design Elements:
+- Color Palette: Pastel tones including mint, peach, lavender, and powder blue for better readability.
+- Emojis: Used in headers and contextually within the cells to improve comprehension and user engagement.
+- Goal: Help readers understand the differences between the OLAP models and make informed decisions based on data needs.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLAP Models Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5faff;
+            margin: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF6347;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #FF6347;
+            color: #fff;
+        }
+
+        tr:nth-child(2) th,
+        tr:nth-child(2) td {
+            background-color: #e0ffff;
+        }
+
+        tr:nth-child(3) th,
+        tr:nth-child(3) td {
+            background-color: #ffe4e1;
+        }
+
+        tr:nth-child(4) th,
+        tr:nth-child(4) td {
+            background-color: #f0fff0;
+        }
+
+        tr:nth-child(5) th,
+        tr:nth-child(5) td {
+            background-color: #fafad2;
+        }
+
+        tr:nth-child(6) th,
+        tr:nth-child(6) td {
+            background-color: #e6e6fa;
+        }
+
+        tr:nth-child(7) th,
+        tr:nth-child(7) td {
+            background-color: #fffacd;
+        }
+
+        tr:nth-child(8) th,
+        tr:nth-child(8) td {
+            background-color: #ffe4b5;
+        }
+
+        tr:nth-child(9) th,
+        tr:nth-child(9) td {
+            background-color: #d0f0c0;
+        }
+
+        tr:nth-child(10) th,
+        tr:nth-child(10) td {
+            background-color: #f0ffff;
+            /* Azure */
+        }
+
+        tr:nth-child(11) th,
+        tr:nth-child(11) td {
+            background-color: #ffe4e1;
+            /* Misty Rose */
+        }
+
+        tr:nth-child(12) th,
+        tr:nth-child(12) td {
+            background-color: #fafad2;
+            /* Light Goldenrod Yellow */
+        }
+
+        tr:nth-child(13) th,
+        tr:nth-child(13) td {
+            background-color: #e0ffff;
+            /* Light Cyan */
+        }
+
+        tr:nth-child(14) th,
+        tr:nth-child(14) td {
+            background-color: #f5f5dc;
+            /* Beige */
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+
+        tr:last-child th,
+        tr:last-child td {
+            background-color: #f0e68c;
+        }
+
+        footer p {
+            color: #FF6347;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>OLAP Models Comparison 📊</h1>
+    <table>
+        <tr>
+            <th>Properties 📋</th>
+            <th>MOLAP 🧊</th>
+            <th>ROLAP 🗃️</th>
+            <th>HOLAP 🧮</th>
+        </tr>
+        <tr>
+            <td>Full Form 🔤</td>
+            <td>Multidimensional OLAP</td>
+            <td>Relational OLAP</td>
+            <td>Hybrid OLAP</td>
+        </tr>
+        <tr>
+            <td>Definition 📖</td>
+            <td>Stores data in multidimensional cubes</td>
+            <td>Works directly with relational databases</td>
+            <td>Combines MOLAP speed and ROLAP scalability</td>
+        </tr>
+        <tr>
+            <td>Storage Method 💾</td>
+            <td>Pre-aggregated cubes</td>
+            <td>Uses SQL over relational DBs</td>
+            <td>Partial data in cubes, rest in DB</td>
+        </tr>
+        <tr>
+            <td>Performance ⚡</td>
+            <td>Very fast for queries</td>
+            <td>Slower, depends on DB indexing</td>
+            <td>Balanced – fast and scalable</td>
+        </tr>
+        <tr>
+            <td>Scalability 📈</td>
+            <td>Low (limited to cube size)</td>
+            <td>High (large data sets)</td>
+            <td>Moderate to high</td>
+        </tr>
+        <tr>
+            <td>Customization 🛠️</td>
+            <td>Less flexible</td>
+            <td>Highly flexible</td>
+            <td>Flexible and optimized</td>
+        </tr>
+        <tr>
+            <td>Real-Life Examples 🌟</td>
+            <td>Microsoft Analysis Services (MOLAP mode)</td>
+            <td>Oracle BI, IBM Cognos</td>
+            <td>SAP BW, Microsoft SSAS (Hybrid mode)</td>
+        </tr>
+        <tr>
+            <td>Use Case 🎯</td>
+            <td>Fast analysis with moderate data</td>
+            <td>Large, complex datasets</td>
+            <td>Balanced performance and data size</td>
+        </tr>
+        <tr>
+            <td>Best For 👍</td>
+            <td>Financial reporting, dashboards</td>
+            <td>Enterprise-level big data</td>
+            <td>Mixed-size business intelligence</td>
+        </tr>
+        <tr>
+            <td>Roll-Up ↗️</td>
+            <td>Efficient and quick – data is pre-aggregated</td>
+            <td>Depends on SQL aggregation – slower but flexible</td>
+            <td>Fast for cube data, uses SQL for detailed levels</td>
+        </tr>
+        <tr>
+            <td>Drill-Down ↘️</td>
+            <td>Excellent – data can be explored to granular level</td>
+            <td>Achievable via detailed queries – needs good indexing</td>
+            <td>Hybrid – quick for summarized data, detailed via SQL</td>
+        </tr>
+        <tr>
+            <td>Slice 🔪</td>
+            <td>Very intuitive – slices through cube dimensions</td>
+            <td>SQL WHERE clauses used – slower</td>
+            <td>Efficient – cube + SQL where needed</td>
+        </tr>
+        <tr>
+            <td>Dice 🎲</td>
+            <td>Flexible within pre-aggregated dimensions</td>
+            <td>Highly flexible with SQL filters</td>
+            <td>Mixed – fast with cube, flexible via SQL</td>
+        </tr>
+        <tr>
+            <td>Pivot 🔁</td>
+            <td>Fast for predefined cube views</td>
+            <td>Dynamic – handled well by RDBMS</td>
+            <td>Handles both predefined and dynamic views</td>
+        </tr>
+
+    </table>
+</body>
+
+<br>
+<footer>
+    <p><b>&copy; 2025 Madhurima Rawat. All rights reserved.</b></p>
+</footer>
+
+</html>
