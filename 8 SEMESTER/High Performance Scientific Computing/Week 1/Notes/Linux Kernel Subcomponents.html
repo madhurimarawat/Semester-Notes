@@ -1,0 +1,131 @@
+<!-- 
+    Author: Madhurima Rawat
+    Date: 05 March 2025
+    Description: 
+    This HTML document provides a structured guide to the subcomponents of the Linux Kernel,
+    covering essential functionalities like process scheduling, memory management, file system abstraction,
+    networking, and inter-process communication.
+
+    Features:
+    - Uses a clean and readable design with pastel row colors.
+    - Includes definitions, key functions, and examples.
+    - Enhances readability with clear column distinctions.
+    - Covers major Linux Kernel subcomponents like Process Scheduler, MMU, VFS, Networking, and IPC.
+
+    Purpose:
+    - Serves as an educational reference for understanding Linux Kernel subcomponents.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Kernel Subcomponents</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7ff;
+            margin: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF6347;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #FF6347;
+            color: #fff;
+        }
+
+        tr:nth-child(2) td {
+            background-color: #ffe4e1;
+        }
+
+        tr:nth-child(3) td {
+            background-color: #e6e6fa;
+        }
+
+        tr:nth-child(4) td {
+            background-color: #e0ffff;
+        }
+
+        tr:nth-child(5) td {
+            background-color: #ffebcd;
+        }
+
+        tr:nth-child(6) td {
+            background-color: #8df0eb;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Linux Kernel Subcomponents 🖥️</h1>
+    <table>
+        <tr>
+            <th>Component 🛠️</th>
+            <th>Description 📖</th>
+            <th>Key Elements ⚙️</th>
+            <th>Tools 🛠️</th>
+            <th>Real-Life Use Example 🌍</th>
+        </tr>
+        <tr>
+            <td>Process Scheduler</td>
+            <td>Manages how processes are allocated to the CPU.</td>
+            <td>Scheduling Policies (RR, FCFS, CFS), Process States, Context Switching, Load Balancing</td>
+            <td>Completely Fair Scheduler (CFS), O(1) Scheduler</td>
+            <td>Running multiple applications efficiently on a multi-core processor</td>
+        </tr>
+        <tr>
+            <td>Memory Management Unit (MMU)</td>
+            <td>Manages physical and virtual memory allocation.</td>
+            <td>Address Translation, Page Tables, TLB, Memory Protection</td>
+            <td>Linux Memory Management Subsystem, /proc/meminfo</td>
+            <td>Handling virtual memory and process isolation</td>
+        </tr>
+        <tr>
+            <td>Virtual File System (VFS)</td>
+            <td>Provides an abstraction layer for different file systems.</td>
+            <td>Superblock, Inode, Dentry, File System Operations</td>
+            <td>EXT4, XFS, NTFS support in Linux</td>
+            <td>Mounting and accessing files across multiple file systems</td>
+        </tr>
+        <tr>
+            <td>Network Sub-System</td>
+            <td>Handles communication between devices over a network.</td>
+            <td>Socket API, Protocol Layers (IP, TCP, UDP), Packet Routing</td>
+            <td>Wireshark, Netfilter, TCPDump</td>
+            <td>Transmitting data over the internet securely</td>
+        </tr>
+        <tr>
+            <td>Inter-Process Communication (IPC) Unit</td>
+            <td>Facilitates communication and synchronization between processes.</td>
+            <td>Message Queues, Shared Memory, Semaphores, Signals</td>
+            <td>SysV IPC, POSIX IPC, D-Bus</td>
+            <td>Running multiple processes that share data efficiently</td>
+        </tr>
+    </table>
+</body>
+
+</html>

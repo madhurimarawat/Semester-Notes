@@ -1,0 +1,498 @@
+<!-- 
+    Author: Madhurima Rawat
+    Date: 05 March 2025
+    Description: 
+    This HTML document provides a categorized guide to essential Linux commands,
+    grouped by functionality such as system information, directory navigation,
+    file operations, and process management.
+
+    Features:
+    - Uses a clean and readable design with pastel row colors.
+    - Includes command syntax, descriptions, and output explanations.
+    - Enhances readability with clear column distinctions.
+    - Covers major Linux command categories like system information, directories, files, and processes.
+
+    Purpose:
+    - Serves as a quick reference for learning and using Linux commands efficiently.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Command Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7ff;
+            margin: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF6347;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #FF6347;
+            color: #fff;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #ffe4e1;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Linux Command Guide 💻</h1>
+    <table>
+        <tr>
+            <th colspan="4">System Information Commands ⚙️</th>
+        </tr>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>whoami</td>
+            <td>Displays the currently logged-in user.<br><b>Output:</b> madhurima</td>
+            <td>uname</td>
+            <td>Shows system information like OS name.<br><b>Output:</b> Linux</td>
+        </tr>
+        <tr>
+            <td>uname -a</td>
+            <td>Displays detailed system information, including kernel name, version, and
+                architecture.<br><b>Output:</b>
+                Linux hostname 5.15.0-60-generic x86_64 GNU/Linux</td>
+            <td>lscpu</td>
+            <td>Shows CPU details.<br><b>Output:</b> Model name: Intel Core i7</td>
+        </tr>
+        <tr>
+            <td>free</td>
+            <td>Displays memory usage.<br><b>Output:</b> Total, used, and free memory</td>
+            <td>free -h</td>
+            <td>Shows memory usage in a human-readable format.<br><b>Output:</b> 7.8G total, 2.1G free</td>
+        </tr>
+
+
+        <tr>
+            <th colspan="4">Directory Navigation Commands 📂</th>
+        </tr>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+
+
+        <tr>
+            <td>pwd</td>
+            <td>Prints the current working directory.<br><b>Output:</b> /home/madhurima</td>
+            <td>ls</td>
+            <td>Lists files and directories in the current directory.<br><b>Output:</b> Documents Downloads Pictures
+            </td>
+        </tr>
+        <tr>
+            <td>ls -la</td>
+            <td>Displays detailed information including hidden files.</td>
+            <td>cd /path</td>
+            <td>Changes the current directory to the specified path.<br><b>Example:</b> cd /home/user/Documents</td>
+        </tr>
+        <tr>
+            <td>cd ..</td>
+            <td>Moves up one directory level.<br><b>Example:</b> If in /home/user/Documents, it moves to /home/user</td>
+            <td>mkdir directory_name</td>
+            <td>Creates a new directory.<br><b>Example:</b> mkdir new_folder</td>
+        </tr>
+        <tr>
+            <td>rmdir</td>
+            <td>Removes an empty directory.<br><b>Example:</b> rmdir myfolder</td>
+            <td>mv</td>
+            <td>Renames or moves a directory.<br><b>Example:</b> mv oldname newname</td>
+        </tr>
+        <tr>
+            <td>touch</td>
+            <td>Creates a new empty file.<br><b>Example:</b> touch myfile.txt</td>
+            <td>vim</td>
+            <td>Opens the vim editor to create or edit a file.<br><b>Example:</b> vim myfile.txt</td>
+        </tr>
+        <tr>
+            <td>gedit</td>
+            <td>Opens the gedit editor to create or edit a file in GUI.<br><b>Example:</b> gedit myfile.txt</td>
+            <td>rm</td>
+            <td>Deletes a file or directory.<br><b>Example:</b> rm myfile.txt</td>
+        </tr>
+        <tr>
+            <td>rm -r</td>
+            <td>Deletes a directory and its contents recursively.<br><b>Example:</b> rm -r myfolder</td>
+            <td><b>⚠️ Use rm command with caution, as it permanently deletes data.</b></td>
+            <td></td>
+        </tr>
+
+
+        <tr>
+            <th colspan="4">File and Directory Management Commands 📜</th>
+        </tr>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+
+
+        <tr>
+            <td>cat</td>
+            <td>Displays/prints the content of a file on the terminal.<br><b>Example:</b> cat myfile.txt</td>
+            <td>cat</td>
+            <td>Concatenates multiple files and displays them together.<br><b>Example:</b> cat file1.txt file2.txt</td>
+        </tr>
+        <tr>
+            <td>cp</td>
+            <td>Copies files or directories.<br><b>Example:</b> cp source.txt destination.txt</td>
+            <td>cp -r</td>
+            <td>Copies directories recursively.<br><b>Example:</b> cp -r myfolder newfolder</td>
+        </tr>
+
+        <tr>
+            <td>cat</td>
+            <td>Displays/prints the content of a file on the terminal.<br><b>Example:</b> cat myfile.txt</td>
+            <td>cat</td>
+            <td>Concatenates multiple files and displays them together.<br><b>Example:</b> cat file1.txt file2.txt</td>
+        </tr>
+        <tr>
+            <td>cp</td>
+            <td>Copies files or directories.<br><b>Example:</b> cp source.txt destination.txt</td>
+            <td>cp -r</td>
+            <td>Copies directories recursively.<br><b>Example:</b> cp -r myfolder newfolder</td>
+        </tr>
+        <tr>
+            <td>mv</td>
+            <td>Moves or renames a file.<br><b>Example:</b> mv oldname.txt newname.txt</td>
+            <td>rm</td>
+            <td>Deletes a file.<br><b>Example:</b> rm myfile.txt</td>
+        </tr>
+        <tr>
+            <td>mkdir</td>
+            <td>Creates a new directory.<br><b>Example:</b> mkdir newfolder</td>
+            <td>rmdir</td>
+            <td>Removes an empty directory.<br><b>Example:</b> rmdir emptyfolder</td>
+        </tr>
+        <tr>
+            <td>ls</td>
+            <td>Lists files in a directory.<br><b>Example:</b> ls -l</td>
+            <td>find</td>
+            <td>Searches for files in a directory.<br><b>Example:</b> find /home -name myfile.txt</td>
+        </tr>
+
+
+        <tr>
+            <th colspan="4">File Permissions and Ownership Commands 🔒</th>
+        </tr>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+
+
+        <tr>
+            <td>chmod</td>
+            <td>Changes file permissions.<br><b>Example:</b> chmod 755 myfile.txt</td>
+            <td>chown</td>
+            <td>Changes file ownership.<br><b>Example:</b> chown user:group myfile.txt</td>
+        </tr>
+        <tr>
+            <td>grep</td>
+            <td>Searches for a pattern in a file.<br><b>Example:</b> grep "hello" myfile.txt</td>
+            <td>echo</td>
+            <td>Outputs text to the terminal.<br><b>Example:</b> echo "Hello, World!"</td>
+        </tr>
+        <tr>
+            <td>df</td>
+            <td>Displays disk space usage.<br><b>Example:</b> df -h</td>
+            <td>du</td>
+            <td>Displays directory size.<br><b>Example:</b> du -sh myfolder</td>
+        </tr>
+        <tr>
+            <td>ps</td>
+            <td>Shows active processes.<br><b>Example:</b> ps aux</td>
+            <td>kill</td>
+            <td>Terminates a process.<br><b>Example:</b> kill 1234</td>
+        </tr>
+        <tr>
+            <td>tar -cvf</td>
+            <td>Creates a tar archive.<br><b>Example:</b> tar -cvf archive.tar myfolder</td>
+            <td>tar -xvf</td>
+            <td>Extracts a tar archive.<br><b>Example:</b> tar -xvf archive.tar</td>
+        </tr>
+        <tr>
+            <td>cat</td>
+            <td>Displays/prints the content of a file.<br><b>Example:</b> cat myfile.txt</td>
+            <td>cat</td>
+            <td>Concatenates multiple files and displays them.<br><b>Example:</b> cat file1.txt file2.txt</td>
+        </tr>
+        <tr>
+            <td>cp</td>
+            <td>Copies files or directories.<br><b>Example:</b> cp source.txt destination.txt</td>
+            <td>cp -r</td>
+            <td>Copies directories recursively.<br><b>Example:</b> cp -r myfolder newfolder</td>
+        </tr>
+        <tr>
+            <td>chmod</td>
+            <td>Changes file permissions.<br><b>Example:</b> chmod 755 myfile.txt</td>
+            <td>chown</td>
+            <td>Changes file ownership.<br><b>Example:</b> chown user:group myfile.txt</td>
+        </tr>
+        <tr>
+            <td>ls -l</td>
+            <td>Lists files with detailed permissions.<br><b>Example:</b> ls -l</td>
+            <td>File Permissions</td>
+            <td>The 10-character format: <code>rwxr-xr--</code><br>
+                <b>Example:</b> Owner (rwx), Group (r-x), Others (r--)
+            </td>
+        </tr>
+        <tr>
+            <td>chmod u+x file.txt</td>
+            <td>Adds execute permission for the user.</td>
+            <td>chmod g-w file.txt</td>
+            <td>Removes write permission from the group.</td>
+        </tr>
+        <tr>
+            <td>chmod a+r file.txt</td>
+            <td>Gives read permission to all users.</td>
+            <td>chmod 755 file.txt</td>
+            <td>Sets permissions: owner (rwx), group (r-x), others (r-x).</td>
+        </tr>
+        <tr>
+            <td>chmod 644 file.txt</td>
+            <td>Sets permissions: owner (rw-), group (r--), others (r--).</td>
+            <td>chown user:group file.txt</td>
+            <td>Changes the file owner and group.</td>
+        </tr>
+        <tr>
+            <td>ps</td>
+            <td>Shows currently running processes.<br><b>Example:</b> ps aux</td>
+            <td>ps -e</td>
+            <td>Lists all running processes.</td>
+        </tr>
+        <tr>
+            <td>ps -ef</td>
+            <td>Lists all processes with full details.</td>
+            <td>top</td>
+            <td>Displays real-time system processes.</td>
+        </tr>
+        <tr>
+            <td>kill PID</td>
+            <td>Terminates a process by PID.</td>
+            <td>kill -9 PID</td>
+            <td>Forces immediate termination of a process.</td>
+        </tr>
+        <tr>
+            <td>kill -SIGTERM PID</td>
+            <td>Gracefully terminates a process.</td>
+            <td>kill -SIGSTOP PID</td>
+            <td>Pauses a process.</td>
+        </tr>
+        <tr>
+            <td>kill -SIGCONT PID</td>
+            <td>Resumes a paused process.</td>
+            <td>kill -SIGKILL PID</td>
+            <td>Forces process termination without cleanup.</td>
+        </tr>
+
+
+        <tr>
+            <th colspan="4">Text Processing Commands 📝</th>
+        </tr>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+
+
+        <tr>
+            <td>grep</td>
+            <td>Searches for a string or pattern in files or input streams.<br><b>Example:</b> grep 'pattern' file.txt
+            </td>
+            <td>grep -r</td>
+            <td>Recursively searches for a pattern in directories.<br><b>Example:</b> grep -r 'pattern'
+                /path/to/directory
+            </td>
+        </tr>
+        <tr>
+            <td>awk</td>
+            <td>Pattern scanning, text extraction, and data manipulation.<br><b>Example:</b> awk '{print $1}' file.txt
+            </td>
+            <td>awk '/pattern/ {print $0}'</td>
+            <td>Filters rows based on a pattern.<br><b>Example:</b> awk '/error/ {print $0}' log.txt</td>
+        </tr>
+        <tr>
+            <td>sort</td>
+            <td>Sorts lines of a text file alphabetically or numerically.<br><b>Example:</b> sort file.txt</td>
+            <td>sort -r</td>
+            <td>Sorts in reverse order.<br><b>Example:</b> sort -r file.txt</td>
+        </tr>
+        <tr>
+            <td>uniq</td>
+            <td>Filters out duplicate lines from sorted input.<br><b>Example:</b> sort file.txt | uniq</td>
+            <td>uniq -c</td>
+            <td>Counts occurrences of duplicate lines.<br><b>Example:</b> sort file.txt | uniq -c</td>
+        </tr>
+        <tr>
+            <td>wc</td>
+            <td>Counts words, lines, characters in a file.<br><b>Example:</b> wc file.txt</td>
+            <td>wc -l</td>
+            <td>Counts lines in a file.<br><b>Example:</b> wc -l file.txt</td>
+        </tr>
+        <tr>
+            <td>head</td>
+            <td>Displays the first n lines of a file.<br><b>Example:</b> head -n 10 file.txt</td>
+            <td>tail</td>
+            <td>Displays the last n lines of a file.<br><b>Example:</b> tail -n 10 file.txt</td>
+        </tr>
+        <tr>
+            <td>diff</td>
+            <td>Compares two files line by line.<br><b>Example:</b> diff file1.txt file2.txt</td>
+            <td>paste</td>
+            <td>Merges lines of multiple files.<br><b>Example:</b> paste file1.txt file2.txt</td>
+        </tr>
+        <tr>
+            <td>tr</td>
+            <td>Translates or deletes characters.<br><b>Example:</b> echo 'hello' | tr 'a-z' 'A-Z'</td>
+            <td>sed</td>
+            <td>Stream editor for filtering and transforming text.<br><b>Example:</b> sed 's/old/new/g' file.txt</td>
+        </tr>
+
+
+        <tr>
+            <th colspan="4">Memory Management Commands 🧠</th>
+        </tr>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+
+
+        <tr>
+            <td>free</td>
+            <td>Displays memory usage (RAM and swap).<br><b>Example:</b> free -h</td>
+            <td>vmstat</td>
+            <td>Reports virtual memory statistics.<br><b>Example:</b> vmstat 5</td>
+        </tr>
+        <tr>
+            <td>df</td>
+            <td>Shows disk space usage.<br><b>Example:</b> df -h</td>
+            <td>swapon</td>
+            <td>Displays or enables/disables swap space.<br><b>Example:</b> swapon -s</td>
+        </tr>
+        <tr>
+            <td>/proc/meminfo</td>
+            <td>Shows detailed memory information.<br><b>Example:</b> cat /proc/meminfo</td>
+            <td>top</td>
+            <td>Displays real-time system memory usage.<br><b>Example:</b> top</td>
+        </tr>
+        <tr>
+            <td>htop</td>
+            <td>Interactive process viewer with memory usage.<br><b>Example:</b> htop</td>
+            <td>ps</td>
+            <td>Shows memory usage of running processes.<br><b>Example:</b> ps aux --sort=-%mem</td>
+        </tr>
+        <tr>
+            <td>pmap</td>
+            <td>Displays memory map of a process.<br><b>Example:</b> pmap PID</td>
+            <td>sync</td>
+            <td>Forces writing buffered data to disk.<br><b>Example:</b> sync</td>
+        </tr>
+
+
+        <tr>
+            <th colspan="4">Networking Management Commands 📡</th>
+        </tr>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+
+
+        <tr>
+            <td>ping</td>
+            <td>Tests network connectivity to a host.<br><b>Example:</b> ping google.com</td>
+            <td>ip</td>
+            <td>Shows/manipulates routing, devices, and policy routing.<br><b>Example:</b> ip addr show</td>
+        </tr>
+        <tr>
+            <td>ssh</td>
+            <td>Secure shell for remote login and command execution.<br><b>Example:</b> ssh user@192.168.1.1</td>
+            <td>wget</td>
+            <td>Retrieves/downloads files from the web.<br><b>Example:</b> wget https://example.com/file.zip</td>
+        </tr>
+        <tr>
+            <td>scp</td>
+            <td>Securely copies files between hosts.<br><b>Example:</b> scp file.txt user@remote:/home/user/</td>
+            <td>curl</td>
+            <td>Transfers data from or to a server.<br><b>Example:</b> curl -O https://example.com/file.txt</td>
+        </tr>
+        <tr>
+            <td>netstat</td>
+            <td>Displays network connections and statistics.<br><b>Example:</b> netstat -tulnp</td>
+            <td>ss</td>
+            <td>Shows detailed socket statistics.<br><b>Example:</b> ss -tulnp</td>
+        </tr>
+        <tr>
+            <td>traceroute</td>
+            <td>Traces the path packets take to a host.<br><b>Example:</b> traceroute google.com</td>
+            <td>nslookup</td>
+            <td>Queries domain name servers.<br><b>Example:</b> nslookup example.com</td>
+        </tr>
+        <tr>
+            <td>dig</td>
+            <td>Performs DNS lookups.<br><b>Example:</b> dig example.com</td>
+            <td>ifconfig</td>
+            <td>Displays network interface information (deprecated in favor of ip command).<br><b>Example:</b> ifconfig
+                eth0
+            </td>
+        </tr>
+        <tr>
+            <td>iptables</td>
+            <td>Configures firewall rules.<br><b>Example:</b> iptables -L</td>
+            <td>route</td>
+            <td>Shows/manipulates the IP routing table.<br><b>Example:</b> route -n</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

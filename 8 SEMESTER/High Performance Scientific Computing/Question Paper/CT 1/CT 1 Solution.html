@@ -1,0 +1,500 @@
+<!-- 
+    Author: Madhurima Rawat
+    Date: 12 March 2025
+    Description: 
+    This HTML document presents a structured and responsive webpage for CT-1 solutions, 
+    offering dynamic calculations and a clean user-friendly interface.
+
+    Features:
+    - Uses a simple, professional layout with structured sections.
+    - Allows users to input data and compute solutions dynamically.
+    - Utilizes JavaScript (math.js library v11.11.0) for accurate mathematical computations.
+    - Styled with CSS for readability and a visually appealing design.
+    - Footer includes copyright.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CT-1 Solutions</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.js"></script>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 15px;
+            padding: 0;
+        }
+
+        code {
+            font-weight: bold;
+            font-family: monospace;
+            color: #333;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .author {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .question {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        /* Bullet point formatting */
+        .question ul {
+            list-style-position: inside;
+            /* Moves bullets inside the content block */
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .question:hover {
+            transform: scale(1.02);
+        }
+
+        .question table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .question table th,
+        .question table td {
+            border: 1px solid #000;
+            /* equivalent to border="1" */
+            padding: 10px;
+            /* equivalent to cellpadding="10" */
+        }
+
+        .question table thead {
+            background-color: #6cb2eb;
+            color: white;
+        }
+
+        .q1 {
+            background-color: #ffd1dc;
+        }
+
+        .q2 {
+            background-color: #d1ffd6;
+        }
+
+        .q3 {
+            background-color: #d1e0ff;
+        }
+
+        .q4 {
+            background-color: #ead1ff;
+        }
+
+        .q5 {
+            background-color: #fff5d1;
+        }
+
+        .q6 {
+            background-color: #d1fff5;
+        }
+
+        .q7 {
+            background-color: #ffd1f5;
+        }
+
+        .question pre {
+            background-color: #faf0e6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-weight: bolder;
+            font-size: 18px;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CT-1 Solutions</h1>
+    <div class="author">By Madhurima Rawat</div>
+
+    <h2>UNIT 1</h2>
+
+    <!-- MCQs -->
+    <div class="question q1">
+        <h3>1. Primary Purpose of High Performance Computing (HPC)</h3>
+        <p><strong>Answer:</strong> B. To solve large-scale, computationally intensive problems</p>
+    </div>
+
+    <div class="question q2">
+        <h3>2. Fastest Level of Memory Hierarchy</h3>
+        <p><strong>Answer:</strong> C. Cache memory</p>
+    </div>
+
+    <div class="question q3">
+        <h3>3. Multi-core Processors Primarily Enable</h3>
+        <p><strong>Answer:</strong> B. Parallel processing of tasks</p>
+    </div>
+
+    <div class="question q4">
+        <h3>4. Parallel Algorithm Description</h3>
+        <p><strong>Answer:</strong> B. Divides a problem into sub-tasks that can be executed concurrently</p>
+    </div>
+
+    <!-- Theoretical Explanation -->
+    <div class="question q5">
+        <h3>5. Significance of Parallel Programming and Parallel Algorithms in HPC</h3>
+        <ul>
+            <li><strong>Need for HPC:</strong> It enables solving complex and large-scale scientific, engineering, and
+                commercial problems that are infeasible for traditional computers due to time and resource constraints.
+            </li>
+            <li><strong>Key Concepts:</strong> Parallelism (data/task), concurrency, synchronization, and communication
+                between processors.</li>
+            <li><strong>Challenges:</strong> Load balancing, minimizing communication overhead, avoiding race
+                conditions, and managing synchronization.</li>
+            <li><strong>Parallel Algorithms Improve Performance:</strong> By executing tasks simultaneously on multiple
+                processors, reducing total execution time compared to sequential algorithms.</li>
+            <li><strong>Implications of Multi-core and Vector Computing:</strong> Increased throughput in scientific
+                simulations, real-time data processing, and applications like weather modeling and genomics.</li>
+        </ul>
+    </div>
+
+    <!-- Amdahl's Law -->
+    <div class=" question q6">
+        <h3>6. Amdahl's Law Calculation</h3>
+        <p><strong>Problem:</strong> 90% parallelizable code, 10% sequential, 4 processors.</p>
+        <pre>
+Speedup = 1 / [ (1 - P) + (P / N) ]
+P = 0.9
+N = 4
+Sequential fraction = 0.1
+
+Speedup = 1 / [0.1 + (0.9 / 4)] = 1 / (0.1 + 0.225) = 1 / 0.325 ≈ 3.08
+        </pre>
+        <p><strong>Answer:</strong> Theoretical Maximum Speedup ≈ 3.08</p>
+    </div>
+
+    <!-- Pseudocode -->
+    <div class="question q7">
+        <h3>7. Pseudocode for Parallel Algorithm</h3>
+        <p><strong>Problem:</strong> Parallel Sum of an Array of 10,000 Numbers</p>
+        <pre>
+Initialize array[10000]
+Divide array into 4 chunks (chunk_size = 2500)
+For each processor P_i (i = 1 to 4):
+    sum_i = sum(array[start_i : end_i])
+
+Combine all sum_i into total_sum
+Output total_sum
+        </pre>
+        <p><strong>Task Division:</strong> Each processor handles 1/4th of the data ensuring balanced workload, reducing
+            execution time by approximately 4x in ideal conditions.</p>
+    </div>
+
+    <h2>UNIT 2</h2>
+
+    <!-- OpenMP MCQ -->
+    <div class="question q1">
+        <h3>8. OpenMP is Primarily Used for</h3>
+        <p><strong>Answer:</strong> B. Shared-memory parallel programming</p>
+    </div>
+
+    <div class="question q2">
+        <h3>9. OpenMP Directive to Parallelize Loops</h3>
+        <p><strong>Answer:</strong> A. <code>#pragma omp parallel for</code></p>
+    </div>
+
+    <div class="question q3">
+        <h3>10. Common Challenge with OpenMP</h3>
+        <p><strong>Answer:</strong> B. Data race conditions</p>
+    </div>
+
+    <!-- MPI MCQ -->
+    <div class="question q4">
+        <h3>11. MPI is Best Suited for</h3>
+        <p><strong>Answer:</strong> B. Distributed-memory systems</p>
+    </div>
+
+    <!-- Differences OpenMP vs MPI in a Table -->
+    <div class="question q5">
+        <h3>12. Fundamental Differences Between OpenMP and MPI</h3>
+        <table border="1" cellspacing="0" cellpadding="10"
+            style="border-collapse: collapse; width: 100%; text-align: center; font-family: Arial, sans-serif;">
+            <thead style="background-color: #6cb2eb; color: white;">
+                <tr>
+                    <th>⚙️ Parameter</th>
+                    <th>🟦 OpenMP</th>
+                    <th>🟥 MPI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Memory Model 🧠</strong></td>
+                    <td>Shared Memory</td>
+                    <td>Distributed Memory</td>
+                </tr>
+                <tr>
+                    <td><strong>Parallelism 🔗</strong></td>
+                    <td>Thread-based (Multithreading)</td>
+                    <td>Process-based (Multiprocessing)</td>
+                </tr>
+                <tr>
+                    <td><strong>Communication 📨</strong></td>
+                    <td>Implicit (via shared variables)</td>
+                    <td>Explicit (message passing)</td>
+                </tr>
+                <tr>
+                    <td><strong>Scalability 📈</strong></td>
+                    <td>Limited to single node/multicore systems</td>
+                    <td>Scales across multiple nodes/computers</td>
+                </tr>
+                <tr>
+                    <td><strong>Ease of Use 👌</strong></td>
+                    <td>Easy (uses compiler directives)</td>
+                    <td>Complex (requires explicit communication code)</td>
+                </tr>
+                <tr>
+                    <td><strong>Fault Tolerance ⚠️</strong></td>
+                    <td>Low (shared memory issues)</td>
+                    <td>High (failure in one node doesn't crash all)</td>
+                </tr>
+                <tr>
+                    <td><strong>Use Case 💡</strong></td>
+                    <td>Multicore CPUs, shared memory systems</td>
+                    <td>Clusters, supercomputers, distributed systems</td>
+                </tr>
+                <tr>
+                    <td><strong>Programming Language Support 🛠️</strong></td>
+                    <td>C, C++, Fortran (with compiler support)</td>
+                    <td>C, C++, Fortran, Python (library-based)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Parallel Programming -->
+    <div class="question q6">
+        <h3>13. OpenMP Parallel Sum Code Snippet 🧮</h3>
+
+        <h4>📝 Code:</h4>
+        <pre>
+    #include &lt;omp.h&gt;
+    #include &lt;stdio.h&gt;
+    
+    int main() {
+        int n = 10000;
+        int array[n], sum = 0;
+    
+        // Initialize array
+        for (int i = 0; i &lt; n; i++) 
+            array[i] = 1;
+    
+        #pragma omp parallel for reduction(+:sum)
+        for (int i = 0; i &lt; n; i++) {
+            sum += array[i];
+        }
+    
+        printf("Sum = %d\n", sum);
+        return 0;
+    }
+        </pre>
+
+        <h4>🧐 Explanation:</h4>
+        <ul>
+            <li>✅ <strong>Shared Memory Model:</strong> All threads share the same array.</li>
+            <li>✅ <strong>Parallel For Loop:</strong> Iterations split among threads automatically.</li>
+            <li>✅ <strong>Reduction(+):</strong> Safely adds each thread's partial sum into the final result.</li>
+            <li>✅ <strong>Result:</strong> Sum of all array elements printed at the end.</li>
+        </ul>
+
+        <h4>📋 Pseudocode:</h4>
+        <pre>
+    Start
+    Initialize array of size 10000 with 1
+    Set sum = 0
+    
+    Parallel For with reduction(+)
+        sum = sum + array[i]
+    End Parallel
+    
+    Print sum
+    End
+        </pre>
+    </div>
+
+    <!-- OpenMP Execution Time -->
+    <div class="question q7">
+        <h3>14. How OpenMP Reduces Execution Time 🕒</h3>
+
+        <p><strong>Answer:</strong> OpenMP reduces execution time by dividing the loop iterations among multiple
+            threads. It
+            exploits multi-core architectures where each thread executes a portion of the workload simultaneously,
+            significantly reducing the total execution time compared to sequential processing.</p>
+
+        <h4>🚀 1. What is OpenMP?</h4>
+        <p><strong>OpenMP</strong> (Open Multi-Processing) is an API that supports <strong>multi-threaded parallel
+                processing</strong> on shared memory architectures. It allows developers to write parallelized versions
+            of
+            code easily, especially loops and regions that process large data.</p>
+
+        <h4>⚙️ 2. How Execution Time is Reduced</h4>
+        <table border="1" cellpadding="5" cellspacing="0" style="text-align: center;">
+            <thead>
+                <tr>
+                    <th>✅ Concept</th>
+                    <th>🔍 Explanation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Parallelism</strong></td>
+                    <td>OpenMP divides a task (like a loop) into smaller sub-tasks. Each sub-task runs in parallel on
+                        different CPU cores.</td>
+                </tr>
+                <tr>
+                    <td><strong>Shared Memory Model</strong></td>
+                    <td>All threads share the same address space (memory), so data does not need to be transferred
+                        between
+                        processes.</td>
+                </tr>
+                <tr>
+                    <td><strong>Thread Management</strong></td>
+                    <td>OpenMP manages threads automatically, distributing workload efficiently among them.</td>
+                </tr>
+                <tr>
+                    <td><strong>Work Sharing Constructs</strong></td>
+                    <td>Constructs like <code>#pragma omp parallel for</code> allow multiple threads to work
+                        simultaneously,
+                        reducing the time it would take if only one thread were working.</td>
+                </tr>
+                <tr>
+                    <td><strong>Reduction Operations</strong></td>
+                    <td>Operations like <code>sum += array[i]</code> use reduction to combine results from multiple
+                        threads
+                        without conflict or errors.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>⏱️ 3. Time Comparison: Sequential vs Parallel</h4>
+        <table border="1" cellpadding="5" cellspacing="0" style="text-align: center;">
+            <thead>
+                <tr>
+                    <th>🖥️ Sequential Processing</th>
+                    <th>🧵 Parallel Processing (OpenMP)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Single core/thread does all the work.</td>
+                    <td>Multiple cores/threads do parts of the work at the same time.</td>
+                </tr>
+                <tr>
+                    <td>Long execution time for large tasks.</td>
+                    <td>Reduced execution time because the workload is divided.</td>
+                </tr>
+                <tr>
+                    <td>CPU utilization is low (1 core).</td>
+                    <td>CPU utilization is high (many cores).</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>📈 4. OpenMP in Action</h4>
+        <p>Imagine a loop that runs 1000 iterations sequentially.</p>
+        <ul>
+            <li>On a single core, it might take <strong>10 seconds</strong>.</li>
+            <li>Using OpenMP on a quad-core CPU, the same loop can be divided like this:</li>
+        </ul>
+        <pre>
+Core 1 → 0 to 249
+Core 2 → 250 to 499
+Core 3 → 500 to 749
+Core 4 → 750 to 999
+    </pre>
+        <p>✅ So, instead of 10 seconds, you get close to <strong>2.5 seconds</strong> total! <br>
+            <em>(This is simplified—actual speedup depends on overhead and efficiency.)</em>
+        </p>
+
+        <h4>🏗️ 5. Process Flow Diagram (Text Version)</h4>
+        <pre>
+Sequential:
+Main Thread → Task 1 → Task 2 → Task 3 → Task 4 → Done!
+
+Parallel (OpenMP):
+Thread 1 → Task 1           ↘
+Thread 2 → Task 2            ↘
+Thread 3 → Task 3             → Merge Results → Done!
+Thread 4 → Task 4           ↗
+    </pre>
+
+        <h4>🔨 6. Example Parallel Region</h4>
+        <pre><code class="language-c">
+#pragma omp parallel
+{
+    int thread_id = omp_get_thread_num();
+    printf("Thread %d is working!\n", thread_id);
+}
+    </code></pre>
+        <p>Each thread runs the block of code inside the <code>parallel</code> region simultaneously, using its own CPU
+            core.</p>
+
+        <h4>📋 7. Key Takeaways</h4>
+        <ul>
+            <li>✅ OpenMP splits tasks over multiple CPU cores, doing work in parallel.</li>
+            <li>✅ Less waiting → faster execution.</li>
+            <li>✅ Best for tasks that can be broken into independent parts (like loops over arrays).</li>
+        </ul>
+
+    </div>
+
+    <!-- MPI Execution Time -->
+    <div class="question q5">
+        <h3>15. MPI Matrix Multiplication Execution Time</h3>
+        <p><strong>Computation Time:</strong> 50 seconds</p>
+        <p><strong>Communication Overhead Per Process:</strong> 8 seconds</p>
+        <p><strong>Total Overhead:</strong> 4 x 8 = 32 seconds</p>
+        <pre>
+Total Execution Time = Computation Time + Communication Overhead
+= 50 + 32 = 82 seconds
+        </pre>
+        <p><strong>Answer:</strong> 82 seconds</p>
+    </div>
+
+    <footer>© 2025 Madhurima Rawat. All rights reserved.</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!-- 
+    Author: Madhurima Rawat
+    Date: 05 March 2025
+    Description: 
+    This HTML document provides a structured guide to the basic components of an Operating System,
+    covering essential functionalities like process management, memory management, file system management,
+    and user interaction.
+
+    Features:
+    - Uses a clean and readable design with pastel row colors.
+    - Includes definitions, key functions, and examples.
+    - Enhances readability with clear column distinctions.
+    - Covers major OS components like kernel, security, and networking.
+
+    Purpose:
+    - Serves as an educational reference for understanding Operating System components.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operating System Components</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7ff;
+            margin: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FF6347;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #FF6347;
+            color: #fff;
+        }
+
+        tr:nth-child(2) td {
+            background-color: #ffe4e1;
+        }
+
+        tr:nth-child(3) td {
+            background-color: #e6e6fa;
+        }
+
+        tr:nth-child(4) td {
+            background-color: #e0ffff;
+        }
+
+        tr:nth-child(5) td {
+            background-color: #ffebcd;
+        }
+
+        tr:nth-child(6) td {
+            background-color: #ffcccb;
+        }
+
+        tr:nth-child(7) td {
+            background-color: #e0f2f1;
+        }
+
+        tr:nth-child(8) td {
+            background-color: #fafad2;
+        }
+
+        tr:nth-child(9) td {
+            background-color: #d0f0c0;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Basic Components of an Operating System 🖥️</h1>
+    <table>
+        <tr>
+            <th>Component 🛠️</th>
+            <th>Description 📖</th>
+            <th>Key Functions ⚙️</th>
+            <th>Tools 🛠️</th>
+            <th>Real-Life Use Example 🌍</th>
+        </tr>
+        <tr>
+            <td>Kernel</td>
+            <td>The core of the OS, acting as a bridge between hardware and software.</td>
+            <td>Process Management, Memory Management, Device Management, System Calls</td>
+            <td>Linux Kernel, Windows NT Kernel, Monolithic & Microkernel</td>
+            <td>Linux servers running cloud applications</td>
+        </tr>
+        <tr>
+            <td>Process Management</td>
+            <td>Handles creation, scheduling, and termination of processes.</td>
+            <td>Multitasking, CPU Scheduling, Process Synchronization, IPC</td>
+            <td>Task Manager (Windows), htop (Linux), ps command</td>
+            <td>Running multiple applications like a browser and a text editor simultaneously</td>
+        </tr>
+        <tr>
+            <td>Memory Management</td>
+            <td>Manages system memory allocation and optimization.</td>
+            <td>Memory Allocation, Paging, Segmentation, Protection</td>
+            <td>Valgrind, RAMMap (Windows), Virtual Memory Systems</td>
+            <td>Swapping unused applications to disk to free up RAM</td>
+        </tr>
+        <tr>
+            <td>File System Management</td>
+            <td>Controls how data is stored and accessed on storage devices.</td>
+            <td>File Creation, Access Control, Organization, Storage</td>
+            <td>NTFS, EXT4, FAT32, File Explorer</td>
+            <td>Saving and retrieving files from an external USB drive</td>
+        </tr>
+        <tr>
+            <td>Device Management</td>
+            <td>Manages communication between OS and hardware peripherals.</td>
+            <td>Device Drivers, I/O Management, Buffering, Spooling</td>
+            <td>Device Manager (Windows), udev (Linux), Plug and Play</td>
+            <td>Printing a document using a connected printer</td>
+        </tr>
+        <tr>
+            <td>User Interface (UI)</td>
+            <td>Provides interaction via GUI or CLI.</td>
+            <td>Graphical UI, Command-line Interface</td>
+            <td>GNOME, KDE, Windows Explorer, Bash</td>
+            <td>Using a web browser or executing commands in a terminal</td>
+        </tr>
+        <tr>
+            <td>Security & Access Control</td>
+            <td>Protects the system from unauthorized access and threats.</td>
+            <td>Authentication, Authorization, Encryption, Firewalls</td>
+            <td>Firewalld, SELinux, Windows Defender, OpenSSL</td>
+            <td>Logging into an online banking website securely</td>
+        </tr>
+        <tr>
+            <td>Networking</td>
+            <td>Handles communication over LAN/WAN.</td>
+            <td>Data Transmission, Network Security, Resource Sharing</td>
+            <td>Wireshark, TCP/IP, DNS, VPN</td>
+            <td>Connecting to Wi-Fi and browsing the internet</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
