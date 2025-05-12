@@ -201,6 +201,30 @@ This repository includes academic notes, study materials, and resources from B.T
 </details>
 
 <details>
+<summary>8 Semester</summary> <br>
+
+**Data Science Subjects:**
+
+1. [**Cloud Computing**](https://github.com/madhurimarawat/Semester-Notes/tree/main/8%20SEMESTER/Cloud%20Computing)  
+   - To see lab programs, visit: [Cloud Computing Lab](https://github.com/madhurimarawat/Cloud-Computing) <br>
+
+2. [**Data Warehousing**](https://github.com/madhurimarawat/Semester-Notes/tree/main/8%20SEMESTER/Data%20Warehousing)  
+   - To see lab programs, visit: [Data Warehousing Lab](https://github.com/madhurimarawat/Data-Warehousing) <br>
+
+3. [**Artificial Intelligence for Investments**](https://github.com/madhurimarawat/Semester-Notes/tree/main/8%20SEMESTER/Artificial%20Intelligence%20for%20Investments) <br><br>
+
+4. [**High Performance Scientific Computing**](https://github.com/madhurimarawat/Semester-Notes/tree/main/8%20SEMESTER/High%20Performance%20Scientific%20Computing) <br><br>
+
+5. [**Major Project**](https://github.com/madhurimarawat/Stock-Market-Prediction/tree/main/Documents)  
+   - To see the lab project, visit: [Stock Market Prediction App](https://stock-market-numerical-text-hybrid-prediction.streamlit.app/) <br>
+
+**Artificial Intelligence Subjects:**
+
+1. [**Deep Learning**](https://github.com/madhurimarawat/Semester-Notes/tree/main/8%20SEMESTER/AI%20Subjects/Deep%20Learning)
+
+</details>
+
+<details>
   <summary>Syllabus</summary> <br>
   
   This section contains the syllabus for each semester:
@@ -250,8 +274,8 @@ This repository includes academic notes, study materials, and resources from B.T
 
 During the **1st to 4th semesters**, both branches followed a **common curriculum**, ensuring a foundational understanding of core subjects. 
 
-From the **5th to 7th semesters**, the curriculum began to diversify:  
-- **5th and 7th semesters:** Two subjects were tailored to individual tracks, reflecting specialized interests. I have detailed these differences above, along with separate **question papers** and **syllabi** for both branches (AI and DS).  
+From the **5th to 8th semesters**, the curriculum began to diversify:  
+- **5th to 8th semesters:** Two subjects were tailored to individual tracks, reflecting specialized interests. I have detailed these differences above, along with separate **question papers** and **syllabi** for both branches (AI and DS).  
 - **6th semester:** Focused entirely on an **internship**, where students selected their projects, institutions, and domains independently.  
 
 ## Directory Structure 🗃️
@@ -274,6 +298,9 @@ Semester-Notes/
 ├── 7 SEMESTER/               # 📁 Folder for the seventh semester
 │   ├── AI Subjects/          # 📁 AI Subjects folder inside 7th semester
 │
+├── 8 SEMESTER/               # 📁 Folder for the eighth semester
+│   ├── AI Subjects/          # 📁 AI Subjects folder inside 8th semester
+|
 ├── Syllabus/                 # 📚 Folder containing the syllabus for all semesters
 │
 ├── Front Page & Index        # 📖 Contains the standardized front page format
