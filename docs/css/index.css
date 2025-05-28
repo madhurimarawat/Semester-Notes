@@ -106,7 +106,7 @@
     /* Position the container absolutely relative to its parent */
     z-index: 1000;
     /* Ensure the container is above other content */
-    width: 100%;
+    width: 88%;
     /* Make the container as wide as its parent */
     list-style-type: none;
     /* Remove default list styling */
@@ -314,91 +314,135 @@
     /* Set hover text color */
 }
 
+/* Center content both vertically and horizontally using Flexbox */
 .center-content {
     display: flex;
+    /* Enables Flexbox layout */
     justify-content: center;
+    /* Center horizontally */
     align-items: center;
+    /* Center vertically */
 }
 
-/* Styling for the body */
+/* Styling for the body element */
 body {
     font-family: Arial, sans-serif;
+    /* Set default font */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Add soft shadow to text */
     background-color: #FFFFF0;
+    /* Set light ivory background */
     color: #333;
+    /* Default text color */
     text-align: center;
+    /* Center align all text */
 }
 
+/* Headings styling */
 h1,
 h2 {
     text-align: center;
+    /* Center align headings */
     color: var(--primary-color);
+    /* Use theme’s primary color */
 }
 
+/* Styling for each semester box */
 .semester-box {
     border: 2px solid var(--primary-color);
+    /* Border with primary color */
     border-radius: 10px;
+    /* Rounded corners */
     padding: 20px;
+    /* Inner spacing */
     margin: 20px 0;
+    /* Vertical spacing */
     background-color: #fff;
+    /* White background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
     transition: transform 0.2s, box-shadow 0.2s;
+    /* Smooth hover transition */
     position: relative;
-    /* Ensure position context for absolute button */
+    /* Needed for positioning internal absolute elements */
 }
 
+/* Hover effect for semester box */
 .semester-box:hover {
     transform: translateY(-5px);
+    /* Slight upward lift */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Darker, deeper shadow */
 }
 
+/* Styling for semester box title */
 .semester-box-title {
     font-weight: bold;
+    /* Make title bold */
     color: var(--primary-color);
+    /* Use primary theme color */
     font-size: 1.2em;
+    /* Slightly larger text */
     text-align: center;
+    /* Center align */
 }
 
-
+/* Styling for semester box description */
 .semester-box-desc {
     margin-top: 10px;
+    /* Add spacing above description */
     color: #666;
+    /* Use medium gray color */
 }
 
+/* Styling for the introduction box */
 .intro-box {
     border: 2px solid var(--primary-color);
+    /* Primary-colored border */
     border-radius: 10px;
+    /* Rounded corners */
     padding: 20px;
+    /* Inner spacing */
     margin: 20px 0;
+    /* Vertical spacing between boxes */
     background-color: #fff;
+    /* White background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
     transition: transform 0.2s, box-shadow 0.2s;
+    /* Smooth transition on hover */
     text-align: center;
+    /* Center-align text inside */
 }
 
+/* Hover effect for the introduction box */
 .intro-box:hover {
     transform: translateY(-5px);
+    /* Lift box slightly */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow on hover */
 }
 
+/* Styling for additional notes or small descriptions */
 .note {
     font-size: 0.9em;
+    /* Slightly smaller text */
     color: #555;
+    /* Medium gray color for readability */
     margin-top: 10px;
+    /* Space above the note */
 }
 
+/* Container to center header content */
 .header-container {
     display: flex;
+    /* Enable Flexbox */
     justify-content: center;
+    /* Center horizontally */
     align-items: center;
-    /* Full height to center vertically */
+    /* Center vertically */
     text-align: center;
-}
-
-/* Styling for secondary headings */
-.heading_1 {
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Ensure text remains centered */
 }
 
 /* Styling for the second type of tool button */
@@ -430,9 +474,48 @@ h2 {
     /* Slight scale up effect on hover */
 }
 
+/* Style for the thank-you section */
+.thank-you {
+    text-align: center;
+    /* Center align text */
+    padding: 20px;
+    /* Add spacing inside the section */
+    background-color: #f1f1f1;
+    /* Light gray background */
+}
+
+/* Style for the contact section */
+.contact {
+    text-align: center;
+    /* Center align text */
+    padding: 10px;
+    /* Add spacing inside the section */
+    color: white;
+    /* Set text color to white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Soft shadow for text */
+}
+
+/* Style for individual contact links */
+.contact-link {
+    color: black;
+    /* Set link color to black */
+}
+
+/* Hover effect for contact links */
+.contact-link:hover {
+    color: var(--primary-color);
+    /* Change color on hover to primary theme color */
+}
+
+/* Style for footer section */
 .footer-section {
     text-align: center;
+    /* Center align text */
     padding: 10px;
+    /* Add spacing inside the section */
     color: white;
+    /* Set text color to white */
     background-color: var(--primary-color);
+    /* Use primary theme color for background */
 }

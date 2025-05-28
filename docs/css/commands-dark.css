@@ -1,0 +1,131 @@
+/*
+**********************************************************************************************
+ * File           : commands-dark.css
+ * Author         : Madhurima Rawat
+ * Date Created   : May 28, 2025
+ * Version        : 1.0
+ * 
+ * Description    : 
+ *   Dark mode theme for the Commands section of Semester Notes Website.
+ * 
+ * Features       :
+ *   - Dark palette with high contrast for readability
+ *   - Smooth hover transitions
+ *   - Responsive and mobile-friendly design
+ *   - Subtle shadows and glow for depth
+ * 
+ * GitHub Repo    : https://github.com/madhurimarawat/Semester-Notes
+ **********************************************************************************************
+*/
+
+/* Body background - soft deep black for a clean dark mode */
+body {
+    background-color: #333;
+    /* Dark charcoal (#333), softer than pure black (#000) */
+    color: bisque;
+}
+
+/* Dark Mode Card - deep background with light text */
+.card {
+    background-color: #3E3A50;
+    /* Dark muted purple */
+    color: bisque;
+    /* Light text for contrast */
+
+    /* Aqua-toned glow instead of black shadow */
+    box-shadow: 0 4px 8px rgba(37, 222, 213, 0.4);
+    /* #25ded5 with opacity */
+
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    /* Optional: Enhance text clarity on dark */
+    text-shadow: 1px 1px 2px rgba(37, 222, 213, 0.5);
+    /* Soft aqua shadow */
+}
+
+/* Card hover - lift effect with stronger aqua glow */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(80, 230, 220, 0.6);
+    /* #50e6dc brighter on hover */
+}
+
+/* Styling for command boxes */
+.command-box {
+    background-color: #4B475D;
+    /* Background color */
+    box-shadow: 0 4px 8px grey;
+    /* Box shadow for 3D effect */
+}
+
+/* Hover effect for command boxes */
+.command-box:hover {
+    box-shadow: 0 8px 16px bisque;
+    /* Deeper shadow on hover */
+}
+
+/* Command box description styling */
+.command-desc {
+    color: bisque;
+    /* Text color */
+}
+
+/* Command text styling */
+.command {
+    background-color: #3E3A50;
+    /* Dark muted purple */
+    /* Background color */
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+/* Background color for the thank-you section */
+.thank-you {
+    background-color: #4B475D;
+}
+
+/* Default text color for contact section */
+.contact {
+    color: white;
+}
+
+/* Style for individual contact links */
+.contact-link {
+    color: whitesmoke;
+    /* Optional: Add a hover effect if desired */
+    /* transition: color 0.3s ease; */
+}
+
+/* Footer section text styling */
+.footer-section {
+    color: #333;
+    /* Dark gray text */
+    font-weight: bold;
+    /* Emphasize the text */
+}
+
+/* Targets all anchor links inside the .intro-box section */
+.intro-box a,
+.command-link {
+    color: palevioletred;
+    /* We can change this to any color like cyan, lightblue, etc. */
+    text-decoration: underline;
+    /* Optional: adds underline to indicate it's a link */
+}
+
+/* Optional: change link color on hover for better interactivity */
+.intro-box a:hover,
+.command-link:hover {
+    color: rgb(222, 70, 121);
+    /* Slightly brighter color on hover */
+}
+
+/* Styles inline <code> elements with a bright green-yellow color for visibility */
+code {
+    color: greenyellow;
+}
+
+/* Changes the color of <code> elements when hovered over to a slightly deeper green */
+code:hover {
+    color: rgb(142, 218, 27);
+}

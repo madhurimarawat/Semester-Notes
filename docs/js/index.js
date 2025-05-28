@@ -2,7 +2,7 @@
 *********************************************************************************************
 * File: index.js
 * Author: Madhurima Rawat
-* Date: May 12, 2025
+* Date: May 28, 2025
 * Description: JavaScript file for study materials website, providing
 *              functionality to dynamically change color schemes based on user-selected seasons.
 * Version: 1.0
@@ -40,40 +40,50 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Function to change colors based on the Color parameter
+// Function to change colors based on the Color parameter and store in localStorage
 function changeColor(Color) {
   let color;
   let button;
 
-  // Determine the color based on the provided Color parameter
+  // Determine the color values based on the theme
   switch (Color) {
     case 'autumn':
-      color = 'coral'; // Autumn: Coral
-      button = '#BA68C8'; // Button color: Purple
+      color = 'coral';             // Autumn: Coral
+      button = '#BA68C8';          // Purple
       break;
     case 'summer':
-      color = '#ffc107'; // Summer: Gold
-      button = '#4D94FF'; // Button color: Blue
+      color = '#ffc107';           // Summer: Gold
+      button = '#4D94FF';          // Blue
       break;
     case 'rainy':
-      color = '#00CED1'; // Rainy: Dark Turquoise
-      button = '#c65b5b'; // Button color: Red
+      color = '#00CED1';           // Rainy: Dark Turquoise
+      button = '#c65b5b';          // Red
       break;
     case 'winter':
       color = 'rgb(242, 82, 175)'; // Winter: Deep Pink
-      button = '#4CAF50'; // Button color: Dark Green
+      button = '#4CAF50';          // Green
       break;
     default:
-      color = '#28a745'; // Default color (Green)
-      button = '#ffc107'; // Default button color: Gold
+      color = '#28a745';           // Default: Green
+      button = '#ffc107';          // Gold
   }
 
-  // Set the '--primary-color' CSS variable of the root element to the determined color
+  // Apply the CSS variables to the document root
   document.documentElement.style.setProperty('--primary-color', color);
-
-  // Set the '--button-color' CSS variable of the root element to the determined button color
   document.documentElement.style.setProperty('--button-color', button);
+
+  // Save the selected theme to localStorage
+  localStorage.setItem('selectedTheme', Color);
 }
+
+// On page load, restore theme from localStorage if present
+document.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('selectedTheme');
+  if (savedTheme) {
+    changeColor(savedTheme); // Apply the saved theme
+  }
+});
+
 
 // jQuery function to handle smooth scrolling for dropdown items within the element with ID 'sem'
 $(document).ready(function () {
@@ -271,3 +281,94 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+/**
+ * Toggles between dark and light mode.
+ * Applies a dark CSS file dynamically and updates the icon/text/button color.
+ * Saves the user's preference in localStorage.
+ * Uses system's prefers-color-scheme as a fallback on first load.
+ */
+function toggleDarkMode() {
+  const darkModeId = 'dark-mode-stylesheet'; // ID for the dark mode stylesheet
+
+  // Identify both toggle elements: navbar link and main button toggle
+  const navToggle = document.getElementById('dark-mode-toggle'); // Navbar toggle (link)
+  const btnToggle = document.getElementById('dark-mode-button'); // Main button toggle
+
+  // Detect if dark mode is already active by checking for the dark stylesheet
+  const isDarkModeActive = document.getElementById(darkModeId);
+
+  /**
+   * Helper function to update any toggle element's icon, text, and button color.
+   * @param {HTMLElement} element - Button or link element
+   * @param {string} mode - "dark" or "light"
+   */
+  function updateUI(element, mode) {
+    if (!element) return; // Check if the element exists
+
+    const icon = element.querySelector('i'); // Select the icon inside the element
+    const text = element; // For the button, the text is directly inside the button
+
+    // Swap icon and label
+    if (mode === 'dark') {
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+      text.innerHTML = '<i class="fas fa-sun"></i> Light Mode'; // Change text to "Light Mode" when dark mode is active
+    } else {
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');
+      text.innerHTML = '<i class="fas fa-moon"></i> Dark Mode'; // Change text to "Dark Mode" when light mode is active
+    }
+  }
+
+  if (!isDarkModeActive) {
+    // Dark mode not active → enable it by injecting <link> for dark mode styles
+    const darkModeLink = document.createElement('link');
+    darkModeLink.rel = 'stylesheet';
+    darkModeLink.href = 'css/index-dark.css'; // Path to your dark mode stylesheet
+    darkModeLink.id = darkModeId;
+    document.head.appendChild(darkModeLink); // Add the stylesheet to the head of the document
+
+    // Update both toggle buttons for dark mode
+    updateUI(navToggle, 'dark');
+    updateUI(btnToggle, 'dark');
+
+    // Save user preference in localStorage for persistence
+    localStorage.setItem('colorMode', 'dark');
+    console.log('Dark mode enabled');
+  } else {
+    // Dark mode is active → disable it by removing the dark stylesheet
+    isDarkModeActive.remove();
+
+    // Update both toggle buttons for light mode
+    updateUI(navToggle, 'light');
+    updateUI(btnToggle, 'light');
+
+    // Save user preference in localStorage for persistence
+    localStorage.setItem('colorMode', 'light');
+    console.log('Dark mode disabled');
+  }
+}
+
+/**
+ * On page load, apply user’s preferred mode.
+ * Priority: localStorage → prefers-color-scheme (system theme)
+ */
+function applyPreferredMode() {
+  const savedMode = localStorage.getItem('colorMode'); // Get saved mode from localStorage
+
+  // Check if a preference is saved in localStorage and apply it
+  if (savedMode === 'dark') {
+    toggleDarkMode(); // Apply dark mode if saved preference is dark
+  } else if (!savedMode) {
+    // No preference saved → check system theme using prefers-color-scheme
+    const prefersDark = window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (prefersDark) {
+      toggleDarkMode(); // Apply dark if system theme prefers dark mode
+    }
+  }
+}
+
+// Run when DOM is ready, to apply the preferred mode
+document.addEventListener('DOMContentLoaded', applyPreferredMode);
