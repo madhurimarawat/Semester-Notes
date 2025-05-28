@@ -2,7 +2,7 @@
 *********************************************************************************************
 * File: index.css
 * Author: Madhurima Rawat
-* Date: July 18, 2024
+* Date: 28 May, 2025
 * Description: Stylesheet for study resources website, including
 *              responsive design, hover effects, color schemes, and layout adjustments.
 * Version: 1.0
@@ -235,19 +235,21 @@
     /* Adjust the value as needed */
 }
 
-/* For mobile devices, set margin-top to 0 for rows and add margin-bottom to cards */
+/* Mobile-specific styling for screen widths below 768px */
 @media (max-width: 767.98px) {
+
+    /* Remove spacing between rows on mobile */
     .row+.row {
         margin-top: 0;
     }
 
+    /* Add spacing below each column card */
     .col-md-4 {
         margin-bottom: 20px;
-        /* Adjust the value as needed */
     }
 
-    /* Remove margin-bottom for the last row of cards */
-    .semester-box .row:last-child .col-md-4 {
+    /* Remove margin-bottom from the last column card inside the last row of semester-box */
+    .semester-box .row:last-of-type .col-md-4:last-child {
         margin-bottom: 0;
     }
 }
