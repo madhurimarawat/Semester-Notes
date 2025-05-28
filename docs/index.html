@@ -2,7 +2,7 @@
 *********************************************************************************************
 * File: index.html
 * Author: Madhurima Rawat
-* Date: May 25, 2025
+* Date: May 28, 2025
 * Description: Study resources website showing the content of my semester notes repository.
 *              It also features a dynamic color-changing dropdown menu using JavaScript.
 * Version: 1.0
@@ -50,7 +50,7 @@
     <meta name="date" content="2025-01-09T08:30:15Z" />
 
     <!-- Last Updated -->
-    <meta name="last-modified" content="2025-05-25T18:56:00Z">
+    <meta name="last-modified" content="2025-05-28T18:56:00Z">
 
     <!-- Open Graph Meta Tags for Social Sharing -->
     <meta property="og:title" content="Comprehensive Study Materials Website" />
@@ -174,6 +174,8 @@
                                 class="fas fa-cloud-showers-heavy"></i>&nbspRainy</a>
                         <a class="dropdown-item" href="#" onclick="changeColor('winter')"><i
                                 class="fas fa-snowflake"></i>&nbspWinter</a>
+                        <a class="dropdown-item" href="#" onclick="changeColor()"><i
+                                class="fas fa-sync-alt"></i>&nbspDefault</a>
                     </div>
                 </li>
             </ul>
@@ -199,8 +201,8 @@
                             class="fa fa-user"></i>Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://linktr.ee/madhurima_rawat">
-                        <i class="fa fa-link"></i> LinkTree
+                    <a class="nav-link dark-mode-link" href="#" onclick="toggleDarkMode()" id="dark-mode-toggle">
+                        <i class="fa fa-moon"></i> <span>Dark Mode</span>
                     </a>
                 </li> &nbsp;
                 <li class="nav-item">
@@ -1013,8 +1015,8 @@
 
     <!-- Thank You section -->
 
-    <section id="thank-you" style="text-align: center; padding: 20px; background-color: #f1f1f1" ">
-        <h2 >Thank You</h2>
+    <section class="thank-you">
+        <h2>Thank You</h2>
         <p>
             Thank you for visiting this website. If you have any questions or would
             like to get in touch, please feel free to contact me.
@@ -1022,22 +1024,20 @@
 
 
         <!-- Contact Links -->
-        <div class=" contact heading_1" style="text-align: center; padding: 10px;color: white;">
-        <a href="mailto:rawatmadhurima@gmail.com" style="color: black"><i class="fas fa-envelope"></i> Email</a>
-        <a class="nav-link" href="tel:+9407959924" style="color: black"><i class="fa fa-phone"></i>
-            9407959924</a>
-        <a href="https://github.com/madhurimarawat" style="color: black"><i class="fab fa-github"></i>
-            GitHub</a>
-        &nbsp;
-        &nbsp;
-        <a href="https://www.linkedin.com/in/madhurima-rawat/" style="color: black"><i class="fab fa-linkedin"></i>
-            LinkedIn</a> &nbsp;
-        <a href="https://linktr.ee/madhurima_rawat" target="_blank" style="color: black"><i class="fa fa-link"></i>
-            LinkTree</a> &nbsp;
-        <a href="https://madhurimarawat.github.io/Portfolio-Website/" style="color: black"><i class="fas fa-globe"></i>
-            Portfolio</a>&nbsp;
-        <a href="https://madhurima-devfolio.streamlit.app/" style="color: black"><i class="fas fa-code"></i>
-            Devfolio</a>
+        <div class=" contact">
+            <a href="mailto:rawatmadhurima@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+            &nbsp; <a href="https://github.com/madhurimarawat" class="contact-link"><i class="fab fa-github"></i>
+                GitHub</a>
+            &nbsp;
+            <a href="https://www.linkedin.com/in/madhurima-rawat/" class="contact-link"><i class="fab fa-linkedin"></i>
+                LinkedIn</a> &nbsp;
+            <a href="https://linktr.ee/madhurima_rawat" target="_blank" class="contact-link"><i class="fa fa-link"></i>
+                LinkTree</a> &nbsp;
+            <a href="https://madhurimarawat.github.io/Portfolio-Website/" class="contact-link"><i
+                    class="fas fa-globe"></i>
+                Portfolio</a>&nbsp;
+            <a href="https://madhurima-devfolio.streamlit.app/" class="contact-link"><i class="fas fa-code"></i>
+                Devfolio</a>
 
         </div>
         <a class="tool-button-2" href="https://github.com/madhurimarawat/Semester-Notes">Visit on GitHub &nbsp;<i

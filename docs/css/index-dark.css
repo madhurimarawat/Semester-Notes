@@ -1,0 +1,211 @@
+/*
+**********************************************************************************************
+ * File           : index-dark.css
+ * Author         : Madhurima Rawat
+ * Date Created   : 28 May, 2025
+ * Version        : 1.0
+ * 
+ * Description    : 
+ *   This stylesheet defines the dark mode theme for Semester NOtes website.
+ *   It includes customized color schemes, responsive design tweaks, hover effects, and layout 
+ *   adjustments specifically optimized for a darker aesthetic.
+ * 
+ * Features       :
+ *   - Dark color scheme for navbar, footer, cards, buttons, and text.
+ *   - Enhanced hover effects for buttons and interactive components.
+ *   - Consistent typography and spacing for readability in dark mode.
+ *   - Responsive design support across different devices and screen sizes.
+ * 
+ * GitHub Repo    : https://github.com/madhurimarawat/Semester-Notes
+ * Issues/Bugs    : 
+ *   For any issues or bugs, please visit the repository’s issues section:
+ *   https://github.com/madhurimarawat/Semester-Notes/issues
+ * 
+ * Dependencies   : 
+ *   - Bootstrap 4.5.2 (for grid system and responsive utilities)
+ *   - Font Awesome 5.15.3 (for icons)
+ * 
+ * Comments       : 
+ *   This CSS file customizes elements such as the navigation bar, buttons, cards, and footer
+ *   to provide a cohesive dark mode experience. The styling focuses on maintaining user 
+ *   experience with balanced contrasts, smooth transitions, and subtle shadows.
+ **********************************************************************************************
+ */
+
+/* Body background - soft deep black for a clean dark mode */
+body {
+    background-color: #333;
+    /* Dark charcoal (#333), softer than pure black (#000) */
+    color: bisque;
+}
+
+/* Dark Mode Card - deep background with light text */
+.card {
+    background-color: #3E3A50;
+    /* Dark muted purple */
+    color: bisque;
+    /* Light text for contrast */
+
+    /* Aqua-toned glow instead of black shadow */
+    box-shadow: 0 4px 8px rgba(37, 222, 213, 0.4);
+    /* #25ded5 with opacity */
+
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    /* Optional: Enhance text clarity on dark */
+    text-shadow: 1px 1px 2px rgba(37, 222, 213, 0.5);
+    /* Soft aqua shadow */
+}
+
+/* Card hover - lift effect with stronger aqua glow */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(80, 230, 220, 0.6);
+    /* #50e6dc brighter on hover */
+}
+
+.dark-mode-link {
+    color: #333 !important;
+}
+
+.dark-mode-link:hover {
+    color: bisque !important;
+}
+
+/* Navbar link text color - deep charcoal for dark mode */
+.navbar-dark .navbar-nav .nav-link {
+    color: #333;
+    /* Soft gray, lighter than #333 but not stark */
+    font-weight: bolder;
+}
+
+/* Hover effect - lighter gray for contrast */
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: bisque;
+    /* Soft light gray for hover */
+}
+
+#searchInput {
+    border: 1px solid #ccc;
+    /* Subtle border */
+    box-shadow: 0 4px 8px rgba(230, 32, 32, 0.1);
+    /* Card-like shadow */
+    background-color: #3E3A50;
+    /* White background */
+    color: whitesmoke;
+}
+
+/* Set placeholder text color inside the search input to white */
+#searchInput::placeholder {
+    color: white;
+    /* Makes the placeholder text appear white */
+    opacity: 1;
+    /* Ensures the placeholder is fully visible */
+}
+
+#searchInput:hover {
+    box-shadow: 0 8px 16px #FAEBD7;
+    /* Enhanced shadow on hover */
+}
+
+/* Styling for each search suggestion item */
+#suggestions .list-group-item {
+    background-color: #3E3A50;
+    /* Set the background color to white */
+    color: bisque;
+    /* Ensure the text color is black */
+    border: 1px solid #ddd;
+    /* Add a light gray border to each item */
+}
+
+/* Active color for keyboard navigation */
+#suggestions .list-group-item.active {
+    background-color: bisque;
+    /* Change the background color when active */
+    color: black;
+    /* Ensure the text color remains black */
+}
+
+/* Hover color for list items */
+#suggestions .list-group-item:hover {
+    background-color: bisque;
+    /* Change the background color on hover */
+    color: black;
+    /* Ensure the text color remains black */
+}
+
+/* Style for the button */
+#searchButton {
+    border-color: #333;
+    /* Initial border color */
+    color: black;
+    /* Initial text color */
+    font-weight: bold;
+}
+
+/* Hover effect */
+#searchButton:hover {
+    color: bisque;
+    /* Text color on hover */
+    border-color: white;
+    /* Border color on hover */
+}
+
+/* Semester box styling: dark background with a soft bisque shadow */
+.semester-box {
+    background-color: #4B475D;
+    /* Deep muted purple-gray */
+    box-shadow: 0 4px 8px bisque;
+    /* Warm shadow for subtle elevation */
+}
+
+/* Intro box styling: same background as semester box with a grey shadow */
+.intro-box {
+    background-color: #4B475D;
+    /* Consistent look with semester-box */
+    box-shadow: 0 4px 8px grey;
+    /* Neutral shadow for initial state */
+}
+
+/* Hover effect for intro box: intensifies the shadow for interaction feedback */
+.intro-box:hover {
+    box-shadow: 0 8px 16px bisque;
+    /* Enhanced warm glow on hover */
+}
+
+/* Dropdown menu background: dark theme */
+.dropdown-menu {
+    background-color: #333;
+    /* Dark gray background for dropdown */
+}
+
+/* Dropdown items: warm text color to contrast with dark background */
+.dropdown-item {
+    color: bisque;
+    /* Soft and readable against dark background */
+}
+
+/* Background color for the thank-you section */
+.thank-you {
+    background-color: #4B475D;
+}
+
+/* Default text color for contact section */
+.contact {
+    color: white;
+}
+
+/* Style for individual contact links */
+.contact-link {
+    color: whitesmoke;
+    /* Optional: Add a hover effect if desired */
+    /* transition: color 0.3s ease; */
+}
+
+/* Footer section text styling */
+.footer-section {
+    color: #333;
+    /* Dark gray text */
+    font-weight: bold;
+    /* Emphasize the text */
+}
