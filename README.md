@@ -264,10 +264,15 @@ This repository includes academic notes, study materials, and resources from B.T
   
   This folder contains the code for this website:
   
-  - The `index.html` file serves as the main page.
-  - The website is user-friendly, featuring an intuitive interface that is easy to navigate.
-  - Responsive design ensures the website looks great and functions well on all devices and screen sizes.
-  - A dropdown menu allows dynamic color changes with options for Autumn, Summer, Rainy, and Winter. Upon selection, the website color changes instantly. Refreshing the page restores the default color scheme.
+  * 🏠 The `index.html` file functions as the main landing page of the website.
+  * 🧭 The website features a clean, user-friendly layout with an intuitive interface that is easy to navigate.
+  * 📱 The responsive design ensures the website displays correctly and performs well across all devices and screen sizes.
+  * 🌈 A dropdown menu allows users to switch between seasonal color themes such as **Autumn**, **Summer**, **Rainy**, and **Winter**. Upon selection, the website’s primary color updates instantly, creating a visually engaging experience.
+  * 💾 The selected theme is stored using **LocalStorage**, allowing it to persist across browser sessions. The previously chosen theme is automatically applied when the user returns to the site.
+  * 🌓 A **Dark Mode** toggle has been added to enhance accessibility and visual comfort. Its state is also saved using **LocalStorage**, ensuring the preference remains active until manually changed.
+  * 🔄 A **"Default"** theme option is available in the dropdown to revert the site’s appearance to its original color scheme.
+  * 📚 A separate **Resources** dropdown in the navigation bar provides convenient access to reference materials and command guides for tools like **Git**, **Hadoop**, and **Astyle**, helping users learn and explore essential technologies.
+
 </details>
 
 ### Data Science and Artificial Intelligence Subjects
@@ -316,11 +321,15 @@ Semester-Notes/
 │   ├── css/
 │   │   ├── index.css         # 🎨 Stylesheet for index.html
 │   │   └── commands.css      # 🎨 Stylesheet for Astyle-Commands.html and Git-Commands.html and Hadoop-Commands.html
+│   │   ├── index-dark.css    # 🌙 Dark theme for index.html
+│   │   └── commands-dark.css # 🌙 Dark theme for command pages
 │   │
 │   ├── js/
 │   │   ├── index.js          # 🖥️ Script to dynamically change the primary color of the website
-│   │   └── commands.js       # 📜 Script to manage the visibility of the color and copying of commands in Astyle-Commands.html and Git-Commands.html and Hadoop-|                                    Commands.html
-│
+│   │   └── commands.js       # 📜 Script manages theme and copy actions in command pages.
+|   |
+│   ├── website_snapshots/    # 🖼️ Contains all website screenshots and demo GIFs for documentation
+│   
 ├── LICENSE                   # 📜 MIT License file
 │
 └── README.md                 # 📄 Documentation file for the repository
@@ -329,14 +338,37 @@ Semester-Notes/
 ```
 
 ---
+
 ## Website Design
 
 This website showcases a comprehensive repository of semester notes and study resources. It features a dynamic, color-changing dropdown menu using JavaScript. The content is organized into detailed sections, covering semester-wise subjects and commonly used commands for Astyle, Git and Hadoop. Visit the website at: [Website Link](https://madhurimarawat.github.io/Semester-Notes/).
 
-<a href ="https://madhurimarawat.github.io/Semester-Notes/">![Screenshot 2024-07-19 103717](https://github.com/user-attachments/assets/f68840c1-f9ec-4db5-af80-789176a1fc47)<a>
+<a href="https://madhurimarawat.github.io/Semester-Notes/">
+  <img src="docs/website_snapshots/website_1.png" width="100%">
+</a>
 
-<a href ="https://madhurimarawat.github.io/Semester-Notes/"><img src = "https://github.com/user-attachments/assets/ea40513b-7e70-4b35-b174-3f162dd553f9" width = "100%"></a>
-<a href ="https://madhurimarawat.github.io/Semester-Notes/">![Screenshot 2024-07-19 104138](https://github.com/user-attachments/assets/65ba467b-38cd-411f-9e40-1eb8e26924c6)</a>
+<a href="https://madhurimarawat.github.io/Semester-Notes/">
+  <img src="docs/website_snapshots/website_2.png" width="100%">
+</a>
+
+<a href="https://madhurimarawat.github.io/Semester-Notes/">
+  <img src="docs/website_snapshots/website_3.png" width="100%">
+</a>
+
+<a href="https://madhurimarawat.github.io/Semester-Notes/">
+  <img src="docs/website_snapshots/subject-search-demo.gif" width="100%">
+</a>
+
+<p align='center'>
+🅳🅰🆁🅺 🅼🅾🅳🅴 🌙🖤 </p>
+
+<a href="https://madhurimarawat.github.io/Semester-Notes/">
+  <img src="docs/website_snapshots/home-page-dark-mode.gif" width="100%">
+</a>
+
+<a href="https://madhurimarawat.github.io/Semester-Notes/">
+  <img src="docs/website_snapshots/commands-page-dark-mode.gif" width="100%">
+</a>
 
 ---
 
