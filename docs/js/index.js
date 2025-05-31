@@ -2,7 +2,7 @@
 *********************************************************************************************
 * File: index.js
 * Author: Madhurima Rawat
-* Date: May 28, 2025
+* Date: May 31, 2025
 * Description: JavaScript file for study materials website, providing
 *              functionality to dynamically change color schemes based on user-selected seasons.
 * Version: 1.0
@@ -73,12 +73,12 @@ function changeColor(Color) {
   document.documentElement.style.setProperty('--button-color', button);
 
   // Save the selected theme to localStorage
-  localStorage.setItem('selectedTheme', Color);
+  localStorage.setItem('semester-notes-website-theme', Color);
 }
 
 // On page load, restore theme from localStorage if present
 document.addEventListener('DOMContentLoaded', () => {
-  const savedTheme = localStorage.getItem('selectedTheme');
+  const savedTheme = localStorage.getItem('semester-notes-website-theme');
   if (savedTheme) {
     changeColor(savedTheme); // Apply the saved theme
   }
@@ -334,7 +334,7 @@ function toggleDarkMode() {
     updateUI(btnToggle, 'dark');
 
     // Save user preference in localStorage for persistence
-    localStorage.setItem('colorMode', 'dark');
+    localStorage.setItem('semester-notes-website-colorMode', 'dark');
     console.log('Dark mode enabled');
   } else {
     // Dark mode is active → disable it by removing the dark stylesheet
@@ -345,7 +345,7 @@ function toggleDarkMode() {
     updateUI(btnToggle, 'light');
 
     // Save user preference in localStorage for persistence
-    localStorage.setItem('colorMode', 'light');
+    localStorage.setItem('semester-notes-website-colorMode', 'light');
     console.log('Dark mode disabled');
   }
 }
@@ -355,7 +355,7 @@ function toggleDarkMode() {
  * Priority: localStorage → prefers-color-scheme (system theme)
  */
 function applyPreferredMode() {
-  const savedMode = localStorage.getItem('colorMode'); // Get saved mode from localStorage
+  const savedMode = localStorage.getItem('semester-notes-website-colorMode'); // Get saved mode from localStorage
 
   // Check if a preference is saved in localStorage and apply it
   if (savedMode === 'dark') {
