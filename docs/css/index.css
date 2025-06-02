@@ -314,6 +314,18 @@
     /* Set hover text color */
 }
 
+/* Show dropdown menu on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    /* optional: remove gap */
+}
+
+/* Optional: smooth appearance */
+.dropdown-menu {
+    transition: all 0.3s ease-in-out;
+}
+
 /* Center content both vertically and horizontally using Flexbox */
 .center-content {
     display: flex;
