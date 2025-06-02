@@ -1,8 +1,11 @@
+---
+---
+
 <!--
 *********************************************************************************************
 * File: Hadoop-Commands.html
 * Author: Madhurima Rawat
-* Date: May 28, 2025
+* Date: June 2, 2025
 * Description: Study resources commands website showing some comman commands used in Hadoop.
 *              It also features a dynamic color-changing dropdown menu using JavaScript.
 * Version: 1.0
@@ -37,6 +40,15 @@
 <html lang="en">
 
 <head>
+
+    <!--
+          The <base> tag sets the base URL for all relative paths.
+           moves up two folders from current file.
+          Use it to correctly link CSS/JS from nested pages.
+          Only one <base> allowed, placed inside <head>.
+        -->
+    <base href="{{ site.baseurl }}/">
+
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -71,9 +83,9 @@
                         Resources
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="Astyle-Commands.html">Astyle</a>
-                        <a class="dropdown-item" href="Git-Commands.html">Git</a>
-                        <a class="dropdown-item" href="Hadoop-Commands.html">Hadoop</a>
+                        <a class="dropdown-item" href="Astyle-Commands">Astyle</a>
+                        <a class="dropdown-item" href="Git-Commands">Git</a>
+                        <a class="dropdown-item" href="Hadoop-Commands">Hadoop</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
