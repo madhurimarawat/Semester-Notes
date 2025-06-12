@@ -1,3 +1,6 @@
+---
+---
+
 <!--
 *********************************************************************************************
 * File: index.html
@@ -166,15 +169,15 @@
                         Theme
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" onclick="changeColor('autumn')"><i
+                        <a class="dropdown-item" href="#" onclick="event.preventDefault(); changeColor('autumn')"><i
                                 class="fas fa-leaf"></i>&nbsp;Autumn</a>
-                        <a class="dropdown-item" href="#" onclick="changeColor('summer')"><i
+                        <a class="dropdown-item" href="#" onclick="event.preventDefault(); changeColor('summer')"><i
                                 class="fas fa-sun"></i>&nbsp;Summer</a>
-                        <a class="dropdown-item" href="#" onclick="changeColor('rainy')"><i
+                        <a class="dropdown-item" href="#" onclick="event.preventDefault(); changeColor('rainy')"><i
                                 class="fas fa-cloud-showers-heavy"></i>&nbspRainy</a>
-                        <a class="dropdown-item" href="#" onclick="changeColor('winter')"><i
+                        <a class="dropdown-item" href="#" onclick="event.preventDefault(); changeColor('winter')"><i
                                 class="fas fa-snowflake"></i>&nbspWinter</a>
-                        <a class="dropdown-item" href="#" onclick="changeColor()"><i
+                        <a class="dropdown-item" href="#" onclick="event.preventDefault(); changeColor()"><i
                                 class="fas fa-sync-alt"></i>&nbspDefault</a>
                     </div>
                 </li>
@@ -201,7 +204,8 @@
                             class="fa fa-user"></i>Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link dark-mode-link" href="#" onclick="toggleDarkMode()" id="dark-mode-toggle">
+                    <a class="nav-link dark-mode-link" href="#" onclick="event.preventDefault(); toggleDarkMode()"
+                        id="dark-mode-toggle">
                         <i class="fa fa-moon"></i> <span>Dark Mode</span>
                     </a>
                 </li> &nbsp;
