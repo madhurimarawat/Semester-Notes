@@ -335,6 +335,8 @@ Semester-Notes/
 └── README.md                 # 📄 Documentation file for the repository
 │
 └── CONTRIBUTING.md           # 🤝 Guide for contributing to the repository
+│
+└── HOW_TO_USE.md             # 📘 Instructions for accessing and downloading the notes
 ```
 
 ---
