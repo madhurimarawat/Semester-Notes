@@ -78,7 +78,7 @@ A comprehensive, well-structured repository of B.Tech (Hons) CSE notes and learn
   <img 
     src="https://github.com/user-attachments/assets/c6e50e1d-00c6-438f-96af-13e4fe3eea4f" 
     alt="Semester Notes Illustration" 
-    style="height: 400px; width: 100%">
+    style="height: 400px; width: 100%" title="Visit Website 🕸️">
 </a></p>
 
 ## 🌱 What this repository offers
