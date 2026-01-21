@@ -1,5 +1,8 @@
 # Semester-Notes
-This repository includes academic notes, study materials, and resources from B.Tech (Hons) in CSE, specializing in Artificial Intelligence and Data Science. It features question papers, proprietary study guides, and resources to support learning in these fields.
+A comprehensive, well-structured repository of B.Tech (Hons) CSE notes and learning resources, specializing in Artificial Intelligence and Data Science. Includes semester-wise notes, question papers, curated study guides, and indexed materials designed for efficient learning, revision, and academic reference.
+
+> [!TIP]
+> 🌐 Check the live, interactive Semester Notes: [Website](https://madhurimarawat.github.io/Semester-Notes/) 🚀
 
 <p align="center">
   <!-- Repository Size -->
@@ -67,12 +70,21 @@ This repository includes academic notes, study materials, and resources from B.T
 
 <a href = "https://madhurimarawat.github.io/NameBlock-Designer/"><img src ="docs/images/SEMESTER NOTES_NameBlock.png" title = "NameBlock" alt = "NameBlock"></a>
 
-![Illustration](https://github.com/madhurimarawat/Semester-Notes/assets/105432776/784d77f1-41bf-46a3-b2f8-c185ec52aad7)
+> [!IMPORTANT]
+> 🌟 Like these notes? Star ⭐ and share to help more students!
 
-- This repository includes academic notes, study materials, and resources from B.Tech (Hons) in CSE, specializing in Artificial Intelligence and Data Science. <br><br>
-- It features question papers, proprietary study guides, and resources to support learning in these fields. <br><br>
-- This repository serves as a valuable resource to access well-structured and reliable study materials.<br><br>
-- Study Materials are organized according to semesters and subjects.
+<p align="center">
+<a href="https://madhurimarawat.github.io/Semester-Notes/" target="_blank" rel="noopener noreferrer">
+  <img 
+    src="https://github.com/user-attachments/assets/c6e50e1d-00c6-438f-96af-13e4fe3eea4f" 
+    alt="Semester Notes Illustration" 
+    style="height: 400px; width: 100%">
+</a></p>
+
+## 🌱 What this repository offers
+- Semester-wise, subject-organized academic notes
+- Question papers and curated study materials
+- Structured content designed for quick revision and reference
 
 ---
 
