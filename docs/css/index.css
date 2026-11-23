@@ -2,7 +2,7 @@
 *********************************************************************************************
 * File: index.css
 * Author: Madhurima Rawat
-* Date: 28 May, 2025
+* Date: November 23, 2026
 * Description: Stylesheet for study resources website, including
 *              responsive design, hover effects, color schemes, and layout adjustments.
 * Version: 1.0
@@ -530,4 +530,61 @@ h2 {
     /* Set text color to white */
     background-color: var(--primary-color);
     /* Use primary theme color for background */
+}
+
+/**
+ * Floating language button and dropdown styling.
+ * Keeps the language controls fixed at the bottom-right of the screen.
+ */
+
+/* Floating language button */
+.language-toggle {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    background: #2563eb;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
+}
+
+/* Darker button background on hover */
+.language-toggle:hover {
+    background: #1d4ed8;
+}
+
+/* Language dropdown container (hidden by default) */
+.translate-container {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 24px;
+    z-index: 9998;
+    padding: 15px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .15);
+}
+
+/* Display the dropdown when the language button is clicked */
+.translate-container.active {
+    display: block;
+}
+
+/* Language selection dropdown styling */
+.translate-container select {
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    color: #222;
+    font-size: 14px;
+    cursor: pointer;
+    min-width: 160px;
 }

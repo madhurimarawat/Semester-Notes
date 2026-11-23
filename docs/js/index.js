@@ -2,7 +2,7 @@
 *********************************************************************************************
 * File: index.js
 * Author: Madhurima Rawat
-* Date: May 31, 2025
+* Date: November 23, 2026
 * Description: JavaScript file for study materials website, providing
 *              functionality to dynamically change color schemes based on user-selected seasons.
 * Version: 1.0
@@ -372,3 +372,48 @@ function applyPreferredMode() {
 
 // Run when DOM is ready, to apply the preferred mode
 document.addEventListener('DOMContentLoaded', applyPreferredMode);
+
+/**
+ * On page load, apply user’s preferred mode.
+ * Priority: localStorage → prefers-color-scheme (system theme)
+ */
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Original language
+  translate.language.setLocal('english');
+
+  // Translation service
+  translate.service.use('client.edge');
+
+  // Clear previously selected language
+  translate.language.clearCacheLanguage();
+
+  // Dropdown languages
+  translate.selectLanguageTag.languages =
+    'english,hindi,french,german,japanese,spanish,chinese_simplified';
+
+  // Render dropdown inside this div
+  translate.selectLanguageTag.documentId = 'translate-container';
+  translate.selectLanguageTag.show = true;
+
+  // Keep the floating button in English
+  // The "ignore" class is already supported by translate.js
+  translate.listener.start();
+
+  translate.ignore.id.push('translate-container');
+
+  // Initialize translate.js
+  translate.execute();
+
+  // Open and close dropdown
+  const button = document.getElementById('language-toggle');
+  const container = document.getElementById('translate-container');
+
+  if (button && container) {
+    button.addEventListener('click', function () {
+      container.classList.toggle('active');
+    });
+  }
+
+});
