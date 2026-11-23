@@ -82,9 +82,14 @@ A comprehensive, well-structured repository of B.Tech (Hons) CSE notes and learn
 </a></p>
 
 ## 🌱 What this repository offers
+
 - Semester-wise, subject-organized academic notes
 - Question papers and curated study materials
 - Structured content designed for quick revision and reference
+- Interactive website with four seasonal themes: Autumn, Summer, Rainy, and Winter, along with Light and Dark modes
+- Dedicated semester cards featuring subject lists, brief descriptions, and direct links to study materials
+- Search bar to quickly find subjects across semesters
+- Multilingual website translation powered by the **translate.js** library (xnx3/translate)
 
 ---
 
