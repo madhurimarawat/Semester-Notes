@@ -2,7 +2,7 @@
 *********************************************************************************************
 * File: commands.css
 * Author: Madhurima Rawat
-* Date: May 28, 2025
+* Date: November 23, 2026
 * Description: Stylesheet for a website dedicated to additional resources for commands, featuring responsive design,
 *              interactive hover effects, cohesive color schemes, and refined layout adjustments.
 * Version: 1.0
@@ -104,6 +104,7 @@ h2 {
     /* Transition effects */
     position: relative;
     /* Ensure position context for absolute button */
+    margin-bottom: 60px;
 }
 
 /* Hover effect for command boxes */
@@ -223,6 +224,7 @@ h2 {
     /* Transition effects */
     text-align: center;
     /* Center align text */
+    margin-bottom: 60px;
 }
 
 /* Hover effect for intro box */
