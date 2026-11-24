@@ -90,6 +90,8 @@ A comprehensive, well-structured repository of B.Tech (Hons) CSE notes and learn
 - Dedicated semester cards featuring subject lists, brief descriptions, and direct links to study materials
 - Search bar to quickly find subjects across semesters
 - Multilingual website translation powered by the **translate.js** library (xnx3/translate)
+- Integrated **73 languages** supported by the translate.js library, with English and native-language display names.
+- Implemented a **custom searchable language dropdown** with real-time filtering, alphabetical sorting, and scrollable language options for improved user experience.
 
 ---
 
