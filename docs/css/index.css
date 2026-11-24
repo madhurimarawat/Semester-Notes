@@ -2,7 +2,7 @@
 *********************************************************************************************
 * File: index.css
 * Author: Madhurima Rawat
-* Date: November 23, 2026
+* Date: November 24, 2026
 * Description: Stylesheet for study resources website, including
 *              responsive design, hover effects, color schemes, and layout adjustments.
 * Version: 1.0
@@ -533,58 +533,345 @@ h2 {
 }
 
 /**
- * Floating language button and dropdown styling.
- * Keeps the language controls fixed at the bottom-right of the screen.
+ * ==========================================================
+ * FLOATING LANGUAGE SELECTOR
+ * ==========================================================
+ *
+ * Features:
+ * - Fixed floating language button
+ * - Bottom-right language selector panel
+ * - Custom searchable language dropdown
+ * - Scrollable language options
+ * - Selected and hover states
+ * - Hidden native select for translate.js
+ * - Responsive mobile layout
+ *
+ * ==========================================================
  */
 
-/* Floating language button */
+
+/* ==========================================================
+   1. FLOATING LANGUAGE BUTTON
+   ========================================================== */
+
 .language-toggle {
     position: fixed;
     bottom: 24px;
     right: 24px;
     z-index: 9999;
+
     padding: 12px 20px;
+
     border: none;
     border-radius: 50px;
-    background: #2563eb;
+
+    background: var(--primary-color);
     color: #fff;
+
     font-size: 14px;
     font-weight: 600;
+
     cursor: pointer;
+
     box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
+
+    transition: background .2s ease, transform .2s ease;
 }
 
-/* Darker button background on hover */
+/* Lighter background on hover */
 .language-toggle:hover {
-    background: #1d4ed8;
+    background: color-mix(in srgb, var(--primary-color) 75%, white);
 }
 
-/* Language dropdown container (hidden by default) */
+
+/* ==========================================================
+   2. FLOATING LANGUAGE CONTAINER
+   ========================================================== */
+
 .translate-container {
     display: none;
+
     position: fixed;
     bottom: 80px;
     right: 24px;
     z-index: 9998;
-    padding: 15px;
-    background: white;
+
+    width: 280px;
+    max-width: calc(100vw - 32px);
+
+    padding: 12px;
+
+    background: #fff;
     border-radius: 12px;
+
     box-shadow: 0 4px 20px rgba(0, 0, 0, .15);
 }
 
-/* Display the dropdown when the language button is clicked */
+/* Show container when activated */
 .translate-container.active {
     display: block;
 }
 
-/* Language selection dropdown styling */
-.translate-container select {
-    padding: 10px 14px;
+
+/* ==========================================================
+   3. CUSTOM LANGUAGE DROPDOWN
+   ========================================================== */
+
+.custom-language-dropdown {
+    position: relative;
+    width: 100%;
+}
+
+
+/* ==========================================================
+   4. DROPDOWN TRIGGER BUTTON
+   ========================================================== */
+
+.language-dropdown-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 11px 14px;
+
     border: 1px solid #ddd;
     border-radius: 8px;
-    background: white;
+
+    background: #fff;
     color: #222;
+
     font-size: 14px;
+    text-align: left;
+
     cursor: pointer;
-    min-width: 160px;
+
+    transition: border-color .2s ease;
+}
+
+/* Dropdown arrow */
+.language-dropdown-trigger::after {
+    content: "▾";
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* Trigger hover state */
+.language-dropdown-trigger:hover {
+    border-color: #999;
+}
+
+
+/* ==========================================================
+   5. DROPDOWN PANEL
+   ========================================================== */
+
+.language-dropdown-panel {
+    display: none;
+
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Show panel when dropdown is open */
+.custom-language-dropdown.is-open .language-dropdown-panel {
+    display: block;
+}
+
+
+/* ==========================================================
+   6. LANGUAGE SEARCH INPUT
+   ========================================================== */
+
+.language-search-input {
+    display: block;
+    box-sizing: border-box;
+
+    width: 100%;
+    padding: 11px 12px;
+    margin-bottom: 10px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    background: #fff;
+    color: #222;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+/* Search input focus state */
+.language-search-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--primary-color) 12%, transparent);
+}
+
+/* Search placeholder */
+.language-search-input::placeholder {
+    color: #999;
+}
+
+
+/* ==========================================================
+   7. SCROLLABLE LANGUAGE OPTIONS
+   ========================================================== */
+
+.language-dropdown-options {
+    display: block;
+
+    width: 100%;
+    max-height: 240px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    background: #fff;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .12);
+
+    scrollbar-width: thin;
+    scrollbar-color: #aaa #f1f1f1;
+}
+
+
+/* ==========================================================
+   8. INDIVIDUAL LANGUAGE OPTIONS
+   ========================================================== */
+
+.language-dropdown-option {
+    display: block;
+    box-sizing: border-box;
+
+    width: 100%;
+    min-height: 40px;
+
+    padding: 10px 12px;
+
+    border: none;
+
+    background: #fff;
+    color: #222;
+
+    font-size: 14px;
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: background .15s ease;
+}
+
+/* Language option hover state */
+.language-dropdown-option:hover {
+    background: #f0f0f0;
+}
+
+/* Currently selected language */
+.language-dropdown-option.selected {
+    background: #e8e8e8;
+    font-weight: 600;
+}
+
+/* Hide options that do not match the search */
+.language-dropdown-option[hidden] {
+    display: none !important;
+}
+
+
+/* ==========================================================
+   9. NO SEARCH RESULTS MESSAGE
+   ========================================================== */
+
+.language-no-results {
+    padding: 15px 10px;
+
+    color: #888;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Hide message when results are available */
+.language-no-results[hidden] {
+    display: none !important;
+}
+
+
+/* ==========================================================
+   10. CUSTOM SCROLLBAR
+   ========================================================== */
+
+/* Chrome, Edge and Safari */
+.language-dropdown-options::-webkit-scrollbar {
+    width: 7px;
+}
+
+.language-dropdown-options::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.language-dropdown-options::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 10px;
+}
+
+.language-dropdown-options::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+
+/* ==========================================================
+   11. HIDDEN NATIVE SELECT
+   ==========================================================
+   Kept in the DOM for translate.js functionality.
+   The custom dropdown is used for the visible interface.
+   ========================================================== */
+
+.translate-container select {
+    position: absolute !important;
+
+    width: 1px !important;
+    height: 1px !important;
+
+    padding: 0 !important;
+    margin: -1px !important;
+
+    overflow: hidden !important;
+
+    clip: rect(0, 0, 0, 0) !important;
+
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+
+/* ==========================================================
+   12. MOBILE RESPONSIVENESS
+   ========================================================== */
+
+@media (max-width: 480px) {
+
+    .language-toggle {
+        right: 16px;
+        bottom: 24px;
+    }
+
+    .translate-container {
+        right: 16px;
+        bottom: 80px;
+
+        width: 260px;
+        max-width: calc(100vw - 32px);
+    }
+
+    .language-dropdown-options {
+        max-height: 240px;
+    }
+
 }
